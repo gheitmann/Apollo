@@ -6,11 +6,10 @@ OUT=ROOT/'Source/InstallerUi';OUT.mkdir(parents=True,exist_ok=True)
 for name in ['Setup.cs','InstallerPresentation.cs','PatchInstaller.cs','ApolloInstaller.cs','PresentationProbe.cs','Initialize.ps1','Get-MediaPortalArchitecture.ps1']:
  source=name.replace('Apollo','Backdrop')
  s=(ORIGINAL/source).read_text(encoding='utf-8-sig').replace('Backdrop','Apollo')
- s=s.replace('1.39.0.27','1.1.0.1')
+ s=s.replace('1.39.0.27','1.1.0.2')
  if name=='Initialize.ps1':
   s=s.replace("New-Item -ItemType Directory -Path $runtime | Out-Null", "New-Item -ItemType Directory -Path $runtime | Out-Null\nif(Test-Path -LiteralPath (Join-Path $installed 'MediaPortalDirs.xml')){Copy-Item -LiteralPath (Join-Path $installed 'MediaPortalDirs.xml') -Destination $runtime}")
   # Retain architecture selection from the maintained launcher.
-  # s=s.replace("if($architecture -eq 'x64' -and -not [Environment]::Is64BitOperatingSystem){throw 'This MediaPortal installation requires 64-bit Windows.'}","if($architecture -ne 'x86'){throw 'This Apollo test build requires the MediaPortal x86 client. Select its client folder.'}")
  if name=='ApolloInstaller.cs':
   s=s.replace('"PASS: native installer binds to isolated MpeCore; native plugin destination=" + plugins', '"PASS: native installer binds to isolated MpeCore; native config destination=" + config.GetMethod("GetFolder").Invoke(null, new object[] { Enum.Parse(dirs, "Config") }) + "; native skin destination=" + config.GetMethod("GetFolder").Invoke(null, new object[] { Enum.Parse(dirs, "Skin") }) + "; native plugin destination=" + plugins')
   old='entry.Invoke(null, entry.GetParameters().Length == 0 ? null : new object[] { args });'

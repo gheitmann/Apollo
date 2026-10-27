@@ -23,8 +23,8 @@ if($LASTEXITCODE -ne 0){throw 'Migration failed.'}
 if($LASTEXITCODE -ne 0){throw 'Static audit failed.'}
 & $Python (Join-Path $PSScriptRoot 'package.py')
 if($LASTEXITCODE -ne 0){throw 'Package verification failed.'}
-$bundle=Join-Path $root 'dist\Apollo-private-ALPHA1.zip'
-$setup=Join-Path $root 'dist\Apollo-Setup-ALPHA1.exe'
+$bundle=Join-Path $root 'dist\Apollo-private-ALPHA2.zip'
+$setup=Join-Path $root 'dist\Apollo-Setup-ALPHA2.exe'
 Compile @('/nologo','/target:winexe','/platform:x86','/r:System.Windows.Forms.dll','/r:System.IO.Compression.dll','/r:System.IO.Compression.FileSystem.dll',('/resource:'+$bundle+',Apollo.Bundle'),('/out:'+$setup),(Join-Path $source 'Setup.cs'))
 $hash=(Get-FileHash -LiteralPath $setup -Algorithm SHA256).Hash.ToLowerInvariant()
 [IO.File]::WriteAllText($setup+'.sha256',$hash+'  '+[IO.Path]::GetFileName($setup)+[Environment]::NewLine)

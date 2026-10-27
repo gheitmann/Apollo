@@ -1,4 +1,4 @@
-# ALPHA1 validation — 27 October 2026
+# ALPHA2 validation — 27 October 2026
 
 Target: MediaPortal 1.39 x86, Windows 11. Original Apollo 1.1.0.0 artwork/layouts
 and themes retained. Experimental candidate; source is published for review.
@@ -117,3 +117,45 @@ Pause/seek, music playback, guide/recording navigation, theme switching and the
 remaining historical plugins were not tested in this scoped pass. This is a
 usable initial demo path, not complete plugin or x64 certification. See
 PLUGIN-COVERAGE.md for the remaining integration inventory.
+
+## ALPHA2 follow-up
+
+The offscreen image control that referenced absent `video-overlay.png` now has
+an empty texture, consistent with adjacent unused backgrounds. Native IDs,
+visibility conditions and active OSD backgrounds are retained. The missing-file
+error is absent in the subsequent normal startup log.
+
+Rebuilt package checks pass again: 537/537 XML files, 449 checked native control
+bindings without known type mismatches, 1,510/1,510 original artwork/font bytes
+unchanged, 2,069/2,069 payload entries and 14/14 bundle entries byte-verified.
+ALPHA2 EXE VerifyOnly succeeds against the installed client.
+
+The local follow-up deployed and checksum-checked 13/13 files with a backup:
+updated Apollo XML/support assembly plus missing MyLyrics 2.2.1.288 and mvCentral
+1.0.8.453 files and enable flags. Existing shared dependencies were preserved.
+Static member-reference resolution checked 223 MyLyrics and 555 mvCentral
+non-framework references without unresolved results against the available local
+assemblies; this is not complete service or runtime coverage. Both plugin file
+versions are discovered by the normal client. Their complete screens/providers
+remain unverified. The mvCentral archive omits its optional DLL configuration
+file; no replacement config was invented.
+
+Additional live checks: the populated TV guide opens, Right selects the next
+programme and changes its detail text, Escape returns to BasicHome, and the
+recorded-TV icon view opens with synthetic recordings. Actual tuning/recording
+is not supplied by the fixtures.
+
+Music fixture correction is local only. Three fictional titles had metadata but
+empty artist/albumartist/genre tables. After a SQLite backup, one lookup entry
+was added to each; the previously empty Album Artists screen now visibly lists
+Backdrop Test Ensemble. The subsequent empty album result exposed missing
+MediaPortal `| value |` delimiters in track metadata. These were normalized after
+a second backup. The native-style album-artist query now matches 3/3 titles.
+Final album traversal and audio playback after this normalization remain untested.
+
+The reviewed AirPlayer DLL and TVWishList client DLL require 32-bit execution;
+BrowseTheWeb includes a Required32Bit Gecko dependency. They were not installed
+in the regular x64 client. This does not certify or reject their x86 runtime
+compatibility. Further hardware/account-dependent integrations remain listed
+in PLUGIN-COVERAGE.md. LogoManager's upstream directory-listing/download issue
+is documented and not patched as part of this skin.

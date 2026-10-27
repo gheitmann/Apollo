@@ -14682,10 +14682,10 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Major>1</Major>
       <Minor>1</Minor>
       <Build>0</Build>
-      <Revision>1</Revision>
+      <Revision>2</Revision>
     </Version>
     <ExtensionDescription>Apollo skin for mediaportal 1 is modern and fresh keeping your HTPC the center of attention the way it should be. Designed to be clean and pretty.</ExtensionDescription>
-    <VersionDescription>ALPHA1: x86 compatibility update; preserve native Apollo design, fix package references and settings, remove global language/plugin replacement.</VersionDescription>
+    <VersionDescription>ALPHA2: x86 compatibility update; preserve native Apollo design, fix package references and settings, remove global language/plugin replacement.</VersionDescription>
     <DevelopmentStatus>Testing</DevelopmentStatus>
     <OnlineLocation />
     <ReleaseDate>2026-10-27T00:00:00</ReleaseDate>

@@ -23,7 +23,8 @@
       <posX>2934</posX>
       <posY>456</posY>
       <visible>control.isvisible(10)|control.isvisible(11)|control.isvisible(12)</visible>
-      <texture>video-overlay.png</texture>
+      <!-- Legacy offscreen decoration: no texture was supplied by Apollo. -->
+      <texture></texture>
       <colorkey>0</colorkey>
       <colordiffuse>white</colordiffuse>
     </control>

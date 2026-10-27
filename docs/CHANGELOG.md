@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0.2 — ALPHA2
+
+- Remove the dangling TV fullscreen overlay texture reference from an unused offscreen decoration. No replacement artwork or OSD layout changes.
+- Extend the regular local smoke test to populated EPG navigation and recorded-TV icon view.
+- Install MyLyrics 2.2.1.288 and mvCentral 1.0.8.453 locally after static API review; third-party binaries remain outside the skin package.
+- Repair the separate synthetic music fixture lookup tables and MediaPortal multi-value tag encoding. No personal database is packaged.
+- Document confirmed x86-only dependencies in the reviewed AirPlayer, BrowseTheWeb and TVWishList packages instead of loading them into the local x64 client.
+
+
 ## 1.1.0.1 â€” local ALPHA1 (from original 1.1.0.0)
 
 - Target MediaPortal 1.39 x86 while preserving Apollo artwork, tiles and themes.
