@@ -14,7 +14,8 @@
 - Preserve existing skin settings during native file replacement; add a
   single-file EXE launcher with backup/restore and guarded presentation fixes.
 
-Full-client interaction/upgrade verification is pending local installation.
+Regular local installation and the scoped movie-navigation/playback/exit smoke
+test passed. Full interactive upgrade and remaining integrations are unverified.
 See VALIDATION.md; this experimental release is not full runtime certification.
 
 - Rebuilt support plugin as AnyCPU and added architecture-selected installer launchers for the regular local test installation.

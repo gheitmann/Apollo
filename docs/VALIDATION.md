@@ -71,30 +71,49 @@ when its copy provider sees an existing file; native uninstall-first upgrades
 or the explicitly accepted original-installer fallback need a separate backup.
 The full interactive upgrade route remains untested.
 
-MediaPortal x64 is outside scope. Other client versions can display an informed
+Full x64 coverage is outside scope. Other client versions can display an informed
 compatibility warning and offer the original native installer; no untested
 cross-version compatibility claim is made.
 
-## Local installation follow-up
+## Regular local installation and smoke test — 27 October 2026
 
-The support plugin was rebuilt as AnyCPU. Matching x86/x64 installer launchers
-are included so the existing local x64 client can be used for practical skin
-tests. The previous isolated runtime is no longer the test target.
+The regular installed MediaPortal 1.39 x64 client is now the practical test
+target. Apollo support is AnyCPU; x86 remains the package compatibility target.
+No separate client installation is used for further skin tests.
 
-The normal Backdrop synthetic databases and media will be reused in place.
-Eight official plugin packages were staged: Extensions 1.5.0.43, Global Search
-2.1.0.12, IMDb+ 2.1.0.581, InfoService 1.9.0.81, LogoManager 1.0.5.63 and Trakt
-6.0.7.474, SubCentral 1.2.7.0 and WorldWeather Lite SharpDX 1.3.4.0 (local x64 package). Existing files are preserved. LogoManager's optional Dark Glass
-design has four missing archive entries upstream and is omitted as a unit.
-No account is linked and no scrobbling or external catalogue import is performed.
+The backed-up deployment completed successfully: all 2,581 planned destination
+files were copied and checked by SHA-256 during deployment. The prior normal
+profile is retained in the transaction backup. The existing Backdrop synthetic
+media, movie/series/music databases, guide fixtures and thumbnails were reused.
 
-Local elevated deployment and the final interaction pass are pending. These
-prepared plugin payloads are not evidence of full service compatibility.
+Eight additional official plugin payloads were installed without replacing
+pre-existing plugin/dependency files: Extensions 1.5.0.43, Global Search 2.1.0.12,
+IMDb+ 2.1.0.581, InfoService 1.9.0.81, LogoManager 1.0.5.63, Trakt 6.0.7.474,
+SubCentral 1.2.7.0 and WorldWeather Lite SharpDX 1.3.4.0 (local x64 package).
+This was a backed-up file deployment, not eight native MPE wizard runs; extension
+registration and individual service configuration are not certified.
+LogoManager's optional Dark Glass design has four missing entries upstream and
+was omitted as a unit. No account was linked.
 
-The rebuilt single EXE also passes VerifyOnly against the regular installed
-MediaPortal 1.39 x64 client: correct Config/Skin/Plugins paths, private assembly
-binding, 3/3 readable buttons and 2,393/2,393 synthetic presentation events.
-This is preparation only, not an interactive installation result.
+The single EXE passes VerifyOnly against the regular client: correct configured
+paths, private assembly binding, 3/3 readable buttons and 2,393/2,393 synthetic
+presentation events. This does not establish interactive upgrade correctness.
 
-Windows reported cancellation of the elevation request. Therefore no successful
-local deployment or regular-client interaction test is claimed.
+Observed live checks passed:
+- Apollo BasicHome opens and shows original tiles and synthetic Latest Movies.
+- Mouse activation opens Moving Pictures; keyboard confirmation opens All Movies.
+- The catalogue lists three seeded movies with artwork and descriptions.
+- Movie details open and the local 20-second synthetic MKV plays in fullscreen.
+- The client returns to details after playback. The subsequent stop key was sent
+  after the short clip had already ended; manual stop is not certified.
+- Alt+F4 closes the normal client; no MediaPortal window remains.
+
+Remaining observations: the fullscreen definition references missing
+`video-overlay.png`; LogoManager reports a design download URL returning 404 and
+no matches for fictional fixture stations. These were not repaired in this pass.
+The first-run absent Apollo texture-cache cleanup warning is also recorded.
+
+Pause/seek, music playback, guide/recording navigation, theme switching and the
+remaining historical plugins were not tested in this scoped pass. This is a
+usable initial demo path, not complete plugin or x64 certification. See
+PLUGIN-COVERAGE.md for the remaining integration inventory.
