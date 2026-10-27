@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <visible>!Control.HasFocus(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+				<control>
+					<description>Movie List</description>
+					<type>listcontrol</type>
+					<id>50</id>
+					<font>font11</font>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<width>1214</width>
+					<posX>127</posX>
+					<posY>245</posY>
+					<height>620</height>
+					<textureFocus>btn_list.png</textureFocus>
+					<textXOff>-15</textXOff>
+					<textYOff>5</textYOff>
+					<textYOff2>5</textYOff2>
+					<textXOff2>1180</textXOff2>
+					<textXOff3>15</textXOff3>
+					<IconXOff>3000</IconXOff> 
+                    <textureHeight>50</textureHeight>					
+					<spinWidth>45</spinWidth>
+					<spinHeight>42</spinHeight>
+					<spinPosX>2760</spinPosX>
+					<spinPosY>380</spinPosY>
+					<spinAlign>right</spinAlign>
+					<spinColor>99ffffff</spinColor>
+					<spinCanFocus>no</spinCanFocus>
+					<!-- group headers -->
+					<textcolor>ffffffff</textcolor>
+					<textcolorNoFocus>ff888888</textcolorNoFocus>
+					<playedColor>FFB2D4F5</playedColor>
+					<textcolor2>ff666666</textcolor2>
+					<textcolor3>ffffffff</textcolor3>
+		            <animation effect="fade" time="350" reversible="true">hidden</animation>
+				</control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <posX>144</posX>
+                    <posY>240</posY>
+                    <width>1250</width>
+                    <height>750</height>
+					<onleft>2</onleft>
+					<onright>50</onright>				
+					<textureUp></textureUp>
+					<textureDown></textureDown>
+					<textXOff>0</textXOff>
+					<textYOff>2250</textYOff>
+					<!-- Small Icons 0.66 aspect ratio -->
+					<itemWidth>133</itemWidth>
+				    <itemHeight>191</itemHeight>
+				    <textureWidth>131</textureWidth>
+				    <textureHeight>189</textureHeight>
+				    <thumbWidth>132</thumbWidth>
+				    <thumbHeight>189</thumbHeight>
+				    <thumbPosX>0</thumbPosX>
+				    <thumbPosY>0</thumbPosY>				
+					<!-- Large Icons 0.66 aspect ratio -->
+					<textureWidthBig>196</textureWidthBig>
+					<textureHeightBig>287</textureHeightBig>
+					<itemWidthBig>198</itemWidthBig>
+					<itemHeightBig>291</itemHeightBig>
+					<thumbWidthBig>195</thumbWidthBig>
+					<thumbHeightBig>286</thumbHeightBig>
+					<thumbPosXBig>0</thumbPosXBig>
+					<thumbPosYBig>0</thumbPosYBig>
+					<font>font11</font>
+					<suffix>|</suffix>					
+					<enableFocusZoom>no</enableFocusZoom>
+					<spinWidth>45</spinWidth>
+					<spinHeight>45</spinHeight>
+					<spinPosX>3660</spinPosX>
+					<spinPosY>950</spinPosY>
+					<spinAlign>left</spinAlign>
+					<scrollOffset>1</scrollOffset>
+					<spinColor>ffffffff</spinColor>
+					<spinCanFocus>no</spinCanFocus>
+					<textureUp>page_up_nofocus.png</textureUp>
+					<textureDown>page_down_nofocus.png</textureDown>
+					<textureUpFocus>page_up_focus.png</textureUpFocus>
+					<textureDownFocus>page_down_focus.png</textureDownFocus>	.
+					<textureMask>D_moviemask.png</textureMask>
+					<frameNoFocus>D_movieshad.png</frameNoFocus>
+                    <frameFocus>D_movieshadfocus.png</frameFocus>
+					<zoomXPixels>18</zoomXPixels>
+                    <zoomYPixels>23</zoomYPixels>
+					<keepaspectratio>yes</keepaspectratio>
+					<unfocusedAlpha>160</unfocusedAlpha>
+					<dimColor>90ffffff</dimColor>       
+        </control>        
+      </control>
+    </control>
+  </controls>
+</window>

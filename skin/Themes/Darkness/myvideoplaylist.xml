@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>28</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#useSelectedFanart:Yes</define>
+  <define>#selecteditem:</define>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+	
+	<include condition="#(eq(#MyVideos.fanart.enable,'Yes'))">common.video.fanart.xml</include>
+   
+		<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>player.hasmedia|topbar.visible+!control.isvisible(08701)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+    	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+    <visible>string.isset(#media.user)</visible>
+</control>
+	
+		
+		<control>
+		  <description>Current Category</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>138</posX>
+		  <posY>48</posY>
+		  <align>left</align>
+		  <width>1800</width>
+		  <font>font18</font>		  
+		  <label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(102015), #currentmodule)), #currentmodule, ' '))</label>
+		  <textcolor>eaeaea</textcolor>		  
+		  <animation effect="fade" time="250">WindowOpen</animation>
+		</control>
+		
+		<control>
+		  <description>Item Count</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>138</posX>
+		  <posY>95</posY>
+		  <label>#time / #itemcount Videos</label>
+		  <align>left</align>
+		  <font>font10</font>
+		  <textcolor>eaeaea</textcolor>
+		  <animation effect="fade" time="250">WindowOpen</animation>
+		</control>
+	
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>100</buttonwidth>
+      <buttonheight>1080</buttonheight>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus></textureNoFocus>
+      <width>800</width>
+      <height>800</height>
+      <dimColor>00ffffff</dimColor>
+      <visible>!Control.HasFocus(50)</visible>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>black.png</texture>
+        <colordiffuse>99000000</colordiffuse>
+	    <animation effect="fade" time="350" reversible="true">hidden</animation>
+		</control>
+		
+		<control>
+        <type>image</type>
+        <id>0</id>
+        <posX>420</posX>
+        <posY>150</posY>
+        <width>975</width>
+        <height>836</height>
+        <texture>dialogglowbig.png</texture>
+		<visible>!Control.HasFocus(50)</visible>    
+      </control>	
+	  
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        <posX>500</posX>
+        <posY>250</posY>
+        <visible>!Control.HasFocus(50)</visible>
+        <layout>StackLayout</layout>
+        <control>
+          <description>View-As button</description>
+          <type>menubutton</type>
+          <id>2</id>
+          <label></label>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <onright>50</onright>
+          <onup>17</onup>
+          <ondown>20</ondown>
+          <mode>dialoglist</mode>
+          <dialogTitle>792</dialogTitle>
+          <valueTextInButton>yes</valueTextInButton>
+          <valuePrefixText>95</valuePrefixText>
+        </control>
+        <control>
+          <description>Shuffle button</description>
+          <type>button</type>
+          <id>20</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>191</label>
+          <onright>50</onright>
+          <onup>2</onup>
+          <ondown>30</ondown>
+        </control>
+        <control>
+          <description>Repeat on/off button</description>
+          <type>checkbutton</type>
+          <id>30</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>486</label>
+          <onright>50</onright>
+          <onup>20</onup>
+          <ondown>21</ondown>
+        </control>
+        <control>
+          <description>Save button</description>
+          <type>button</type>
+          <id>21</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>190</label>
+          <onright>50</onright>
+          <onup>30</onup>
+          <ondown>22</ondown>
+        </control>
+        <control>
+          <description>Clear button</description>
+          <type>button</type>
+          <id>22</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>192</label>
+          <onright>50</onright>
+          <onup>21</onup>
+          <ondown>23</ondown>
+        </control>
+        <control>
+          <description>Play button</description>
+          <type>button</type>
+          <id>23</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>208</label>
+          <onright>50</onright>
+          <onup>22</onup>
+          <ondown>24</ondown>
+        </control>
+        <control>
+          <description>Next button</description>
+          <type>button</type>
+          <id>24</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>209</label>
+          <onright>50</onright>
+          <onup>23</onup>
+          <ondown>25</ondown>
+        </control>
+        <control>
+          <description>Previous button</description>
+          <type>button</type>
+          <id>25</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>210</label>
+          <onright>50</onright>
+          <onup>24</onup>
+          <ondown>9</ondown>
+        </control>
+        <control>
+          <description>My Playlists</description>
+          <type>button</type>
+          <id>9</id>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>	
+          <label>983</label>
+          <onright>50</onright>
+          <ondown>2</ondown>
+          <onup>25</onup>
+        </control>
+      </control>
+    </control>
+    <import>common.facade.video.Title.xml</import>
+	
+	<!-- Gradient overlay -->
+	  <control>
+        <type>image</type>
+        <id>0</id>
+		<posX>0</posX>
+		<posY>730</posY>
+        <width>1920</width>
+        <height>164</height>
+        <texture>#overlaycolour</texture>
+		<visible>[facadeview.largeicons|facadeview.smallicons]</visible>
+      </control>
+	<!-- Gradient overlay -->  	
+	
+	<control>
+      <description>Little Poster</description>
+      <type>image</type>
+      <id>500</id>
+      <posX>135</posX>
+      <posY>875</posY>
+      <height>170</height>
+      <width>120</width>
+      <texture mask="postermask.png">#selectedthumb</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control> 
+	
+		  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>134</posX>
+        <posY>875</posY>
+		<height>177</height>
+		<width>126</width>
+        <texture>postershadow.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+      </control>
+	
+    <control>
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>280</posX>
+      <posY>900</posY>
+      <width>950</width>
+      <height>20</height>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>      
+      <align>left</align>
+      <label>#title | #mpaarating | #videoruntime</label>
+      <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control>
+	<!--
+    <control>
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>75</posX>
+      <posY>75</posY>
+      <width>1350</width>
+      <label>#title</label>
+      <font>font18</font>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>!facadeview.playlist+!facadeview.album</visible>
+    </control>
+	
+    <control>
+      <type>imagelist</type>
+      <id>1</id>
+      <posX>127</posX>
+      <posY>247</posY>
+      <width>453</width>
+      <height>55</height>
+      <textureWidth>25</textureWidth>
+      <textureHeight>25</textureHeight>
+      <subitems>
+        <subitem>greystar.png</subitem>
+        <subitem>star.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>10</imagesToDraw>
+      <percentage>#rating</percentage>
+      <visible>[facadeview.playlist|facadeview.album]+Control.HasFocus(50)+string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <description>Text Rating/Votes Value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>405</posX>
+      <posY>240</posY>
+      <label>#strrating (#(L(205)) #votes)</label>
+      <font>font11</font>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+string.equals(#hideinfo, False)</visible>
+    </control>
+	-->
+	 <control>
+        <description>Cover Art BG</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>movieShad.png</texture>
+	    <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)+string.equals(#hideinfo, False)</visible>
+     </control>	
+	  
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>1342</posX>
+        <posY>225</posY>
+        <width>402</width>
+        <height>576</height>
+      <texture mask="coverartm.png">missing_Coverart_video.png</texture>
+      <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+[Control.HasFocus(50)+!control.hasthumb(500)]+string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <id>500</id>
+      <type>image</type>
+      <posX>1342</posX>
+        <posY>225</posY>
+        <width>402</width>
+        <height>576</height>
+      <texture mask="coverartm.png">#selectedthumb</texture>
+      <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)+string.equals(#hideinfo, False)</visible>
+    </control>
+
+    <control>
+      <description>Not Watched Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1337</posX>
+      <posY>757</posY>
+      <width>413</width>
+      <height>67</height>
+      <texture>redflag.png</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+control.hasfocus(50)+string.equals(#iswatched,no)+string.equals(#hideinfo, False)</visible>
+    </control>
+	
+	<!--
+    <control>
+      <description>Genre txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>457</posX>
+      <posY>280</posY>
+      <label>174</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+ string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <description>Genre value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>457</posX>
+      <posY>309</posY>
+      <width>405</width>
+      <label>#genre</label>
+      <font>font12</font>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+ string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <description>Director txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>457</posX>
+      <posY>346</posY>
+      <label>199</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+ string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <description>Director value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>457</posX>
+      <posY>375</posY>
+      <label>#director</label>
+      <font>font12</font>
+      <width>405</width>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+ string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <description>Year txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>457</posX>
+      <posY>412</posY>
+      <label>201</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+ string.equals(#hideinfo, False)</visible>
+    </control>
+    <control>
+      <description>Year value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>457</posX>
+      <posY>441</posY>
+      <width>405</width>
+      <label>#year</label>
+      <font>font12</font>
+      <textcolor>99ffffff</textcolor>
+      <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+ string.equals(#hideinfo, False)</visible>
+    </control>
+	-->
+
+
+    <control Style="NoShadow">
+      <description>Plot value</description>
+      <type>textboxscrollup</type>
+      <id>1</id>
+      <posX>280</posX>
+      <posY>940</posY>
+      <width>1530</width>
+      <height>80</height>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>      
+      <align>left</align>
+      <label>#plot</label>
+      <visible>[facadeview.playlist|facadeview.album|facadeview.smallicons|facadeview.largeicons]+control.hasfocus(50)+string.equals(#hideinfo, False)</visible>
+    </control>
+
+    <!-- ********** Media Info Logos (List View) ********** -->
+	<!--
+    <control>
+      <description>Logos group</description>
+      <type>group</type>
+      <posX>75</posX>
+      <posY>982</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>
+      <control>
+        <description>Video codec</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\#VideoCodec.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)</visible>
+      </control>
+      <control>
+        <description>Video resolution</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\#VideoResolution.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)</visible>
+      </control>
+      <control>
+        <description>Aspect ratio</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\#AspectRatio.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)</visible>
+      </control>
+      <control>
+        <description>Audio codec</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\#AudioCodec.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)</visible>
+      </control>
+      <control>
+        <description>Audio channels</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\#AudioChannels.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)</visible>
+      </control>
+      <control>
+        <description>Subtitles</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\subtitles.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)+string.equals(#HasSubtitles, True)</visible>
+      </control>
+      <control>
+        <description>Certification (MPAA) Logo</description>
+        <type>image</type>
+        <id>0</id>
+        <width>103</width>
+        <height>55</height>
+        <texture>logos\#mpaarating.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>[facadeview.playlist|facadeview.album]+control.hasfocus(50)</visible>
+      </control>
+    </control>
+	-->
+	<!--
+    <control>
+      <id>500</id>
+      <type>image</type>
+      <posX>118</posX>
+      <posY>289</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="videothumbmask.png">#selectedthumb</texture>
+      <visible>[facadeview.playlist|facadeview.album]+Control.HasFocus(50)</visible>
+    </control>
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>118</posX>
+      <posY>289</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture>Videothumbframe.png</texture>
+      <visible>[facadeview.playlist|facadeview.album]+Control.HasFocus(50)</visible>
+    </control>
+    -->
+  </controls>
+</window>
+
+

@@ -1,0 +1,9 @@
+build/
+dist/
+legacy/
+__pycache__/
+*.pyc
+docs/*.il.txt
+docs/original-sections.xml
+docs/*-probe.txt
+docs/setup-verification.txt

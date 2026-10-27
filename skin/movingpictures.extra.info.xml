@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file should contain the details view
+-->
+<window>
+  <controls>
+  
+	<!-- Listview info -->
+	
+    <control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>280</posX>
+      <posY>885</posY>
+      <width>1530</width>
+      <height>115</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#MovingPictures.SelectedMovie.summary</label>
+      <visible>[facadeview.list]+!control.isvisible(6)+!control.isvisible(51)</visible>
+    </control>	
+	<control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>280</posX>
+      <posY>1005</posY>
+      <width>1530</width>
+      <height>35</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#MovingPictures.SelectedMovie.extra.runtime.short,  #MovingPictures.LocalMedia.videoresolution,  #MovingPictures.LocalMedia.audiochannels,  #MovingPictures.LocalMedia.Subtitles,   #MovingPictures.SelectedMovie.score.localized/10 from #MovingPictures.SelectedMovie.popularity.localized users,   #MovingPictures.SelectedMovie.extra.genres.1/#MovingPictures.SelectedMovie.extra.genres.2,  Release Date: #MovingPictures.SelectedMovie.release_date.year</label>
+      <visible>[facadeview.list]+!control.isvisible(6)+!control.isvisible(51)</visible>
+    </control>	
+	
+	
+	<!-- otherviews info -->
+	
+    <control Style="NoShadow">
+      <description>Movie Title</description>
+      <type>label</type>
+      <id>0</id>
+      <width>1550</width>
+      <height>20</height>
+      <posX>280</posX>
+      <posY>885</posY>
+      <align>left</align>
+      <font>font11</font>
+      <label>#MovingPictures.SelectedMovie.title</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+!control.isvisible(6)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>	
+	
+    <control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>280</posX>
+      <posY>925</posY>
+      <width>1530</width>
+      <height>80</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#MovingPictures.SelectedMovie.summary</label>
+      <visible>!facadeview.list+!control.isvisible(6)+!control.isvisible(51)</visible>
+    </control>	
+	<control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>280</posX>
+      <posY>1005</posY>
+      <width>1530</width>
+      <height>35</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#MovingPictures.SelectedMovie.extra.runtime.short,  #MovingPictures.LocalMedia.videoresolution,  #MovingPictures.LocalMedia.audiochannels,  #MovingPictures.LocalMedia.Subtitles,   #MovingPictures.SelectedMovie.score.localized/10 from #MovingPictures.SelectedMovie.popularity.localized users,   #MovingPictures.SelectedMovie.extra.genres.1/#MovingPictures.SelectedMovie.extra.genres.2,  Release Date: #MovingPictures.SelectedMovie.release_date.year</label>
+      <visible>!facadeview.list+!control.isvisible(6)+!control.isvisible(51)</visible>
+    </control>		
+	
+	<!-- Thumbsview info -->
+  
+    <control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>280</posX>
+      <posY>885</posY>
+      <width>1530</width>
+      <height>150</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#MovingPictures.SelectedMovie.summary</label>
+      <visible>control.isvisible(6)+!control.isvisible(51)</visible>
+    </control>	
+
+  
+  </controls>
+</window>
+

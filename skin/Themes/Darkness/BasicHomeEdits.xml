@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+
+  <controls>
+	  <!-- FOCUSED HIGHLIGHT FOR TILES -->
+	    
+      <control>
+	    <type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>51012222</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>100</buttonX>
+		<buttonY>180</buttonY>
+		<buttonwidth>40</buttonwidth>
+        <buttonheight>40</buttonheight>
+        <textureFocus>setting.png</textureFocus>
+        <textureNoFocus>setting.png</textureNoFocus>
+		<width>800</width>
+		<height>800</height>
+		<dimColor>00ffffff</dimColor>
+
+		  
+      <control>
+	    <type>image</type>
+	    <posX>0</posX>
+	    <posY>0</posY>
+	    <width>1920</width>
+	    <height>1080</height>
+        <texture>black.png</texture>
+        <colordiffuse>99000000</colordiffuse>
+	    <animation effect="fade" time="350" reversible="true">hidden</animation>
+	    <visible>!Control.HasFocus(50)+!Control.isVisible(6)+!Control.isVisible(51)</visible>    
+	  </control>
+		
+	  <control Style="BasicHomeButton">
+        <description>BasicHome settings</description>
+        <type>button</type>
+        <id>51012222</id>
+		<posX>120</posX>
+        <posY>1005</posY>
+		<hyperlink>4</hyperlink>
+		<oninfo>#(skin.setfocus(35,269))</oninfo>
+		<height>43</height>
+		<width>43</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus>setting.png</textureFocus>
+		<textureNoFocus>setting.png</textureNoFocus>
+		<align>center</align>
+		<font>font14</font>
+        <onleft>5005</onleft>
+        <onup>0011223</onup>
+		<ondown>55522</ondown>
+		<onright>5006</onright>
+		<animation effect="rotate" delay="0" end="-360" centre="475,258" time="20000" loop="true" condition="control.hasFocus(0011223)">Conditional</animation>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+	 </control>  	
+			  
+
+	
+  </control>
+  </controls>
+</window>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+
+    <!--#################   THIS IS THE EXPANDING OSD BACKGROUND     ##################-->
+    <control>
+      <description>background top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>190</posX>
+      <posY>630</posY>
+      <height>255</height>
+      <width>1530</width>
+      <texture>osdinfo2.png</texture>
+      <visible>Control.HasFocus(1237)</visible>
+      <!--animation effect="slide" start="0,-500" end="0,0" time="50" reversible="false">visible</animation-->
+    </control>
+    <!--###################     HERE ARE THE DISPLAYED OSD DATA    ###################################-->
+
+    <control>
+      <description>Movie thumb</description>
+      <type>image</type>
+      <id>102</id>
+        <posX>225</posX>
+        <posY>665</posY>
+		<width>180</width>
+        <height>180</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<centered>yes</centered>
+      <texture>#Play.Current.Thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>control.hasfocus(1237)</visible>
+    </control>
+
+    <control>
+      <description>Time Info</description>
+      <type>label</type>
+      <id>110</id>
+      <posX>4890</posX>
+      <posY>810</posY>
+      <label>#time</label>
+      <align>right</align>
+      <font>font12</font>
+      <textcolor>ivory</textcolor>
+      <visible>control.hasfocus(1237)</visible>
+    </control>
+   
+  </controls>
+</window>

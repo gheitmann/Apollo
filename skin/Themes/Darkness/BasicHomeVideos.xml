@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <!--     *******************************************************************************************  -->
+      <!--     ****************************   Tile 4 Latest media 2    ***********************************  -->
+      <!--     *******************************************************************************************  -->	  
+	  
+	  
+	  <control>
+        <description>missing art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1276</posX>
+        <posY>206</posY>
+		<height>296</height>
+		<width>532</width>
+        <texture mask="">black.png</texture>
+        <colordiffuse>99ffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+		<visible>control.hasfocus(2)|control.hasfocus(55510)|control.hasfocus(55511)|control.hasfocus(55510)|control.hasfocus(58511)|control.hasfocus(91915991)|control.hasfocus(91915992)+!control.hasthumb(49999)</visible>
+      </control>
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>49999</id>
+        <posX>1276</posX>
+        <posY>206</posY>
+		<height>296</height>
+		<width>532</width>
+        <texture mask="">#latestMediaHandler.myvideo.latest1.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+		<visible>control.hasfocus(2)|control.hasfocus(55510)|control.hasfocus(55511)|control.hasfocus(55510)|control.hasfocus(58511)|control.hasfocus(91915991)|control.hasfocus(91915992)</visible>
+      </control>
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1277</posX>
+        <posY>206</posY>
+		<height>297</height>
+		<width>531</width>
+        <texture>blackfanover.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+		<visible>control.hasfocus(91915991)</visible>
+      </control>
+	  
+	  
+	  <control>
+        <description>title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1288</posX>
+        <posY>450</posY>
+        <width>510</width>
+        <height>30</height>
+		<align>center</align>
+        <label>#latestMediaHandler.myvideo.latest1.title</label>
+        <font>font12</font>
+        <visible>control.hasfocus(91915991)</visible>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+      </control>
+	
+	  
+      <control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91915991</id>
+        <posX>1460</posX>
+        <posY>240</posY>
+        <width>170</width>
+        <height>170</height>
+        <textureFocus>play_shad1.png</textureFocus>
+        <textureNoFocus>play_shad1.png</textureNoFocus>
+        <label></label>
+        <onleft>55511</onleft>
+        <onright>55512</onright>
+        <onup>91915991</onup>
+		<ondown>91915992</ondown>
+        <font>font12</font>
+        <animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+        <visible allowhiddenfocus="true">control.hasfocus(91915991)</visible>
+    </control>	  
+	  
+	  
+	  
+      <!--     *******************************************************************************************  -->
+      <!--     ****************************   Tile 4 Latest media 2    ***********************************  -->
+      <!--     *******************************************************************************************  -->	  
+	  
+	  
+	  <control>
+        <description>missing art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1278</posX>
+        <posY>519</posY>
+		<height>296</height>
+		<width>530</width>
+        <texture mask="">black.png</texture>
+        <colordiffuse>99ffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+		<visible>control.hasfocus(2)|control.hasfocus(55510)|control.hasfocus(55511)|control.hasfocus(55510)|control.hasfocus(58511)|control.hasfocus(91915991)|control.hasfocus(91915992)+!control.hasthumb(40001)</visible>
+      </control>
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>40001</id>
+        <posX>1278</posX>
+        <posY>519</posY>
+		<height>296</height>
+		<width>530</width>
+        <texture mask="">#latestMediaHandler.myvideo.latest2.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+		<visible>control.hasfocus(2)|control.hasfocus(55510)|control.hasfocus(55511)|control.hasfocus(55510)|control.hasfocus(58511)|control.hasfocus(91915991)|control.hasfocus(91915992)</visible>
+      </control>	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1277</posX>
+        <posY>520</posY>
+		<height>296</height>
+		<width>532</width>
+        <texture>blackfanover.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+		<visible>control.hasfocus(91915992)</visible>
+      </control>
+	  
+	  
+	  <control>
+        <description>title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1288</posX>
+        <posY>760</posY>
+        <width>510</width>
+        <height>30</height>
+		<align>center</align>
+        <label>#latestMediaHandler.myvideo.latest2.title</label>
+        <font>font12</font>
+        <visible>control.hasfocus(91915992)</visible>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+      </control>
+	
+	  
+      <control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91915992</id>
+        <posX>1460</posX>
+        <posY>550</posY>
+        <width>170</width>
+        <height>170</height>
+        <textureFocus>play_shad1.png</textureFocus>
+        <textureNoFocus>play_shad1.png</textureNoFocus>
+        <label></label>
+        <onleft>58511</onleft>
+        <onright>55512</onright>
+        <onup>91915991</onup>
+		<ondown>91915992</ondown>
+        <font>font12</font>
+        <animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666002)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666001)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.hasfocus(55512)">Conditional</animation>
+		<animation effect="fade" delay="300" time="500" reversible="true">VisibleChange</animation>
+        <visible allowhiddenfocus="true">control.hasfocus(91915992)</visible>
+    </control>	  
+	   
+	  </control>
+  </controls>
+</window>

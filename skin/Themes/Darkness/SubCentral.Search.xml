@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<!-- 
+		This skin file is meant for all controls that should be visible for the user
+		when in the search view of the plugin. All controls should be tagged at a minimum
+		with "<visible>Control.IsVisible(102)</visible>". 
+		-->
+
+		<control>
+			<type>label</type>
+			<description>Number of Files Label</description>
+			<id>0</id>
+			<width>300</width>
+			<posX>140</posX>
+			<posY>125</posY>
+			<label>#itemcount</label>
+			<font>font9</font>
+			<align>left</align>
+			<textcolor>ffffffff</textcolor>
+			<visible>Control.IsVisible(102)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>202</onleft>
+				<onright>202</onright>
+				<scrollOffset>2</scrollOffset>
+				<posX>127</posX>
+				<posY>240</posY>
+				<width>1214</width>
+				<height>600</height>
+				<textureFocus>btn_list.png</textureFocus>
+                <textureNoFocus></textureNoFocus>
+				<textureHeight>50</textureHeight>
+				<itemWidth>30</itemWidth>
+				<itemHeight>30</itemHeight>
+				<IconXOff>3010</IconXOff>
+				<IconYOff>7</IconYOff>
+				<textXOff>-15</textXOff>
+				<textXOff2>1060</textXOff2>
+				<textYOff2>7</textYOff2>
+				<textXOff3>1110</textXOff3>
+				<textYOff3>7</textYOff3>
+				<font>font10</font>	
+				<font2>font9</font2>	
+				<font3>font9</font3>	
+				<textYOff>7</textYOff>
+				<spinCanFocus>no</spinCanFocus>
+				<spinWidth>30</spinWidth>
+				<spinHeight>30</spinHeight>
+				<spinPosX>3050</spinPosX>
+				<spinPosY>780</spinPosY>
+				<PinIconXOff>627</PinIconXOff> 
+				<PinIconYOff>4</PinIconYOff>
+				<playedColor>ff77ccff</playedColor>
+				<textcolor2>ffffffff</textcolor2>
+				<textcolor3>ffffffff</textcolor3>
+				<visible>Control.IsVisible(102)</visible>
+				<animation effect="fade" time="250">visiblechange</animation>
+				<animation effect="fade" time="250">WindowClose</animation>
+			</control>
+		</control>
+			
+
+        <control>
+            <description>Season Poster</description>
+            <type>image</type>
+            <id>911</id>
+            <posX>135</posX>
+            <posY>875</posY>
+		    <height>170</height>
+		    <width>120</width>
+            <texture mask="">#SubCentral.Search.Media.Thumb</texture>
+			<visible>Control.IsVisible(102)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+        </control>
+
+		<control>
+			<description>Cover Art Default</description>
+			<type>image</type>
+			<id>0</id>
+			<keepaspectratio>no</keepaspectratio>
+            <posX>135</posX>
+            <posY>875</posY>
+		    <height>170</height>
+		    <width>120</width>
+			<texture mask="">defaultVideoBig.png</texture>
+			<visible>Control.IsVisible(102)+!Control.HasThumb(911)<!--[String.Equals(#SubCentral.Search.Media.Thumb,)|String.Equals(#SubCentral.Search.Media.Thumb, )]--></visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>134</posX>
+        <posY>875</posY>
+		<height>176</height>
+		<width>126</width>
+        <texture>postershadow.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>Control.IsVisible(102)</visible>
+      </control>		
+		
+        <control>
+            <description>Season Poster</description>
+            <type>image</type>
+            <id>911</id>
+            <posX>1342</posX>
+            <posY>224</posY>
+            <width>422</width>
+            <height>604</height>
+            <keepaspectratio>no</keepaspectratio>
+            <zoom>no</zoom>
+            <texture mask="">#SubCentral.Search.Media.Thumb</texture>
+			<visible>Control.IsVisible(102)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+        </control>
+		
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1314</posX>
+        <posY>210</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>control.isvisible(911)</visible>
+      </control>		
+
+		<control>
+			<description>Cover Art Default</description>
+			<type>image</type>
+			<id>0</id>
+			<keepaspectratio>no</keepaspectratio>
+            <posX>1342</posX>
+            <posY>224</posY>
+            <width>422</width>
+            <height>604</height>
+            <keepaspectratio>no</keepaspectratio>
+            <zoom>no</zoom>
+			<texture mask="">defaultVideoBig.png</texture>
+			<visible>Control.IsVisible(102)+!Control.HasThumb(911)<!--[String.Equals(#SubCentral.Search.Media.Thumb,)|String.Equals(#SubCentral.Search.Media.Thumb, )]--></visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>		
+
+
+		<control>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>270</posX>
+            <posY>890</posY>
+            <width>1550</width>
+            <height>140</height>
+			<label>#SubCentral.Search.Media.TitleWithYear | #SubCentral.Search.Media.IMDb.ID.Text</label>
+			<font>font11</font>
+			<align>left</align>
+			<visible>Control.IsVisible(102)+[String.Equals(#SubCentral.Search.SearchType.Type,MOVIE)|String.Equals(#SubCentral.Search.SearchType.Type,IMDb)]</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>270</posX>
+            <posY>890</posY>
+            <width>1550</width>
+            <height>140</height>
+			<label>#SubCentral.Search.Media.TitleWithSE | #SubCentral.Search.Media.IMDb.ID.Text</label>
+			<font>font11</font>
+			<align>left</align>
+			<visible>Control.IsVisible(102)+String.Equals(#SubCentral.Search.SearchType.Type,TVSHOW)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+
+		<control>
+			<description>Media Files Key</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<textalign>left</textalign>
+            <posX>270</posX>
+            <posY>940</posY>
+            <width>1550</width>
+            <height>40</height>
+			<textcolor>ffffffff</textcolor>
+			<label>#SubCentral.Translation.MediaFiles.Label:  #SubCentral.Search.Files.AllNames</label>
+			<visible>!string.contains(#SubCentral.Search.Files.AllNames,SubCentral.Search.Files.AllNames)+!string.equals(#SubCentral.Search.Files.AllNames,)+!string.equals(#SubCentral.Search.Files.AllNames, )+!string.equals(#SubCentral.Search.Files.AllNames,  )+Control.IsVisible(102)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Media tags key</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>270</posX>
+            <posY>990</posY>
+            <width>1550</width>
+            <height>40</height>
+			<textcolor>ffffffff</textcolor>
+			<label>#SubCentral.Translation.MediaTags.Label:  #SubCentral.Search.Files.Tags</label>
+			<visible>!string.contains(#SubCentral.Search.Files.Tags,SubCentral.Search.Files.Tags)+!string.equals(#SubCentral.Search.Files.Tags,)+!string.equals(#SubCentral.Search.Files.Tags, )+!string.equals(#SubCentral.Search.Files.Tags,  )+Control.IsVisible(102)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+
+	</controls>
+</window>

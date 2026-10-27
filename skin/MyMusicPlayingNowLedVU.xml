@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>510</id>
+  <defaultcontrol>33</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#usePlayFanart:Yes</define>
+  <define>#selecteditem:</define>
+  <controls>
+    <control>
+      <type>label</type>
+      <description>Dummy label</description>
+      <id>1</id>
+      <posX>3090</posX>
+      <label>-</label>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Dummy button</description>
+      <id>30</id>
+      <posX>3090</posX>
+      <label>-</label>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Dummy button</description>
+      <id>31</id>
+      <posX>3090</posX>
+      <label>-</label>
+    </control>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>    
+	
+	<include condition="#(eq(#Music.fanart.enable,'Now Playing only'))">common.music.play.fanart.xml</include>
+	<include condition="#(eq(#Music.fanart.enable,'All Screens'))">common.music.play.fanart.xml</include>
+
+    <control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>	
+    <control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+      <animation effect="fade" time="1500" reversible="true">visible</animation>
+      <animation effect="fade" time="1500" reversible="true">hidden</animation>
+      <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+      <visible>player.hasmedia|topbar.visible</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>	
+     <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>[!player.hasaudio]+string.isset(#media.user)</visible>
+    </control>	
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>Playing audio..</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>player.hasaudio</visible>
+    </control>	  
+	
+    <control>
+      <description>Current window</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1800</width>
+      <font>font18</font>		  
+      <label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(102015), #currentmodule)), #currentmodule, ' '))</label>
+      <textcolor>eaeaea</textcolor>		  
+    </control>
+	
+	<control>
+      <description>Item Count</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>95</posY>
+      <label>#time</label>
+      <align>left</align>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+    </control>
+	
+	<!--List background-->
+    
+    <control>
+      <type>label</type>
+      <description>Dummy label to cause focus on top tracks / related tracks</description>
+      <id>888</id>
+      <posX>3090</posX>
+      <label>-</label>
+    </control>
+	
+	
+      <control>
+        <description>poster shadow</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>music_shadow.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+	    <animation effect="fade" time="350" reversible="true">hidden</animation>
+        <visible>control.hasthumb(02201)</visible>
+      </control>		
+	
+	 <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>1199</posX>
+      <posY>220</posY>
+      <width>578</width>
+      <height>576</height>
+      <texture mask="music_mask.png">missing_Coverart.png</texture>
+      <visible>!control.hasthumb(02201)</visible>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+    </control>
+	
+	<control>
+      <id>1</id>
+      <type>image</type>
+      <posX>980</posX>
+      <posY>250</posY>
+      <width>525</width>
+      <height>503</height>
+      <texture>cdfx.png</texture>
+      <visible>control.hasthumb(02201)</visible>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+	  <animation effect="rotate" delay="0" end="-360" centre="475,258" time="30000" loop="true" condition="player.hasAudio">Conditional</animation>
+	  <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <id>11922</id>
+      <type>image</type>
+      <posX>980</posX>
+      <posY>250</posY>
+      <width>525</width>
+      <height>503</height>
+      <texture>#Music.CDArt\#Play.Current.Artist-#Play.Current.Album.jpg</texture>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+	  <animation effect="rotate" delay="0" end="-360" centre="475,258" time="30000" loop="true" condition="player.hasAudio">Conditional</animation>
+	  <colordiffuse>ffffffff</colordiffuse>
+    </control>	
+	
+	<!-- PATH TEST FOR CDART NAMES -->
+	<!--
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1920</posX>
+      <posY>130</posY>
+      <width>1920</width>
+      <height>30</height>
+      <label>#Music.CDArt\#Play.Current.Artist-#Play.Current.Album.jpg</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>player.hasaudio</visible>
+    </control>	  
+-->
+	
+	
+    <control>
+      <id>112</id>
+      <type>image</type>
+      <posX>4199</posX>
+      <posY>220</posY>
+      <width>578</width>
+      <height>576</height>
+      <texture mask="music_mask.png">#Play.Current.Thumb</texture>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+    </control>
+	
+    <control>
+      <id>02201</id>
+      <type>image</type>
+      <posX>1199</posX>
+      <posY>220</posY>
+      <width>578</width>
+      <height>576</height>
+      <texture mask="music_mask.png">#Play.Current.Thumb</texture>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+    </control>
+	
+	<control>
+      <type>image</type>
+      <id>117</id>
+      <posX>800</posX>
+      <posY>955</posY>
+      <width>10</width>
+      <height>10</height>
+      <texture><!--osd_progress_background_medium.png--></texture>
+      <visible>Player.HasAudio+!Player.HasVideo+string.equals(#duration)</visible>
+    </control>
+	
+
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>118</id>
+      <posX>0</posX>
+      <posY>1077</posY>
+      <width>1920</width>
+      <height>3</height>
+      <label>#percentage</label>
+      <texturebg>black.png</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>1920</midwidth>
+      <midheight>3</midheight>
+      <midoffsetX>-</midoffsetX>
+      <midoffsetY>0</midoffsetY>
+      <midtexture>osd_progress_mid.png</midtexture>
+      <visible>player.hasmedia</visible>
+	  </control>
+	<!--
+    <control>
+      <type>label</type>
+      <description>track progress label</description>
+      <id>119</id>
+      <posX>850</posX>
+      <posY>1010</posY>
+      <label>#currentplaytime</label>
+      <font>font12</font>
+      <align>right</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>Player.HasAudio+!Player.HasVideo+string.equals(#duration)</visible>
+    </control>
+    <control>
+      <type>label</type>
+      <description>track duration label</description>
+      <id>110</id>
+      <posX>1400</posX>
+      <posY>1010</posY>
+      <label>#currentremaining</label>
+      <font>font12</font>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <visible>Player.HasAudio+!Player.HasVideo+string.equals(#duration)</visible>
+    </control>
+	-->
+	
+	<!-- Next playing song -->
+	
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>220</posY>
+      <width>1001</width>
+      <height>202</height>
+      <texture>musicgrad.png</texture>
+    </control>	
+	
+    <control>
+      <type>label</type>
+      <description>up next label</description>
+      <id>20</id>
+      <posX>135</posX>
+      <posY>240</posY>
+      <label>4541</label>
+      <font>font11</font>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+    </control>
+	
+	<control>
+      <type>label</type>
+      <description>up next label</description>
+      <id>990</id>
+      <posX>135</posX>
+      <posY>240</posY>
+      <label>Nothing to play next ...</label>
+      <font>font11</font>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+	  <visible>!control.isvisible(20)</visible>
+    </control>
+	
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>135</posX>
+      <posY>290</posY>
+      <width>105</width>
+      <height>105</height>
+      <texture mask="ltlmusic_mask.png">defaultArtistBig.png</texture>
+	  <visible>!control.hasthumb(600)+!control.isvisible(990)</visible>
+    </control>
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>600</id>
+      <posX>135</posX>
+      <posY>290</posY>
+      <width>105</width>
+      <height>105</height>
+      <texture mask="ltlmusic_mask.png">#Play.Next.Thumb</texture>      
+    </control>
+	
+	<control>
+      <description>BasicHome tile3</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>132</posX>
+      <posY>287</posY>
+      <height>113</height>
+      <width>112</width>
+      <texture>ltlmusic.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>!control.isvisible(990)</visible>
+    </control>
+    
+    <control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>121</id>
+      <posX>255</posX>
+      <posY>290</posY>
+      <width>620</width>
+      <label>#Play.Next.Artist</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>next title label</description>
+      <id>123</id>
+      <posX>255</posX>
+      <posY>327</posY>
+      <width>700</width>
+      <label>#Play.Next.Title</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>255</posX>
+      <posY>365</posY>
+      <width>700</width>
+      <label>#Play.Next.Album</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+    </control>
+	
+	<!-- Details -->
+	
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>480</posY>
+      <width>620</width>
+      <label>Current Track Details</label>
+      <align>left</align>
+      <font>font12</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>!control.isvisible(089)</visible>
+    </control>
+	
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>550</posY>
+      <width>620</width>
+      <label>Bitrate: #Play.Current.BitRate</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+	  <visible>!control.isvisible(089)</visible>
+    </control>	
+	
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>600</posY>
+      <width>620</width>
+      <label>Released: #Play.Current.Year</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+	  <visible>!control.isvisible(089)</visible>
+    </control>	
+
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>650</posY>
+      <width>620</width>
+      <label>Codec: #Play.Current.Codec</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+	  <visible>!control.isvisible(089)</visible>
+    </control>		
+	
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>700</posY>
+      <width>620</width>
+      <label>Sample Rate: #Play.Current.SampleRate</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+	  <visible>!control.isvisible(089)</visible>
+    </control>
+
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>750</posY>
+      <width>620</width>
+      <label>Channels: #Play.Current.Channels</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+	  <visible>!control.isvisible(089)</visible>
+    </control>	
+	
+	<!-- Details -->
+	
+	<control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>089</id>
+      <posX>135</posX>
+      <posY>480</posY>
+      <width>620</width>
+      <label>Current Artist Details</label>
+      <align>left</align>
+      <font>font12</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>false</visible>
+    </control>
+	<!--
+	<control>
+      <type>textboxscrollup</type>
+      <description>next artist label</description>
+      <id>9980</id>
+      <posX>135</posX>
+      <posY>550</posY>
+	  <height>230</height>
+      <width>850</width>
+      <label>#Play.ArtistInfo.Bio</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+      <visible>plugin.isenabled(MusicInfoHandler GUI)</visible>
+    </control>	
+	-->
+
+
+	
+	
+	<!-- Now Playing info -->
+	
+	<control>
+      <type>fadelabel</type>
+      <id>1</id>
+       <posX>15</posX>
+      <posY>960</posY>
+      <width>160</width>
+      <visible>Player.HasAudio</visible>
+      <label>Now Playing...</label>
+      <align>left</align>
+      <font>font10</font>
+      <textcolor>99ffffff</textcolor>
+	  <animation effect="rotate" delay="0" end="90" time="0" loop="false" condition="true">Conditional</animation>
+    </control>
+	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>330</posX>
+      <posY>960</posY>
+      <width>350</width>
+      <label>#currentplaytime &gt; #currentremaining</label>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <font>font11</font>
+      <visible>Player.HasAudio+string.equals(#Play.Current.Lastfm.CurrentStream,)</visible>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>330</posX>
+      <posY>960</posY>
+      <width>350</width>
+      <label>#currentplaytime &gt; #currentremaining</label>
+      <align>left</align>
+      <textcolor>99ffffff</textcolor>
+      <font>font11</font>
+      <visible>Player.HasAudio+!string.equals(#Play.Current.Lastfm.CurrentStream,)</visible>
+    </control>
+	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>330</posX>
+      <posY>880</posY>
+      <visible>Player.HasAudio</visible>
+      <label>#Play.Current.Artist</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99ffffff</textcolor>
+    </control>
+
+    <control>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>330</posX>
+      <posY>920</posY>
+      <visible>Player.HasAudio</visible>
+      <label>#Play.Current.Title</label>
+      <width>900</width>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>99FFFFFF</textcolor>
+    </control>
+
+	
+	<control>
+      <description>music logo when no thumb</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>135</posX>
+      <posY>875</posY>
+      <height>170</height>
+      <width>170</width>
+      <centered>no</centered>
+      <keepaspectratio>no</keepaspectratio>
+      <visible>Player.HasAudio</visible>
+      <texture mask="ltlmusic_mask.png">smallart_shadow.png</texture>
+    </control>
+	
+	<control>
+      <description>music logo when no thumb</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>135</posX>
+      <posY>875</posY>
+      <height>170</height>
+      <width>170</width>
+      <centered>no</centered>
+      <keepaspectratio>no</keepaspectratio>
+      <visible>Player.HasAudio+!control.hasThumb(12345)</visible>
+      <texture mask="ltlmusic_mask.png">defaultArtistBig.png</texture>
+    </control>
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>12345</id>
+      <posX>135</posX>
+      <posY>875</posY>
+      <height>170</height>
+      <width>170</width>
+      <centered>no</centered>
+      <keepaspectratio>no</keepaspectratio>
+      <visible>Player.HasAudio</visible>
+      <texture mask="ltlmusic_mask.png">#Play.Current.Thumb</texture>
+    </control>
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>77</id>
+      <posX>135</posX>
+      <posY>875</posY>
+      <height>170</height>
+      <width>170</width>
+      <centered>no</centered>
+      <keepaspectratio>no</keepaspectratio>
+      <texture mask="ltlmusic_mask.png">#Play.Current.ArtistThumb</texture>
+      <visible>Player.HasAudio</visible>
+    </control>
+	
+	<control>
+      <description>BasicHome tile3</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>131</posX>
+      <posY>871</posY>
+      <height>182</height>
+      <width>181</width>
+      <texture>ltlmusic.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <animation effect="fade" delay="0" time="1500">hidden</animation>
+      <animation effect="fade" delay="0" time="2000">visible</animation>
+    </control>
+    <!-- *************************************************************************************************** -->
+    <!-- ************************************** Here are the VU Meters ************************************* -->
+    <!-- *************************************************************************************************** -->
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>325</posX>
+      <posY>1000</posY>
+      <width>195</width>
+      <height>25</height>
+      <texture>Animations\LedVu\vu1.png</texture>
+      <visible>Player.HasAudio+Player.paused</visible>
+	  <shouldCache>true</shouldCache>
+    </control>
+    <control>
+      <type>image</type>
+      <id>999</id>
+      <posX>325</posX>
+      <posY>1000</posY>
+      <width>195</width>
+      <height>25</height>
+      <imagepath>Animations\LedVu</imagepath>
+      <texture>#VUMeterL</texture>
+      <visible>Player.HasAudio+Player.playing+!Player.paused</visible>
+	  <shouldCache>true</shouldCache>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>325</posX>
+      <posY>1020</posY>
+      <width>195</width>
+      <height>25</height>
+      <texture>Animations\LedVu\vu1.png</texture>
+      <visible>Player.HasAudio+Player.paused</visible>
+	  <shouldCache>true</shouldCache>
+    </control>
+    <control>
+      <type>image</type>
+      <id>998</id>
+      <posX>325</posX>
+      <posY>1020</posY>
+      <width>195</width>
+      <height>25</height>
+      <imagepath>Animations\LedVu</imagepath>
+      <texture>#VUMeterR</texture>
+      <visible>Player.HasAudio+Player.playing+!Player.paused</visible>
+	  <shouldCache>true</shouldCache>
+    </control>
+	
+	<import>MyMusicPlayingNow.HiddenMenu.xml</import>
+	
+	
+  </controls>
+</window>

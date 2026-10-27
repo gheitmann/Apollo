@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>87275</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+    
+	<import>custom\Allscreens\user_dialog.xml</import>
+	
+    <control>
+      <description>Current View</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>138</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1800</width>
+      <font>font18</font>	
+      <textcolor>ffffffff</textcolor>
+      <label>#Trakt.Translation.Lists.Label | #Trakt.Lists.CurrentUser</label>
+	  <visible>!control.hastext(80000)</visible>
+      <align>left</align>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <control>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <height>700</height>
+          <width>1020</width>
+		  <textureFocus>btn_list.png</textureFocus>
+          <textcolorNoFocus>ff999999</textcolorNoFocus>	
+          <textcolor2>ff999999</textcolor2>		 
+		  <textXOff>-20</textXOff>
+          <textXOff2>1010</textXOff2>
+		  <IconXOff>3000</IconXOff> 
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <spinCanFocus>no</spinCanFocus>
+        </control>
+      </control>
+    </control>
+	
+ 	 <control>
+      <type>textbox</type>
+      <id>1</id>
+      <posX>115</posX>
+      <posY>890</posY>
+      <width>1550</width>
+      <height>140</height>
+      <label>#Trakt.List.Likes #Trakt.Translation.Likes.Label | #Trakt.List.Comments #Trakt.Translation.Comments.Label</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>   
+    
+    <control>
+      <description>Description</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>115</posX>
+      <posY>940</posY>
+      <width>1550</width>
+      <height>80</height>
+      <textcolor>ffFFFFFF</textcolor>
+      <font>font11</font>
+      <label>#Trakt.List.Description</label>
+      <visible>!string.equals(#Trakt.List.Description,--)+facadeview.list</visible>
+    </control>
+  </controls>
+</window>

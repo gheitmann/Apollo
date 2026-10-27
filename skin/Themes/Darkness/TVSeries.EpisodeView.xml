@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+   
+   
+   
+	 <control>
+        <description>Little Poster</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>135</posX>
+        <posY>875</posY>
+		<height>170</height>
+		<width>120</width>
+        <texture mask="">#TVSeries.SeasonPoster</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>control.isvisible(1239)</visible>
+      </control>
+	  
+   	  <control>
+        <description>background overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>123</posX>
+        <posY>863</posY>
+		<height>197</height>
+		<width>147</width>
+        <texture>postshad.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>control.isvisible(1239)</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>	
+	  
+	  
+      <control>
+        <description>Series Default image</description>
+        <id>0</id>
+        <type>image</type>
+        <posX>1342</posX>
+        <posY>224</posY>
+        <width>422</width>
+        <height>604</height>
+        <texture mask="">missing_Coverart_video.png</texture>
+        <visible>!control.hasthumb(800)+[control.isvisible(1239)]</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+      
+	  
+      <control>
+        <description>Series Poster</description>
+        <id>800</id>
+        <type>image</type>
+        <posX>1342</posX>
+        <posY>224</posY>
+        <width>422</width>
+        <height>604</height>
+        <texture mask="">#TVSeries.SeasonPoster</texture>
+        <visible>control.isvisible(1239)</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1314</posX>
+        <posY>210</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>![string.equals(#skin.series.extended,yes)+facadeview.largeicons]+!facadeview.filmstrip+!facadeview.coverflow</visible>
+      </control>		  
+	  
+	  <control>
+        <description>Cover Art watched flag</description>
+        <type>image</type>
+        <id>56565</id>
+        <posX>1764</posX>
+        <posY>205</posY>
+        <width>52</width>
+        <height>639</height>
+        <texture>redflag.png</texture>
+		<visible>![string.equals(#skin.series.extended,yes)+facadeview.largeicons]+!control.isvisible(99999)+!facadeview.coverflow+!facadeview.filmstrip</visible>
+      </control>
+	  <control>
+        <description>Cover Art watched flag</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1764</posX>
+        <posY>219</posY>
+        <width>43</width>
+        <height>614</height>
+        <texture>greyflag.png</texture>
+		<visible>![string.equals(#skin.series.extended,yes)+facadeview.largeicons]+!control.isvisible(56565)+!facadeview.coverflow+!facadeview.filmstrip</visible>
+      </control>		  
+	
+  </controls>
+</window>

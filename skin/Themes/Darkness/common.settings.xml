@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+
+	<control>
+	  <description>Current Category</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>138</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1800</width>
+      <font>font18</font>		  
+	  <label>100004</label>
+	  <textcolor>eaeaea</textcolor>		
+      <visible>!control.isvisible(07500)</visible>	  
+	</control> 
+
+	<control>
+	  <description>Date / Time</description>
+	  <type>label</type>
+      <id>0</id>
+	  <posX>138</posX>
+	  <posY>95</posY>
+	  <label>#time</label>
+	  <align>left</align>
+	  <font>font10</font>
+	  <textcolor>eaeaea</textcolor>
+	  <visible>!control.isvisible(1239)+!control.isvisible(07500)</visible>
+	</control>	
+  
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>player.hasmedia|topbar.visible|control.isvisible(13)+!control.isvisible(08701)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+    	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>[!control.isvisible(2211)+!control.isvisible(07500)]+string.isset(#media.user)</visible>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>black.png</texture>
+      <colordiffuse>95000000</colordiffuse>
+	  <visible>!control.isvisible(07500)</visible>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>420</posX>
+      <posY>150</posY>
+      <width>975</width>
+      <height>836</height>
+      <texture>dialogglowbig.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+	  <visible>!control.isvisible(911110)+!control.isvisible(07500)</visible>
+    </control>
+	
+  </controls>
+</window>

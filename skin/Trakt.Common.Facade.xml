@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <visible>!Control.HasFocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+		  <posX>115</posX>
+          <posY>240</posY>
+          <width>1020</width>
+          <textcolor>ffffffff</textcolor>
+		  <textcolorNoFocus>ff999999</textcolorNoFocus>
+		  <textureFocus>btn_list.png</textureFocus>
+		  <IconXOff>3000</IconXOff> 
+		  <playedColor>FFB2D4F5</playedColor>
+		  <textcolor2>ff999999</textcolor2>
+		  <textcolor3>ffffffff</textcolor3>
+		  <textXOff>-25</textXOff>
+          <textXOff2>1010</textXOff2>
+          <textYOff2>2</textYOff2>
+          <textXOff3>2544</textXOff3>
+          <textYOff3>8</textYOff3>
+          <textalign3>right</textalign3>
+          <font3>font9</font3>
+          <scrollOffset>2</scrollOffset>
+          <spinCanFocus>no</spinCanFocus>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <folderPrefix />
+          <folderSuffix />
+          <onleft>2</onleft>
+          <onright>2</onright>
+        </control>
+                  <control>
+                    <description>Thumbnail Panel</description>
+                    <type>thumbnailpanel</type>
+                    <id>50</id>
+                    <posX>135</posX>
+                    <posY>220</posY>
+                    <width>1250</width>
+                    <height>750</height>
+					<onleft>2</onleft>
+					<onright>2</onright>				
+					<textureUp></textureUp>
+					<textureDown></textureDown>
+					<textXOff>0</textXOff>
+					<textYOff>2250</textYOff>
+					<!-- Small Icons 0.66 aspect ratio -->
+					<itemWidth>150</itemWidth>
+				    <itemHeight>207</itemHeight>
+				    <textureWidth>145</textureWidth>
+				    <textureHeight>202</textureHeight>
+				    <thumbWidth>145</thumbWidth>
+				    <thumbHeight>202</thumbHeight>
+				    <thumbPosX>0</thumbPosX>
+				    <thumbPosY>0</thumbPosY>				
+					<!-- Large Icons 0.66 aspect ratio -->
+					<textureWidthBig>182</textureWidthBig>
+					<textureHeightBig>278</textureHeightBig>
+					<itemWidthBig>185</itemWidthBig>
+					<itemHeightBig>278</itemHeightBig>
+					<thumbWidthBig>182</thumbWidthBig>
+					<thumbHeightBig>278</thumbHeightBig>
+					<thumbPosXBig>0</thumbPosXBig>
+					<thumbPosYBig>0</thumbPosYBig>
+					<font>font11</font>
+					<suffix>|</suffix>			
+					<enableFocusZoom>no</enableFocusZoom>
+					<spinWidth>45</spinWidth>
+					<spinHeight>45</spinHeight>
+					<spinPosX>3660</spinPosX>
+					<spinPosY>950</spinPosY>
+					<spinAlign>left</spinAlign>
+					<scrollOffset>1</scrollOffset>
+					<spinColor>ffffffff</spinColor>
+					<spinCanFocus>no</spinCanFocus>
+					<textureUp>page_up_nofocus.png</textureUp>
+					<textureDown>page_down_nofocus.png</textureDown>
+					<textureUpFocus>page_up_focus.png</textureUpFocus>
+					<textureDownFocus>page_down_focus.png</textureDownFocus>	.
+					<textureMask>movieshadmask.png</textureMask>
+					<frameNoFocus>movieshad0.png</frameNoFocus>
+                    <frameFocus>movieshad0.png</frameFocus>
+					<zoomXPixels>18</zoomXPixels>
+                    <zoomYPixels>23</zoomYPixels>
+					<keepaspectratio>no</keepaspectratio>
+					<unfocusedAlpha>160</unfocusedAlpha>
+					<dimColor>90ffffff</dimColor>
+					<visible allowhiddenfocus="true"></visible>
+                 </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <id>50</id>
+          <posX>130</posX>
+          <posY>265</posY>
+          <width>1800</width>          
+          <spinPosX>-1200</spinPosX>
+          <spinPosY>832</spinPosY>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <frame>coverflowshadow.png</frame>
+          <frameFocus>coverflowshadow.png</frameFocus>
+          <itemWidth>332</itemWidth>
+          <itemHeight>486</itemHeight>
+          <textureWidth>331</textureWidth>
+          <textureHeight>495</textureHeight>
+          <thumbWidth>322</thumbWidth>
+          <thumbHeight>486</thumbHeight>
+          <thumbPosX>4</thumbPosX>
+          <thumbPosY>3</thumbPosY>
+          <thumbs mask="coverartm.png"/>
+          <font>font11</font>
+          <InfoImage></InfoImage>
+	      <imageFolder>-</imageFolder>
+	      <imageFolderFocus>-</imageFolderFocus>
+          <showFrame>yes</showFrame>
+          <showFolder>yes</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <enableFocusZoom>no</enableFocusZoom>
+          <scrollOffset>3</scrollOffset>
+          <keepaspectratio>no</keepaspectratio>
+          <suffix>|</suffix>
+          <folderPrefix />
+          <folderSuffix />
+          <spinCanFocus>no</spinCanFocus>   
+          <unfocusedAlpha>150</unfocusedAlpha>		  
+          <thumbAnimation effect="zoom" start="100,100" end="110,110" time="50">focus</thumbAnimation>   	
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

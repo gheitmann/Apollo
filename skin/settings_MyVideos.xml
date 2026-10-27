@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>703</id>
+  <defaultcontrol>42</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <controls>
+    <import>common.settings.xml</import>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>500</posX>
+      <posY>240</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>
+      <control>
+        <description>Playlist</description>
+        <type>button</type>
+        <id>42</id>
+        <label>851</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+        <onup>46</onup>
+      </control>
+      <control>
+        <description>Subtitles On/Off</description>
+        <type>checkbutton</type>
+        <id>31</id>
+        <label>1196</label>
+      </control>
+      <control>
+        <description>Play all</description>
+        <type>button</type>
+        <id>34</id>
+        <label>300192</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+      </control>
+      <control>
+        <description>Share folders</description>
+        <type>button</type>
+        <id>40</id>
+        <label>300071</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+      </control>
+      <control>
+        <description>Database</description>
+        <type>button</type>
+        <id>41</id>
+        <label>300161</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+      </control>
+      <control>
+        <description>Extensions</description>
+        <type>button</type>
+        <id>35</id>
+        <label>300162</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+      </control>
+      <control>
+        <description>Video</description>
+        <type>button</type>
+        <id>24</id>
+        <label>2134</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+      </control>
+      <control>
+        <description>Audio</description>
+        <type>button</type>
+        <id>25</id>
+        <label>2135</label>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+        <textureNoFocus />
+        <textYOff>7</textYOff>
+        <width>820</width>
+        <height>50</height>
+        <ondown>44</ondown>
+      </control>
+      <control>
+        <description>Auto Decoder Settings On/Off</description>
+        <type>checkbutton</type>
+        <id>44</id>
+        <label>1321</label>
+        <onup>25</onup>
+        <ondown>45</ondown>
+      </control>
+      <control>
+        <description>Force Source Splitter On/Off</description>
+        <type>checkbutton</type>
+        <id>45</id>
+        <label>1322</label>
+        <onup>44</onup>
+        <ondown>46</ondown>
+      </control>
+      <control>
+        <description>Use Movie Codec TS On/Off</description>
+        <type>checkbutton</type>
+        <id>46</id>
+        <label>1323</label>
+        <onup>45</onup>
+        <ondown>42</ondown>
+        <onright>36</onright>
+      </control>
+    </control>
+    <control>
+      <description>Renderer</description>
+      <type>button</type>
+      <id>36</id>
+      <label>300236</label>
+      <width>480</width>
+      <height>50</height>
+      <font>font10</font>
+      <textXOff>22</textXOff>
+      <textYOff>7</textYOff>
+      <onup>46</onup>
+      <ondown>43</ondown>
+      <onleft>46</onleft>
+      <onright>42</onright>
+      <textureFocus>btn_list_blue2.png</textureFocus>
+      <textureNoFocus />
+      <posX>1370</posX>
+      <posY>240</posY>
+    </control>
+    <control>
+      <description>Others</description>
+      <type>button</type>
+      <id>43</id>
+      <label>101023</label>
+      <width>480</width>
+      <height>50</height>
+      <font>font10</font>
+      <textXOff>22</textXOff>
+      <textYOff>7</textYOff>
+      <onup>36</onup>
+      <ondown>47</ondown>
+      <onleft>46</onleft>
+      <onright>42</onright>
+      <textureFocus>btn_list_blue2.png</textureFocus>
+      <textureNoFocus />
+      <posX>1370</posX>
+      <posY>300</posY>
+    </control>
+    <control>
+      <description>Override audio selection and use default one</description>
+      <type>checkbutton</type>
+      <id>47</id>
+      <label>1324</label>
+      <width>480</width>
+      <height>50</height>
+      <font>font10</font>
+      <textXOff>22</textXOff>
+      <textYOff>7</textYOff>
+      <onup>43</onup>
+      <ondown>48</ondown>
+      <onleft>46</onleft>
+      <onright>42</onright>
+      <posX>1370</posX>
+      <posY>360</posY>
+    </control>
+    <control>
+      <description>Use audio/subtitle stream selection from LAV Splitter</description>
+      <type>checkbutton</type>
+      <id>48</id>
+      <label>1325</label>
+      <width>480</width>
+      <height>50</height>
+      <font>font10</font>
+      <textXOff>22</textXOff>
+      <textYOff>7</textYOff>
+      <onup>47</onup>
+      <ondown>42</ondown>
+      <onleft>46</onleft>
+      <onright>42</onright>
+      <posX>1370</posX>
+      <posY>420</posY>
+    </control>
+  </controls>
+</window>

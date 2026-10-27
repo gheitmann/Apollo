@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <!--     *******************************************************************************************  -->
+    <!--     *************************     Horizontal Menu      ****************************************  -->
+    <!--     *******************************************************************************************  -->
+
+	
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <layout>StackLayout(5, Horizontal, true)</layout>
+	  <posX>390</posX>
+      <posY>123</posY>
+	  <height>20</height>
+	  <align>center</align>
+	  
+	  
+	    <control Style="BasicHomeButton">
+        <description>Dummy</description>
+        <type>button</type>
+        <id>0</id>
+		<height>10</height>
+		<width>40</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+	  
+      <control Style="BasicHomeButton">
+        <description>BasicHome MovingPictures</description>
+        <type>button</type>
+		<posX>315</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>200</width>
+        <id>2</id>
+		<hyperlink>#skin.movietile.hyperlink</hyperlink>
+        <label>#menu.label2</label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+        <onup>22</onup>
+		<onright>3</onright>
+        <onleft>5006</onleft>
+        <ondown>55510</ondown>
+		<visible allowhiddenfocus="true"></visible>
+		<animation effect="fade" delay="0" reversible="false" time="100">focus</animation>
+      </control>
+
+	  <control Style="BasicHomeButton">
+        <description>BasicHome TVSeries</description>
+        <type>button</type>
+        <id>3</id>
+		<posX>870</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>215</width>
+		<hyperlink>9811</hyperlink>
+        <label>#menu.label3</label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+		<onleft>2</onleft>
+        <onright>4</onright>
+        <onup>22</onup>
+        <ondown>55512</ondown>
+		<animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+	  <control Style="BasicHomeButton">
+        <description>BasicHome TV</description>
+        <type>button</type>
+        <id>4</id>
+		<posX>1125</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>170</width>
+		<hyperlink>600</hyperlink>
+        <label>#menu.label4</label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+        <onleft>3</onleft>
+        <onright>5</onright>
+        <onup>22</onup>
+        <ondown>55514</ondown>
+		<animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+	  
+      <control Style="BasicHomeButton">
+        <description>BasicHome audio</description>
+        <type>button</type>
+        <id>5</id>
+		<posX>1350</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>185</width>
+		<hyperlink>501</hyperlink>
+        <label>#menu.label5</label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+        <onleft>4</onleft>
+        <onup>22</onup>
+        <ondown>55518</ondown>
+		<onright>5005</onright>
+		<animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+	  
+	  <control Style="BasicHomeButton">
+        <description>BasicHome plugins</description>
+        <type>button</type>
+        <id>5005</id>
+		<posX>1350</posX>
+        <posY>120</posY>
+		<hyperlink>#tile1.hyperlink</hyperlink>
+		<oninfo>#(skin.setfocus(35,450))</oninfo>
+		<height>45</height>
+		<width>345</width>
+        <label>#menu.label6</label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+        <onleft>5</onleft>
+        <onup>22</onup>
+		<ondown>55522</ondown>
+		<onright>0011223</onright>
+		<animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+		
+	  
+	  
+	  <control Style="BasicHomeButton">
+        <description>BasicHome settings</description>
+        <type>button</type>
+        <id>0011223</id>
+		<posX>120</posX>
+        <posY>1005</posY>
+		<hyperlink>4</hyperlink>
+		<oninfo>#(skin.setfocus(35,269))</oninfo>
+		<height>43</height>
+		<width>43</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus>setting.png</textureFocus>
+		<textureNoFocus>setting.png</textureNoFocus>
+		<align>center</align>
+		<font>font14</font>
+        <onleft>5005</onleft>
+        <onup>0011223</onup>
+		<ondown>55522</ondown>
+		<onright>5006</onright>
+		<animation effect="rotate" delay="0" end="-360" centre="475,258" time="20000" loop="true" condition="control.hasFocus(0011223)">Conditional</animation>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+	 </control>  
+    </control>
+	
+		  <control Style="BasicHomeButton">
+        <description>BasicHome exit</description>
+        <type>button</type>
+        <id>5006</id>
+		<posX>320</posX>
+        <posY>117</posY>
+		<action>99</action>
+		<height>65</height>
+		<width>65</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus>p_btn_focus.png</textureFocus>
+		<textureNoFocus>p_btn.png</textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+        <onleft>0011223</onleft>
+        <onup>22</onup>
+		<ondown>77785</ondown>
+		<onright>2</onright>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+	
+	  <control>
+        <id>201</id>
+        <description>Time</description>
+        <type>label</type>
+        <posX>1380</posX>
+        <posY>128</posY>
+		<height>43</height>
+		<width>140</width>
+        <font>font11</font>
+        <textcolor>white</textcolor>
+		<align>center</align>
+        <label>#time</label>
+      </control>
+		
+		
+		<!--Button overlay workaround for non focused highlight-->
+		
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <layout>StackLayout(5, Horizontal, false)</layout>
+	  <posX>390</posX>
+      <posY>123</posY>
+	  <height>20</height>
+	  <align>center</align>
+	  
+	  
+	    <control Style="BasicHomeButton">
+        <description>Dummy</description>
+        <type>button</type>
+        <id>0</id>
+		<height>10</height>
+		<width>40</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>white</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+      </control>
+	  
+      <control Style="BasicHomeButton">
+        <description>BasicHome MovingPictures</description>
+        <type>button</type>
+		<posX>315</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>200</width>
+        <id>0</id>
+        <label>#menu.label2</label>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+		<visible>control.hasfocus(55510)|control.hasfocus(55511)|control.hasfocus(58511)|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91915991)|control.hasfocus(91915992)</visible>
+      </control>
+
+	  <control Style="BasicHomeButton">
+        <description>BasicHome TVSeries</description>
+        <type>button</type>
+        <id>0</id>
+		<posX>870</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>215</width>
+        <label>#menu.label3</label>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+		<visible>control.hasfocus(55512)|control.hasfocus(55513)|control.hasfocus(91919994)|control.hasfocus(91919995)|control.hasfocus(91919996)</visible>
+      </control>
+	  
+	  <control Style="BasicHomeButton">
+        <description>BasicHome TV</description>
+        <type>button</type>
+        <id>0</id>
+		<posX>1125</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>170</width>
+        <label>#menu.label4</label>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+		<visible>control.hasfocus(55514)|control.hasfocus(55515)|control.hasfocus(55516)|control.hasfocus(55517)|control.hasfocus(68880)</visible>
+      </control>
+	  
+      <control Style="BasicHomeButton">
+        <description>BasicHome audio</description>
+        <type>button</type>
+        <id>0</id>
+		<posX>1350</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>185</width>
+        <label>#menu.label5</label>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+		<visible>control.hasfocus(55518)|control.hasfocus(55519)|control.hasfocus(55520)|control.hasfocus(91919997)|control.hasfocus(55521)|control.hasfocus(91919998)</visible>
+      </control>
+	  
+	  <control Style="BasicHomeButton">
+        <description>BasicHome plugins</description>
+        <type>button</type>
+        <id>0</id>
+		<posX>1350</posX>
+        <posY>120</posY>
+		<height>45</height>
+		<width>345</width>
+        <label>#menu.label6</label>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<textalign>left</textalign>
+		<font>font14</font>
+        <visible>control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)</visible>
+      </control>
+		
+	  
+	  
+	  <control Style="BasicHomeButton">
+        <description>BasicHome settings</description>
+        <type>button</type>
+        <id>0</id>
+		<posX>120</posX>
+        <posY>1005</posY>
+		<hyperlink>4</hyperlink>
+		<oninfo>#(skin.setfocus(35,269))</oninfo>
+		<height>43</height>
+		<width>43</width>
+        <label></label>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus></textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<align>center</align>
+		<font>font14</font>
+        <onleft>5005</onleft>
+        <onup>0011223</onup>
+		<ondown>55522</ondown>
+		<onright>5006</onright>
+		<animation effect="rotate" delay="0" end="-360" centre="475,258" time="20000" loop="true" condition="control.hasFocus(0011223)">Conditional</animation>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+	 </control>  
+     </control>	  		
+	  
+  </controls>
+</window>

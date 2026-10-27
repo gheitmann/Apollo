@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+
+    <!-- User Info -->
+
+	  <control>
+        <description>Little Poster</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>135</posX>
+        <posY>875</posY>
+		<height>170</height>
+		<width>120</width>
+		<centered>yes</centered>
+        <keepaspectratio>yes</keepaspectratio>
+	    <zoom>yes</zoom>
+        <texture mask="postermask.png">#selectedthumb</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>facadeview.list+!string.equals(#Trakt.User.Username,)</visible>
+      </control>
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>134</posX>
+        <posY>875</posY>
+		<height>176</height>
+		<width>126</width>
+        <texture>postershadow.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>facadeview.list+!string.equals(#Trakt.User.Username,)</visible>
+      </control>
+	  
+	 <control>
+      <type>textbox</type>
+      <id>1</id>
+      <posX>270</posX>
+      <posY>890</posY>
+      <width>1550</width>
+      <height>140</height>
+      <label>#Trakt.User.FullName | #Trakt.User.Age | #Trakt.User.Location | Joined #Trakt.User.JoinDate</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>facadeview.list+!string.equals(#Trakt.User.About,)+!string.equals(#Trakt.User.About,--)</visible>
+    </control>
+
+	
+    <control Style="NoShadow">
+      <description>Plot value</description>
+      <type>textboxscrollup</type>
+      <id>1</id>
+      <textalign>left</textalign>
+      <posX>270</posX>
+      <posY>940</posY>
+      <width>1550</width>
+      <height>80</height>
+      <label>#Trakt.User.About</label>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>facadeview.list+!string.equals(#Trakt.User.About,)+!string.equals(#Trakt.User.About,--)</visible>
+    </control>
+
+	
+
+  </controls>
+</window>

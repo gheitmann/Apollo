@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>54537688</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+
+  <controls>
+
+    
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>106</buttonwidth>
+      <buttonheight>720</buttonheight>
+      <textureFocus></textureFocus>
+      <textureNoFocus></textureNoFocus>
+      <width>568</width>
+      <height>900</height>
+      <dimColor>00ffffff</dimColor>
+      <control>
+        <type>image</type>
+        <posX>26</posX>
+        <posY>78</posY>
+        <width>467</width>
+        <height>591</height>
+        <texture>Backslide.png</texture>
+        <colorDiffuse>fffffffff</colorDiffuse>
+        <visible>!Control.HasFocus(50)</visible>
+        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+      </control>
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+        <posX>71</posX>
+        <posY>121</posY>
+        <layout>StackLayout</layout>
+        <visible>!Control.HasFocus(50)</visible>
+        <control>
+          <description>View-As</description>
+          <type>button</type>
+          <id>2</id>
+          <label>100</label>
+          <onright>50</onright>
+          <onup>17</onup>
+        </control>
+      </control>
+    </control>
+       
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <scrollOffset>2</scrollOffset>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <posX>88</posX>
+          <posY>131</posY>
+          <width>1173</width>
+          <height>588</height>
+          <scrollOffset>1</scrollOffset>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <itemWidth>157</itemWidth>
+          <itemHeight>185</itemHeight>
+          <textureWidth>97</textureWidth>
+          <textureHeight>140</textureHeight>
+          <thumbWidth>90</thumbWidth>
+          <thumbHeight>133</thumbHeight>
+          <thumbPosX>5</thumbPosX>
+          <thumbPosY>6</thumbPosY>
+          <itemWidthBig>195</itemWidthBig>
+          <itemHeightBig>250</itemHeightBig>
+          <thumbWidthBig>135</thumbWidthBig>
+          <thumbHeightBig>200</thumbHeightBig>
+          <textureWidthBig>150</textureWidthBig>
+          <textureHeightBig>216</textureHeightBig>
+          <thumbPosXBig>10</thumbPosXBig>
+          <thumbPosYBig>8</thumbPosYBig>
+          <zoomXPixels>30</zoomXPixels>
+          <zoomYPixels>30</zoomYPixels>
+          <hideUnfocusTexture>no</hideUnfocusTexture>
+          <renderFocusText>no</renderFocusText>
+          <renderUnfocusText>yes</renderUnfocusText>
+          <showFrame>true</showFrame>
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <scrollOffset>2</scrollOffset>
+          <posX>0</posX>
+          <posY>225</posY>
+          <width>1244</width>
+          <height>720</height>
+          <onup>2</onup>
+          <onleft>2</onleft>
+          <thumbWidth>194</thumbWidth>
+          <thumbHeight>295</thumbHeight>
+          <thumbPosX>3</thumbPosX>
+          <thumbPosY>2</thumbPosY>
+          <itemWidth>238</itemWidth>
+          <itemHeight>231</itemHeight>
+          <textureWidth>206</textureWidth>
+          <textureHeight>307</textureHeight>
+          <imageFolderFocus>Picture_cover.png</imageFolderFocus>
+          <frame>Picture_cover.png</frame>
+          <frameFocus>Picture_cover.png</frameFocus>
+          <background>emtpy.png</background>
+          <thumbs flipY="true" diffuse="Thumb_Mask.png">
+          </thumbs>
+          <InfoImage flipY="true" diffuse="Thumb_Mask.png">
+          </InfoImage>
+          <showFrame>yes</showFrame>
+          <showFolder>yes</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <visible>facadeview.filmstrip</visible>
+          <thumbAnimation effect="zoom" start="100,100" end="130,130" time="200">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="130,130" end="100,100" time="200">unfocus</thumbAnimation>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <itemWidth>32</itemWidth>
+          <itemHeight>32</itemHeight>
+          <IconXOff>12</IconXOff>
+          <IconYOff>4</IconYOff>
+          <scrollOffset>2</scrollOffset>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

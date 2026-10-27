@@ -1,0 +1,612 @@
+WINDOW	MediaPortal.Plugins.Process.UnattendedWindow	\psclientplugin_unattended.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoFullscreen	imgVolumeMuteIcon	GUIImage	500
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoFullscreen	imgVolumeBar	GUIVolumeBar	501
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoFullscreen	imgActionForbiddenIcon	GUIImage	502
+WINDOW	MediaPortal.GUI.Video.GUIVideoFullscreen	\videoFullScreen.xml
+WINDOW	MediaPortal.GUI.Video.GUIVideoOSD	\videoOSD.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_videoRectangle	GUIImage	0
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_videoWindow	GUIVideoControl	1
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_labelPlayTime	GUILabelControl	2
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_imagePlayLogo	GUIImage	3
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_imagePauseLogo	GUIImage	4
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_labelInfo	GUIFadeLabel	5
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_labelBigPlayTime	GUIImage	6
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_imageFastForward	GUIImage	7
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoOverlay	_imageRewind	GUIImage	8
+WINDOW	MediaPortal.GUI.Video.GUIVideoOverlay	\videoOverlay.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoTopOverlay	imagePause	GUIImage	4
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoTopOverlay	imageFastForward	GUIImage	5
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Video.GUIVideoTopOverlay	imageRewind	GUIImage	6
+WINDOW	MediaPortal.GUI.Video.GUIVideoTopOverlay	\videoOverlayTop.xml
+WINDOW	MediaPortal.GUI.Pictures.GUIPictureSlideShow	\slideshow.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	listView	GUIListControl	25
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	imgCoverArt	GUIImage	10
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	lblCoverLabel	GUILabelControl	11
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	lblArtistName	GUIFadeLabel	12
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	lblAlbumName	GUIFadeLabel	13
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	lblReleaseYear	GUILabelControl	14
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	lblNoMatches	GUILabelControl	15
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	btnSkip	GUIButtonControl	20
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	btnCancel	GUIButtonControl	21
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUICoverArtGrabberResults	imgAmazon	GUIImage	30
+WINDOW	MediaPortal.GUI.Music.GUICoverArtGrabberResults	\MyMusicCoverArtGrabberResults.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicArtistInfo	btnRefresh	GUIButtonControl	6
+WINDOW	MediaPortal.GUI.Music.GUIMusicArtistInfo	\DialogArtistInfo.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicBaseWindow	btnSearch	GUIButtonControl	8
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicBaseWindow	btnPlayCd	GUIButtonControl	12
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicBaseWindow	btnSavedPlaylists	GUIButtonControl	10
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicBaseWindow	btnAutoDJ	GUICheckButton	18
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicInfo	btnRefresh	GUIButtonControl	6
+WINDOW	MediaPortal.GUI.Music.GUIMusicInfo	\DialogAlbumInfo.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	LblCaption	GUILabelControl	1
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	ImgCoverArt	GUIImage	112
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	ProgTrack	GUIProgressControl	118
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	LblUpNext	GUILabelControl	20
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	VUMeterLeft	GUIImage	999
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	VUMeterRight	GUIImage	998
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	lstSimilarTracks	GUIListControl	155
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	btnLastFMLove	GUIButtonControl	30
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayingNow	btnLastFMBan	GUIButtonControl	31
+WINDOW	MediaPortal.GUI.Music.GUIMusicPlayingNow	\MyMusicPlayingNowAnVu.xml
+WINDOW	MediaPortal.GUI.Music.GUIMusicPlayingNow	\MyMusicPlayingNowLedVu.xml
+WINDOW	MediaPortal.GUI.Music.GUIMusicPlayingNow	\MyMusicPlayingNow.xml
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnShuffle	GUIButtonControl	20
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnSave	GUIButtonControl	21
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnClear	GUIButtonControl	22
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnNowPlaying	GUIButtonControl	26
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnScrobble	GUICheckButton	27
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnScrobbleMode	GUIButtonControl	28
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnScrobbleUser	GUIButtonControl	29
+BIND	Common.GUIPlugins.dll	MediaPortal.GUI.Music.GUIMusicPlayList	btnRepeatPlaylist	GUICheckButton	30
+WINDOW	MediaPortal.GUI.Music.GUIMusicPlayList	\myMusicplaylist.xml
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.GUIMixerOverlay	_imgBG	GUIImage	501
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.GUIMixerOverlay	_imgMute	GUIImage	502
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.GUIMixerOverlay	_volumeBar	GUIVolumeBar	503
+WINDOW	Common.GUIPlugins.GUIMixerOverlay	\VolumeOverlay.xml
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.WindowPluginBase	facadeLayout	GUIFacadeControl	50
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.WindowPluginBase	btnLayouts	GUIMenuButton	2
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.WindowPluginBase	btnSortBy	GUISortButtonControl	3
+BIND	Common.GUIPlugins.dll	Common.GUIPlugins.WindowPluginBase	btnViews	GUIMenuButton	5
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogCIMenu	lblBottom	GUILabelControl	6
+WINDOW	MediaPortal.Dialogs.GUIDialogCIMenu	\DialogCIMenu.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogIncompatiblePlugins	listView	GUIListControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogIncompatiblePlugins	btnContinue	GUIButtonControl	3
+WINDOW	MediaPortal.Dialogs.GUIDialogIncompatiblePlugins	\dialogIncompatiblePlugins.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogMenu	btnClose	GUIButtonControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogMenu	listView	GUIListControl	3
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogMenu	lblHeading	GUILabelControl	4
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogMenu	lblHeading2	GUILabelControl	5
+WINDOW	MediaPortal.Dialogs.GUIDialogMenu	\DialogMenu.xml
+WINDOW	MediaPortal.Dialogs.GUIDialogNotifyLastFM	\DialogNotifyLastFM.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogOldSkin	chkIgnore	GUICheckMarkControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogOldSkin	btnContinue	GUIButtonControl	3
+WINDOW	MediaPortal.Dialogs.GUIDialogOldSkin	\dialogOldSkin.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogPlayStop	btnPlay	GUIButtonControl	10
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogPlayStop	btnStop	GUIButtonControl	11
+WINDOW	MediaPortal.Dialogs.GUIDialogPlayStop	\dialogPlayStop.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinChannel	GUISpinControl	1
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinStartHour	GUISpinControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinStartMinute	GUISpinControl	3
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinStartDay	GUISpinControl	4
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinStartMonth	GUISpinControl	5
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinStartYear	GUISpinControl	6
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinEndHour	GUISpinControl	7
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinEndMinute	GUISpinControl	8
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinEndDay	GUISpinControl	9
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinEndMonth	GUISpinControl	10
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	spinEndYear	GUISpinControl	11
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	btnOK	GUIButtonControl	12
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogDateTime	lblHeading	GUILabelControl	13
+WINDOW	MediaPortal.Dialogs.GUIDialogDateTime	\dialogDateTime.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblHeading	GUILabelControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	imgPicture	GUIImage	3
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblImgTitle	GUIControl	20
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblImgDimensions	GUIControl	21
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblResolutions	GUIControl	22
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblFlash	GUIControl	23
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblMeteringMode	GUIControl	24
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblExposureCompensation	GUIControl	25
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblShutterSpeed	GUIControl	26
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblDateTakenLabel	GUIControl	27
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblFstop	GUIControl	28
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblExposureTime	GUIControl	29
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblCameraModel	GUIControl	30
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblEquipmentMake	GUIControl	31
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogExif	lblViewComments	GUIControl	32
+WINDOW	MediaPortal.Dialogs.GUIDialogExif	\DialogPictureInfo.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	btnNo	GUIButtonControl	10
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	btnYes	GUIButtonControl	11
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	btnAlways	GUIButtonControl	12
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	btnNever	GUIButtonControl	13
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	btnCancel	GUIButtonControl	14
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	imgProgressBackground	GUIImage	100
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogFile	prgProgressBar	GUIProgressControl	20
+WINDOW	MediaPortal.Dialogs.GUIDialogFile	\DialogFile.xml
+WINDOW	MediaPortal.Dialogs.GUIDialogFileStacking	\dialogFileStacking.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogMenuBottomRight	lblHeading3	GUILabelControl	6
+WINDOW	MediaPortal.Dialogs.GUIDialogMenuBottomRight	\DialogMenuBottomRight.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogNotify	btnClose	GUIButtonControl	4
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogNotify	lblHeading	GUILabelControl	3
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogNotify	imgLogo	GUIImage	5
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogNotify	txtArea	GUITextControl	6
+WINDOW	MediaPortal.Dialogs.GUIDialogNotify	\DialogNotify.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogOK	btnNo	GUIButtonControl	10
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogOK	btnYes	GUIButtonControl	11
+WINDOW	MediaPortal.Dialogs.GUIDialogOK	\dialogOK.xml
+WINDOW	MediaPortal.Dialogs.GUIDialogProgress	\dialogProgress.xml
+WINDOW	MediaPortal.Dialogs.GUIDialogSelect	\DialogSelect.xml
+WINDOW	MediaPortal.Dialogs.GUIDialogSelect2	\DialogSelect2.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	lblHeading	GUILabelControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	lblName	GUILabelControl	4
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	btnPlus	GUIButtonControl	10
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	btnMin	GUIButtonControl	11
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	btnOk	GUIButtonControl	12
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	btnNextItem	GUIButtonControl	13
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	btnPlay	GUIButtonControl	14
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	btnPreviousItem	GUIButtonControl	15
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	imgStar1	GUIImage	100
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	imgStar2	GUIImage	101
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	imgStar3	GUIImage	102
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	imgStar4	GUIImage	103
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogSetRating	imgStar5	GUIImage	104
+WINDOW	MediaPortal.Dialogs.GUIDialogSetRating	\dialogRating.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogText	btnClose	GUIButtonControl	2
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogText	txtArea	GUITextControl	3
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogText	lblHeading	GUILabelControl	4
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogText	imgLogo	GUIImage	5
+WINDOW	MediaPortal.Dialogs.GUIDialogText	\DialogText.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	lblText	GUILabelControl	6
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	lblRating	GUILabelControl	7
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar1	GUICheckMarkControl	100
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar2	GUICheckMarkControl	101
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar3	GUICheckMarkControl	102
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar4	GUICheckMarkControl	103
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar5	GUICheckMarkControl	104
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar6	GUICheckMarkControl	105
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar7	GUICheckMarkControl	106
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar8	GUICheckMarkControl	107
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar9	GUICheckMarkControl	108
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogUserRating	btnStar10	GUICheckMarkControl	109
+WINDOW	MediaPortal.Dialogs.GUIDialogUserRating	\dialogUserRating.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogYesNo	btnNo	GUIButtonControl	10
+BIND	Dialogs.dll	MediaPortal.Dialogs.GUIDialogYesNo	btnYes	GUIButtonControl	11
+WINDOW	MediaPortal.Dialogs.GUIDialogYesNo	\dialogYesNo.xml
+BIND	Dialogs.dll	MediaPortal.Dialogs.VirtualKeyboard	_keyboard	GUIKeyboard	1
+BIND	Dialogs.dll	MediaPortal.Dialogs.VirtualKeyboard	_background	GUIImage	2
+WINDOW	MediaPortal.Dialogs.StandardKeyboard	\stdKeyboard.xml
+WINDOW	MediaPortal.GUI.Home.GUIHome	\myHome.xml
+BIND	GUIHome.dll	MediaPortal.GUI.Home.GUIHomeBaseWindow	lblDate	GUILabelControl	200
+BIND	GUIHome.dll	MediaPortal.GUI.Home.GUIHomeBaseWindow	lblTime	GUILabelControl	201
+BIND	GUIHome.dll	MediaPortal.GUI.Home.GUIHomeBaseWindow	menuMain	GUIControl	50
+BIND	GUIHome.dll	MediaPortal.GUI.Home.GUIHomeBaseWindow	videoWindow	GUIVideoControl	99
+WINDOW	MediaPortal.GUI.Home.GUIPlugIns	\myHomePlugIns.xml
+BIND	GUIHome.dll	WindowPlugins.home.GUIBasicHome	_videoWindow	GUIVideoControl	99
+WINDOW	WindowPlugins.home.GUIBasicHome	\BasicHome.xml
+WINDOW	WindowPlugins.GUIMusic.GUIMusicMenu	\MusicMenu.xml
+WINDOW	MediaPortal.GUI.Video.GUIMusicFullscreen	\musicFullScreen.xml
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	lblOverallProgress	GUIFadeLabel	10
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	lblCurrentProgress	GUIFadeLabel	11
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	lblFolderName	GUILabelControl	12
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	lblCurrentAlbum	GUIFadeLabel	13
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	lblFilteredSearch	GUIFadeLabel	14
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	btnStart	GUIButtonControl	30
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	btnCancel	GUIButtonControl	31
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	progOverall	GUIProgressControl	20
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	progCurrent	GUIProgressControl	21
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	checkSkipExisting	GUICheckMarkControl	40
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	checkSaveInAlbumFolder	GUICheckMarkControl	41
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	checkSaveInThumbsFolder	GUICheckMarkControl	42
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	imgOverallProgBG	GUIImage	100
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	imgCurrentProgBG	GUIImage	101
+WINDOW	MediaPortal.GUI.Music.GUICoverArtGrabberProgress	\MyMusicCoverArtGrabberProgress.xml
+WINDOW	MediaPortal.GUI.Music.GUIMusicFiles	\mymusicsongs.xml
+WINDOW	MediaPortal.GUI.Music.GUIMusicGenres	\mymusicgenres.xml
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_videoRectangle	GUIImage	0
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_thumbImage	GUIImage	1
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_labelPlayTime	GUILabelControl	2
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imagePlayLogo	GUIImage	3
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imagePauseLogo	GUIImage	4
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_labelInfo	GUIFadeLabel	5
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_labelBigPlayTime	GUIImage	6
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imageFastForward	GUIImage	7
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imageRewind	GUIImage	8
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_videoWindow	GUIVideoControl	9
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imageNormal	GUIImage	10
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imageGapless	GUIImage	11
+BIND	GUIMusic.dll	MediaPortal.GUI.Music.GUIMusicOverlay	_imageCrossfade	GUIImage	12
+WINDOW	MediaPortal.GUI.Music.GUIMusicOverlay	\musicOverlay.xml
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIanimationWork	GUIAnimation	13
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIbuttonReadAll	GUIButtonControl	14
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIbuttonClear	GUIButtonControl	15
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIbuttonClearAll	GUIButtonControl	16
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIbuttonExit	GUIButtonControl	17
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIbuttonLevel	GUISelectButtonControl	18
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIbuttonClass	GUISelectButtonControl	19
+BIND	GUINotifier.dll	MediaPortal.GUI.Notifier.GUINotifier	_GUIfacadeList	GUIFacadeControl	50
+WINDOW	MediaPortal.GUI.Notifier.GUINotifier	\myNotifier.xml
+BIND	GUIPictures.dll	MediaPortal.GUI.Pictures.GUIPicureExif	imgPicture	GUIImage	2
+BIND	GUIPictures.dll	MediaPortal.GUI.Pictures.GUIPicureExif	listExifProperties	GUIListControl	3
+WINDOW	MediaPortal.GUI.Pictures.GUIPicureExif	\PictureExifInfo.xml
+BIND	GUIPictures.dll	MediaPortal.GUI.Pictures.GUIPictures	btnSlideShow	GUIButtonControl	6
+BIND	GUIPictures.dll	MediaPortal.GUI.Pictures.GUIPictures	btnSlideShowRecursive	GUIButtonControl	7
+BIND	GUIPictures.dll	MediaPortal.GUI.Pictures.GUIPictures	btnSearch	GUIButtonControl	8
+WINDOW	MediaPortal.GUI.Pictures.GUIPictures	\mypics.xml
+WINDOW	MediaPortal.GUI.Pictures.GUISlideShow	\slideshow.xml
+WINDOW	MediaPortal.GUI.RSS.GUIRSSFeed	\myrss.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.BacklightWindow	btnRed	GUISelectButtonControl	65
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.BacklightWindow	btnGreen	GUISelectButtonControl	66
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.BacklightWindow	btnBlue	GUISelectButtonControl	67
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.BacklightWindow	btnInvert	GUICheckButton	68
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.BacklightWindow	\settings_MiniDisplay_BackLight.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayControlWindow	btnDisplayVideo	GUICheckButton	40
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayControlWindow	btnDisplayAction	GUICheckButton	41
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayControlWindow	btnDisplayActionTime	GUISelectButtonControl	42
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayControlWindow	btnDisplayIdle	GUICheckButton	43
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayControlWindow	btnIdleDelay	GUISelectButtonControl	44
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayControlWindow	\settings_MiniDisplay_Control.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnUseEqualizer	GUICheckButton	20
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnUseStyle	GUISelectButtonControl	21
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnSmothEQ	GUICheckButton	22
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnDelayStart	GUICheckButton	23
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnDelayStartTime	GUISelectButtonControl	24
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnShowTitle	GUICheckButton	25
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnShowTitleTime	GUISelectButtonControl	26
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	btnShowTitleFreq	GUISelectButtonControl	27
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.EqualizerWindow	\settings_MiniDisplay_Equalizer.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.KeyPadWindow	label1	GUILabelControl	50
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.KeyPadWindow	btnEnableKeyPad	GUICheckButton	60
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.KeyPadWindow	btnEnableCustom	GUICheckButton	61
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.KeyPadWindow	btnKeyPadMapping	GUIButtonControl	62
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.KeyPadWindow	\settings_MiniDisplay_Keypad.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	labelInfo1	GUILabelControl	3
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	labelInfo2	GUILabelControl	4
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnKeyPad	GUIButtonControl	5
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnDisplayOptions	GUIButtonControl	6
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnDisplayControl	GUIButtonControl	7
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnEqualizer	GUIButtonControl	8
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnBacklight	GUIButtonControl	9
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnRemote	GUIButtonControl	10
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnMonitorPower	GUICheckButton	11
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnContrast	GUISelectButtonControl	12
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	btnBrightness	GUISelectButtonControl	13
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.MainMenuWindow	\settings_MiniDisplay_Main.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnVolume	GUICheckButton	30
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnProgress	GUICheckButton	31
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnDiskIcon	GUICheckButton	32
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnMediaStatus	GUICheckButton	33
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnDiskStatus	GUICheckButton	34
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnCustomFont	GUICheckButton	35
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnLargeIcons	GUICheckButton	36
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnCustomIcons	GUICheckButton	37
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnInvertIcons	GUICheckButton	38
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnFontEditor	GUIButtonControl	39
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	btnIconEditor	GUIButtonControl	40
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.DisplayOptionsWindow	\settings_MiniDisplay_Options.xml
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.RemoteWindow	label1	GUILabelControl	40
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.RemoteWindow	btnDisableRemote	GUICheckButton	50
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.RemoteWindow	btnDisableRepeat	GUICheckButton	51
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.RemoteWindow	btnRepeatDelay	GUISelectButtonControl	52
+BIND	GUISettings.dll	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.RemoteWindow	btnRemoteMapping	GUIButtonControl	53
+WINDOW	MediaPortal.ProcessPlugins.MiniDisplayPlugin.Setup.RemoteWindow	\settings_MiniDisplay_Remote.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_cmTurnoffmonitor	GUICheckButton	20
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_cmShowlastactivemodule	GUICheckButton	21
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_cmStopOnAudioRemoval	GUICheckButton	22
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_btnStartScreen	GUIButtonControl	24
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_btnDelayStartup	GUIButtonControl	30
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_cmDelayStartup	GUICheckButton	31
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralResume	_cmDelayResume	GUICheckButton	32
+WINDOW	MediaPortal.GUI.Settings.GUISettingsGeneralResume	\settings_General_Resume.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmStartfullscreen	GUICheckButton	10
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmUsefullscreensplash	GUICheckButton	11
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmIgnorefullscreenresolutionchanges	GUICheckButton	11
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmAlwaysontop	GUICheckButton	12
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmHidetaskbar	GUICheckButton	13
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmAutostart	GUICheckButton	14
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmMinimizeonstartup	GUICheckButton	15
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmMinimizeonexit	GUICheckButton	16
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	_cmMinimizeonfocusloss	GUICheckButton	17
+WINDOW	MediaPortal.GUI.Settings.GUISettingsGeneralStartup	\settings_General_Startup.xml
+WINDOW	MediaPortal.GUI.Settings.GUISettingsGUIScreenSetup	\settings_GUI_ScreenSetup.xml
+WINDOW	MediaPortal.GUI.Settings.GUISettingsGUI	\settings_GUI_ScrollSpeed.xml
+WINDOW	MediaPortal.GUI.Settings.GUISettingsUICalibration	\settings_GUI_UICalibration.xml
+WINDOW	MediaPortal.GUI.Settings.GUISettingsMovieCalibration	\settings_GUI_VideoScreenCalibration.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettings	_btnMiniDisplay	GUIButtonControl	11
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettings	_btnTV	GUIButtonControl	10
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettings	_btnLocked	GUICheckButton	20
+WINDOW	MediaPortal.GUI.Settings.GUISettings	\settings.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsExtensions	extensionsListcontrol	GUIListControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsExtensions	btnAdd	GUIButtonControl	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsExtensions	btnRemove	GUIButtonControl	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsExtensions	btnDefault	GUIButtonControl	5
+WINDOW	MediaPortal.GUI.Settings.GUISettingsExtensions	\settings_Common_Extensions.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnMusicplaylist	GUIButtonControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnMusicrepeatplaylist	GUICheckButton	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnMusicautoshuffle	GUICheckButton	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnMusicsavecurrentasdefault	GUICheckButton	5
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnMusicloaddefault	GUICheckButton	6
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnMusicplaylistscreen	GUICheckButton	7
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnVideosplaylist	GUIButtonControl	8
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPlaylist	btnVideosrepeatplaylist	GUICheckButton	9
+WINDOW	MediaPortal.GUI.Settings.GUISettingsPlaylist	\settings_Common_Playlist.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnAdd	GUIButtonControl	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnRemove	GUIButtonControl	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnEdit	GUIButtonControl	5
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnReset	GUIButtonControl	6
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnRemeberLastFolder	GUICheckButton	40
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnAddOpticalDrives	GUICheckButton	41
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	btnAutoSwitchRemovables	GUICheckButton	42
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUIShareFolders	videosShareListcontrol	GUIListControl	43
+WINDOW	MediaPortal.GUI.Settings.GUIShareFolders	\settings_Common_ShareFolders.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnNowPlaying	GUIButtonControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnPlaylist	GUIButtonControl	8
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnDeletealbuminfo	GUIButtonControl	10
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnDeletealbum	GUIButtonControl	13
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnExtensions	GUIButtonControl	35
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnFolders	GUIButtonControl	40
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusic	btnDatabase	GUIButtonControl	41
+WINDOW	MediaPortal.GUI.Settings.GUISettingsMusic	\Settings_MyMusic.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	lcFolders	GUIListControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnStripartistprefixes	GUICheckButton	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnTreatFolderAsAlbum	GUICheckButton	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnUseFolderThumbs	GUICheckButton	5
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnUseAllImages	GUICheckButton	6
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnExtractthumbs	GUICheckButton	7
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnCreategenrethumbs	GUICheckButton	8
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnCreateartistthumbs	GUICheckButton	9
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnCreateMissingFolderThumbs	GUICheckButton	10
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnDateAdded	GUIButtonControl	11
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnUpdateSinceLastImport	GUICheckButton	12
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnMonitorShares	GUICheckButton	13
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	btnUpdateDatabase	GUIButtonControl	14
+WINDOW	MediaPortal.GUI.Settings.GUISettingsMusicDatabase	\Settings_MyMusic_Database.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicNowPlaying	btnDisableSimilarTrackLookup	GUICheckButton	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMusicNowPlaying	btnVUNone	GUIButtonControl	6
+WINDOW	MediaPortal.GUI.Settings.GUISettingsMusicNowPlaying	\Settings_MyMusic_NowPlaying.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPictures	btnSlideshow	GUIButtonControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPictures	btnExtensions	GUIButtonControl	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPictures	btnFolders	GUIButtonControl	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPictures	btnDatabase	GUIButtonControl	5
+WINDOW	MediaPortal.GUI.Settings.GUISettingsPictures	\settings_MyPictures.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesDatabase	lcFolders	GUIListControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesDatabase	btnScanDatabase	GUIButtonControl	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesDatabase	btnResetDatabase	GUIButtonControl	4
+WINDOW	MediaPortal.GUI.Settings.GUISettingsPicturesDatabase	\settings_MyPictures_Database.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmXfade	GUICheckButton	5
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmKenburns	GUICheckButton	6
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmRandom	GUICheckButton	7
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmLoopSlideShows	GUICheckButton	8
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmShuffleSlideShows	GUICheckButton	9
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmExifSlideShows	GUICheckButton	41
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmPicasaSlideShows	GUICheckButton	42
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmGroupByDaySlideShows	GUICheckButton	43
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmEnablePlaySlideShows	GUICheckButton	44
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmPlayInSlideShows	GUICheckButton	45
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmShowOSD	GUICheckButton	50
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	cmAutoHideOSD	GUICheckButton	51
+WINDOW	MediaPortal.GUI.Settings.GUISettingsPicturesSlideshow	\settings_MyPictures_Slideshow.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnGrabber	GUIButtonControl	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnUpdateGrabbers	GUIButtonControl	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnNearestmatch	GUICheckButton	4
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnUsefanart	GUICheckButton	5
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnActorsFetchSize	GUIButtonControl	7
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnFoldernamefortitle	GUICheckButton	8
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnPrefervideofilename	GUICheckButton	9
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	lcFolders	GUIListControl	10
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnSkipalreadyexisting	GUICheckButton	11
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnRefreshexistingonly	GUICheckButton	12
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnStripprefix	GUICheckButton	13
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnScandatabase	GUIButtonControl	14
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnResetdatabase	GUIButtonControl	15
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnUseSortTitle	GUICheckButton	16
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnUseNfoScraper	GUICheckButton	18
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	btnFetchActors	GUICheckButton	19
+WINDOW	MediaPortal.GUI.Settings.GUISettingsMoviesDatabase	\settings_MyVideos_Database.xml
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesOther	btnMarkWatched	GUICheckButton	2
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesOther	btnKeepFoldersTogether	GUICheckButton	3
+BIND	GUISettings.dll	MediaPortal.GUI.Settings.GUISettingsMoviesOther	btnCommercialSkip	GUICheckButton	4
+WINDOW	MediaPortal.GUI.Settings.GUISettingsMoviesOther	\settings_MyVideos_OtherSettings.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMain	btnGeneral	GUIButtonControl	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMain	btnStartup	GUIButtonControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMain	btnResume	GUIButtonControl	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMain	btnVolume	GUIButtonControl	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMain	btnRefreshRate	GUIButtonControl	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMain	btnAutoplay	GUIButtonControl	7
+WINDOW	WindowPlugins.GUISettings.GUISettingsGeneralMain	\settings_General.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMP	btnLog	GUIButtonControl	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMP	btnProcess	GUIButtonControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMP	cmWatchdog	GUICheckButton	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralMP	cmAutoRestart	GUICheckButton	5
+WINDOW	WindowPlugins.GUISettings.GUISettingsGeneralMP	\settings_General_MP.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnEnableDynamicRefreshRate	GUICheckButton	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnNotify	GUICheckButton	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnUseDeviceReset	GUICheckButton	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnForceRefreshRateChange	GUICheckButton	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	lcRefreshRatesList	GUIListControl	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnAdd	GUIButtonControl	7
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnRemove	GUIButtonControl	8
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnDefault	GUIButtonControl	9
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnEdit	GUIButtonControl	12
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnUseDefaultRefreshRate	GUICheckButton	10
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	btnSelectDefaultRefreshRate	GUIButtonControl	11
+WINDOW	WindowPlugins.GUISettings.GUISettingsGeneralRefreshRate	\settings_General_DynamicRefreshRate.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnMasterVolume	GUICheckButton	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnWave	GUICheckButton	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnWinXP	GUICheckButton	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnClassic	GUICheckButton	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnLogarithmic	GUICheckButton	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnVistaWin7	GUICheckButton	7
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnCustom	GUICheckButton	8
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGeneralVolume	btnEnableOSDVolume	GUICheckButton	9
+WINDOW	WindowPlugins.GUISettings.GUISettingsGeneralVolume	\settings_General_Volume.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnGeneral	GUIButtonControl	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnSkin	GUIButtonControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnScreenSetup	GUIButtonControl	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnScreensaver	GUIButtonControl	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnThumbnails	GUIButtonControl	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnOnScreenDisplay	GUIButtonControl	7
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnSkipSteps	GUIButtonControl	8
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnFileMenu	GUICheckButton	16
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIMain	btnPin	GUIButtonControl	18
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUIMain	\settings_GUI.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	cmAllowRememberLastFocusedItem	GUICheckButton	30
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	cmHideextensions	GUICheckButton	31
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	cmFileexistscache	GUICheckButton	32
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	cmEnableguisounds	GUICheckButton	33
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	cmMousesupport	GUICheckButton	34
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	cmReduceFrameRate	GUICheckButton	35
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIGeneral	btnHomeUsage	GUIButtonControl	40
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUIGeneral	\settings_GUI_General.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIOnScreenDisplay	btnDisplayTimeout	GUIButtonControl	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIOnScreenDisplay	btnZapDelay	GUIButtonControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIOnScreenDisplay	btnZapTimeOut	GUIButtonControl	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIOnScreenDisplay	btnZapKeyTimeout	GUIButtonControl	5
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUIOnScreenDisplay	\settings_GUI_OnScreenDisplay.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIScreenSaver	btnScreenSaverEnabled	GUICheckButton	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIScreenSaver	cmBlankScreen	GUICheckButton	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIScreenSaver	cmReduceFrameRate	GUICheckButton	5
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUIScreenSaver	\settings_GUI_ScreenSaver.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkin	_btnSkin	GUIButtonControl	10
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkin	_btnLanguage	GUIButtonControl	11
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkin	_btnLanguagePrefix	GUICheckButton	14
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkin	_imgSkinPreview	GUIImage	20
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUISkin	\settings_GUI_Skin.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep1	GUICheckMarkControl	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep2	GUICheckMarkControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep3	GUICheckMarkControl	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep4	GUICheckMarkControl	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep5	GUICheckMarkControl	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep6	GUICheckMarkControl	7
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep7	GUICheckMarkControl	8
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep8	GUICheckMarkControl	9
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep9	GUICheckMarkControl	10
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep10	GUICheckMarkControl	11
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep11	GUICheckMarkControl	12
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep12	GUICheckMarkControl	13
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep13	GUICheckMarkControl	14
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep14	GUICheckMarkControl	15
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep15	GUICheckMarkControl	16
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	checkMarkButtonStep16	GUICheckMarkControl	17
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	buttonReset	GUIButtonControl	18
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	buttonAdd	GUIButtonControl	19
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	buttonRemove	GUIButtonControl	20
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	labelCurrent	GUILabelControl	21
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	btnTimeoutValue	GUIButtonControl	22
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	btnRelative	GUICheckButton	23
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	btnConstant	GUICheckButton	24
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	btnSkipValue	GUIButtonControl	25
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUISkipSteps	\settings_GUI_SkipSteps.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnEnableMusicThumbs	GUICheckButton	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnDeleteMusicThumbs	GUIButtonControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnEnablePicturesThumbs	GUICheckButton	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnDeletePicturesThumbs	GUIButtonControl	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnEnableVideosThumbs	GUICheckButton	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnEnableLeaveThumbInFolder	GUICheckButton	7
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnDeleteVideosThumbs	GUIButtonControl	8
+BIND	GUISettings.dll	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	btnClearBlacklistedThumbs	GUIButtonControl	20
+WINDOW	WindowPlugins.GUISettings.GUISettingsGUIThumbnails	\settings_GUI_Thumbnails.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsBluRay	btnRegion	GUIButtonControl	2
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsBluRay	btnAudioType	GUIButtonControl	3
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsBluRay	btnVideo	GUIButtonControl	4
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsBluRay	btnAudio	GUIButtonControl	5
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsBluRay	btnEnableSubtitles	GUICheckButton	6
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsBluRay	btnUseInternalBDPlayer	GUICheckButton	8
+WINDOW	WindowPlugins.GUISettings.TV.GUISettingsBluRay	\settings_BluRay.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsDVD	btnEnableSubtitles	GUICheckButton	22
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsDVD	btnDXVA	GUICheckButton	23
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsDVD	btnVideo	GUIButtonControl	24
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsDVD	btnAudio	GUIButtonControl	25
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsDVD	btnSubtitle	GUIButtonControl	29
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsDVD	btnEnableCC	GUICheckButton	31
+WINDOW	WindowPlugins.GUISettings.TV.GUISettingsDVD	\settings_dvd.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnVideo	GUIButtonControl	24
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnAudio	GUIButtonControl	25
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnEnableSubtitles	GUICheckButton	31
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnPlayall	GUIButtonControl	34
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnExtensions	GUIButtonControl	35
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnRenderer	GUIButtonControl	36
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnFolders	GUIButtonControl	40
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnDatabase	GUIButtonControl	41
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnPlaylist	GUIButtonControl	42
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnOtherSettings	GUIButtonControl	43
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnautoDecoderSettings	GUICheckButton	44
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnForceSourceSplitter	GUICheckButton	45
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnUseMovieCodects	GUICheckButton	46
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnUseAudioDefaultCheckBox	GUICheckButton	47
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsMovies	btnUseSstreamLAVSelection	GUICheckButton	48
+WINDOW	WindowPlugins.GUISettings.TV.GUISettingsMovies	\settings_MyVideos.xml
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnVideoCodec	GUIButtonControl	24
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnAudioCodec	GUIButtonControl	25
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnDeinterlace	GUIButtonControl	27
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnAspectRatio	GUIButtonControl	28
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	chbConfirmTimeshiftStop	GUICheckButton	29
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnAutoTurnOnTv	GUIButtonControl	30
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnAudioRenderer	GUIButtonControl	33
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnH264VideoCodec	GUIButtonControl	35
+BIND	GUISettings.dll	WindowPlugins.GUISettings.TV.GUISettingsTv	btnAACAudioCodec	GUIButtonControl	36
+WINDOW	WindowPlugins.GUISettings.TV.GUISettingsTv	\settings_tv.xml
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnNewGame	GUIButtonControl	2
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnHelpOnce	GUIButtonControl	3
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnResetGame	GUIButtonControl	4
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnSolve	GUIButtonControl	5
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnBlockInvalidMoves	GUICheckButton	6
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnShowInvalidMoves	GUICheckButton	7
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnLevel	GUIButtonControl	8
+BIND	GUISudoku.dll	MediaPortal.GUI.Sudoku.GUISudoku	btnClear	GUIButtonControl	9
+WINDOW	MediaPortal.GUI.Sudoku.GUISudoku	.xml
+WINDOW	MediaPortal.Games.Tetris.MyTetris	\mytetris.xml
+WINDOW	MediaPortal.Topbar.GUITopbar	\topbar.xml
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	btnBiography	GUICheckButton	3
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	btnMovies	GUICheckButton	4
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	tbBiographyArea	GUITextScrollUpControl	20
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	imgCoverArt	GUIImage	21
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	tbMovieArea	GUITextControl	22
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	listActorMovies	GUIListControl	24
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	imgMovieCover	GUIImage	25
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoArtistInfo	tbMoviePlot	GUITextScrollUpControl	26
+WINDOW	MediaPortal.GUI.Video.GUIVideoArtistInfo	\DialogVideoArtistInfo.xml
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoBaseWindow	btnPlayDVD	GUIButtonControl	6
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoBaseWindow	btnScanNew	GUIButtonControl	7
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoBaseWindow	btnTrailers	GUIButtonControl	8
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoBaseWindow	btnSavedPlaylists	GUIButtonControl	9
+WINDOW	MediaPortal.GUI.Video.GUIVideoFiles	\myVideo.xml
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnPlay	GUIButtonControl	2
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnPlot	GUICheckButton	3
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnCast	GUICheckButton	4
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnRefresh	GUIButtonControl	5
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnWatched	GUICheckButton	6
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnReview	GUICheckButton	7
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	spinImages	GUISpinControl	10
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	spinDisc	GUISpinControl	11
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	tbPlotArea	GUITextScrollUpControl	20
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	imgCoverArt	GUIImage	21
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	tbCastTextArea	GUITextControl	22
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	tbReviwArea	GUITextScrollUpControl	23
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	lblImage	GUILabelControl	30
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	lblDisc	GUILabelControl	100
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	listActors	GUIListControl	24
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	imgActorArt	GUIImage	25
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnRename	GUIButtonControl	26
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnAwards	GUICheckButton	50
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	tbAwardsArea	GUITextScrollUpControl	51
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	btnMPAAText	GUICheckButton	52
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoInfo	tbMPAATextArea	GUITextScrollUpControl	53
+WINDOW	MediaPortal.GUI.Video.GUIVideoInfo	\DialogVideoInfo.xml
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnShuffle	GUIButtonControl	20
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnSave	GUIButtonControl	21
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnClear	GUIButtonControl	22
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnPlay	GUIButtonControl	23
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnNext	GUIButtonControl	24
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnPrevious	GUIButtonControl	25
+BIND	GUIVideos.dll	MediaPortal.GUI.Video.GUIVideoPlayList	btnRepeatPlaylist	GUICheckButton	30
+WINDOW	MediaPortal.GUI.Video.GUIVideoPlayList	\myvideoplaylist.xml
+WINDOW	MediaPortal.GUI.Video.GUIVideoTitle	\myvideoTitle.xml
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	buttonSearch	GUIButtonControl	10
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	buttonLocal	GUIButtonControl	11
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	buttonBack	GUIButtonControl	14
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	buttonLinks	GUIButtonControl	12
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	buttonImages	GUIButtonControl	13
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	searchtermLabel	GUILabelControl	4
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	imagedescLabel	GUILabelControl	5
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	txtArticle	GUITextControl	20
+BIND	GUIWikipedia.dll	Wikipedia.GUIWikipedia	imageControl	GUIImage	25
+WINDOW	Wikipedia.GUIWikipedia	\wikipedia.xml

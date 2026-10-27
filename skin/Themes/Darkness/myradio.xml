@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>30</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>[facadeview.list|facadeview.filmstrip|facadeview.coverflow]</allowoverlay>
+  <define>#header.label:666</define>
+  <define>#header.hover:hover_my radio.png</define>
+  <controls>
+      <control>
+      <description>background top overlay</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#backgroundcolour</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>120</posX>
+        <posY>217</posY>
+        <width>1675</width>
+        <height>623</height>
+        <texture>D_over1.png</texture>
+      </control>	
+	  
+
+	<!--Now recording info on home-->
+
+
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>1090</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>control.isvisible(13)|player.hasmedia|topbar.visible+!control.isvisible(08701)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+    
+	
+     <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>[!player.hasaudio]+string.isset(#media.user)</visible>
+    </control>	
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>Playing audio..</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>player.hasaudio</visible>
+    </control>	  
+
+	
+		<control>
+		  <description>Current window</description>
+		  <type>label</type>
+		  <id>16</id>
+		  <posX>135</posX>
+          <posY>48</posY>
+          <align>left</align>
+          <width>1800</width>
+          <font>font18</font>			  
+		  <label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(102015), #currentmodule)), #currentmodule, ' '))</label>
+		  <textcolor>eaeaea</textcolor>		  
+		  <animation effect="fade" time="250">WindowOpen</animation>
+		  <animation effect="fade" time="250">WindowClose</animation>
+		  <visible>!player.hasaudio+!player.hasmedia</visible>
+		</control>
+		
+		<control>
+		  <description>Date / Time</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>135</posX>
+          <posY>95</posY>
+          <label>#time</label>
+          <align>left</align>
+          <font>font10</font>
+		  <label>#time / #itemcount Files</label>
+		  <textcolor>eaeaea</textcolor>
+		  <animation effect="fade" time="250">WindowOpen</animation>
+		  <animation effect="fade" time="250">WindowClose</animation>
+		  <visible>!player.hasaudio+!player.hasmedia</visible>
+		</control>
+		
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>100</buttonwidth>
+      <buttonheight>1080</buttonheight>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus></textureNoFocus>
+      <width>800</width>
+      <height>800</height>
+      <dimColor>00ffffff</dimColor>
+     <control>
+	   <type>image</type>
+	   <posX>0</posX>
+	   <posY>0</posY>
+	   <width>1920</width>
+	   <height>1080</height>
+       <texture>black.png</texture>
+        <colordiffuse>99000000</colordiffuse>
+	   <animation effect="fade" time="350" reversible="true">hidden</animation>
+	   <visible>!Control.HasFocus(50)</visible>    
+	 </control>
+		
+	  <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>420</posX>
+        <posY>150</posY>
+        <width>975</width>
+        <height>836</height>
+        <texture>dialogglowbig.png</texture>
+		<visible>!Control.HasFocus(50)</visible>    
+      </control>	
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        <posX>500</posX>
+        <posY>250</posY>
+        <layout>StackLayout</layout>
+        <visible>!Control.HasFocus(50)</visible>
+        <control>
+          <description>View-As</description>
+          <type>menubutton</type>
+          <id>2</id>
+          <label></label>
+          <onright>50</onright>
+          <onup>17</onup>
+          <ondown>3</ondown>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+          <mode>dialoglist</mode>
+          <dialogTitle>792</dialogTitle>
+          <valueTextInButton>yes</valueTextInButton>
+          <valuePrefixText>95</valuePrefixText>
+        </control>
+        <control>
+          <description>Sort</description>
+          <type>sortbutton</type>
+          <id>3</id>
+          <onup>2</onup>
+          <ondown>6</ondown>
+          <onright>50</onright>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+        </control>
+        <control>
+          <description>Previous</description>
+          <type>button</type>
+          <id>6</id>
+          <label>210</label>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+          <onright>50</onright>
+          <onup>3</onup>
+          <ondown>7</ondown>
+          <action>15</action>
+        </control>
+        <control>
+          <description>Next</description>
+          <type>button</type>
+          <id>7</id>
+          <label>209</label>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+          <onup>6</onup>
+          <ondown>8</ondown>
+          <onright>50</onright>
+          <action>14</action>
+        </control>
+        <control>
+          <description>Radio Guide</description>
+          <type>button</type>
+          <id>8</id>
+          <label>533</label>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+          <onright>50</onright>
+          <onup>7</onup>
+          <ondown>9</ondown>
+          <hyperlink>762</hyperlink>
+        </control>
+        <control>
+          <description>Recorded Radio</description>
+          <type>button</type>
+          <id>9</id>
+          <label>914</label>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+          <onright>50</onright>
+          <onup>8</onup>
+          <ondown>10</ondown>
+          <hyperlink>763</hyperlink>
+        </control>
+        <control>
+          <description>Radio Search</description>
+          <type>button</type>
+          <id>10</id>
+          <label>137</label>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+          <textureNoFocus></textureNoFocus>
+		  <textYOff>7</textYOff>
+		  <width>820</width>
+		  <height>50</height>
+          <onright>50</onright>
+          <onup>9</onup>
+          <ondown>11</ondown>
+          <hyperlink>8900</hyperlink>
+        </control>
+		<control>
+		  <description>Now playing button</description>
+		  <type>button</type>
+		  <id>11</id>
+		  <label>4540</label>
+		  <onleft>50</onleft>
+		  <onright>50</onright>
+		  <ondown>2</ondown>
+		  <onup>10</onup>
+		  <hyperlink>510</hyperlink>
+		  <textureFocus>btn_list_blue2.png</textureFocus>
+		  <textureNoFocus>-</textureNoFocus>
+		  <width>820</width>
+		  <height>50</height>
+		  <textYOff>7</textYOff>	
+      	</control>
+      </control>
+    </control>
+    <import>common.facade.music.xml</import>
+	
+
+	
+	<control>
+      <id>1</id>
+      <type>image</type>
+      <posX>1159</posX>
+      <posY>225</posY>
+      <width>604</width>
+      <height>603</height>
+      <texture mask="">missing_Coverart.png</texture>
+      <visible>[Control.HasFocus(50)+!control.hasthumb(500)]</visible>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+    </control>
+	
+    <control>
+      <id>500</id>
+      <type>image</type>
+      <posX>1159</posX>
+      <posY>225</posY>
+      <width>604</width>
+      <height>603</height>
+      <texture mask="">#selectedthumb</texture>
+      <visible>[Control.HasFocus(50)]</visible>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+    </control>
+	
+	
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1132</posX>
+        <posY>210</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>!facadeview.filmstrip+!facadeview.coverflow</visible>
+      </control>    
+	  
+	  
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1762</posX>
+        <posY>225</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>!facadeview.filmstrip+!facadeview.coverflow</visible>
+        <animation effect="rotate" delay="0" end="180" time="0" loop="false" condition="true">Conditional</animation>		
+      </control>   
+	  
+  </controls>
+</window>
+
+

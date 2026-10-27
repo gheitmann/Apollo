@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>9813</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#useSelectedFanart:No</define>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+   
+		
+	<import>custom\Allscreens\user_dialog.xml</import>
+	
+   <control>
+		  <description>Date / Time</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>140</posX>
+		  <posY>125</posY>
+		  <label>#selectedindex/#TVSeries.Playlist.Count</label>
+		  <align>left</align>
+		  <font>font10</font>
+		  <textcolor>eaeaea</textcolor>
+		  <animation effect="fade" time="250">WindowOpen</animation>
+		  <animation effect="fade" time="250">WindowClose</animation>
+		</control>	
+
+    <control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>100</buttonwidth>
+            <buttonheight>1080</buttonheight>
+            <textureFocus>-</textureFocus>
+            <textureNoFocus></textureNoFocus>
+			<width>800</width>
+			<height>800</height>
+			<dimColor>00ffffff</dimColor>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>black.png</texture>
+        <colordiffuse>99000000</colordiffuse>
+	    <animation effect="fade" time="350" reversible="true">hidden</animation>
+		</control>
+		
+		<control>
+        <type>image</type>
+        <id>0</id>
+        <posX>420</posX>
+        <posY>150</posY>
+        <width>975</width>
+        <height>836</height>
+        <texture>dialogglowbig.png</texture>
+		<visible>!Control.HasFocus(50)</visible>    
+      </control>	
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<visible>!Control.HasFocus(50)</visible>
+				<posX>500</posX>
+				<posY>250</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<visible>!Control.HasFocus(50)</visible>
+				<control>
+					<description>View-As button</description>
+					<type>button</type>
+					<id>2</id>
+					<label>100</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<ondown>20</ondown>
+					<onup>17</onup>
+				</control> 
+				<control>
+					<description>Shuffle button</description>
+					<type>button</type>
+					<id>20</id>
+					<label>191</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>30</ondown>
+				</control>
+				<control>
+					<description>Repeat on/off button</description>
+					<type>checkbutton</type>
+					<id>30</id>
+					<label>486</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>20</onup>
+					<ondown>40</ondown>
+				</control>
+				<control>
+					<description>AutoPlay on/off button</description>
+					<type>checkbutton</type>
+					<id>40</id>					
+					<label>Auto Play</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>30</onup>
+					<ondown>21</ondown>
+				</control>				
+				<control>
+					<description>Save button</description>
+					<type>button</type>
+					<id>21</id>
+					<label>190</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>40</onup>
+					<ondown>22</ondown>
+				</control>	
+				<control>
+					<description>Clear button</description>
+					<type>button</type>
+					<id>22</id>
+					<label>192</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>21</onup>
+					<ondown>23</ondown>
+				</control>	
+				<control>
+					<description>Play button</description>
+					<type>button</type>
+					<id>23</id>
+					<label>208</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onup>22</onup>
+					<ondown>24</ondown>
+				</control>
+				<control>
+					<description>Next button</description>
+					<type>button</type>
+					<id>24</id>
+					<label>209</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<ondown>25</ondown>
+					<onup>23</onup>
+				</control>	
+				<control>
+					<description>Previous button</description>
+					<type>button</type>
+					<id>25</id>
+					<label>210</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>24</onup>
+					<ondown>9</ondown>
+				</control>
+				<control>
+					<description>My Playlists</description>
+					<type>button</type>
+					<id>9</id>
+					<label>983</label>
+					<textureFocus>btn_list_blue2.png</textureFocus>
+                    <textureNoFocus></textureNoFocus>
+		            <textYOff>7</textYOff>
+		            <width>820</width>
+		            <height>50</height>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>25</onup>
+					<ondown>2</ondown>
+				</control>
+			</control>
+		</control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <visible>!Control.HasFocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+		<control>
+		<description>playlist listcontrol</description>
+		<type>playlistcontrol</type>
+		<id>50</id>
+		<width>1020</width>
+	    <posX>115</posX>
+	    <posY>240</posY>
+	    <height>620</height>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <scrollOffset>2</scrollOffset>
+        <itemWidth>48</itemWidth>
+        <itemHeight>48</itemHeight>
+        <IconXOff>2218</IconXOff>
+        <IconYOff>6</IconYOff>
+        <keepaspectratio>yes</keepaspectratio>
+		<textcolor>ffffffff</textcolor>
+        <textcolorNoFocus>ff666666</textcolorNoFocus>
+		<textXOff>-35</textXOff>
+        <textYOff>7</textYOff>
+        <textXOff2>2220</textXOff2>
+		</control>
+		</control>
+		</control>
+    <control>
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>380</posX>
+      <posY>900</posY>
+      <width>800</width>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>	
+      <label><!--#TVSeries.Series.Pretty_Name - -->#TVSeries.Title</label>
+	  <visible>!string.equals(#selecteditem,)</visible>
+    </control>
+	
+
+	
+    <control>
+      <description>Series Default image</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1170</posX>
+      <posY>250</posY>
+      <width>591</width>
+      <height>347</height>
+      <texture mask="tvbigmask.png">missing_Coverart_video.png</texture>
+      <visible>!control.hasthumb(500)</visible>
+    </control>
+
+    <control>
+      <description>Series Poster</description>
+      <id>500</id>
+      <type>image</type>
+      <posX>1170</posX>
+      <posY>250</posY>
+      <width>591</width>
+      <height>347</height>
+      <texture mask="tvbigmask.png">#TVSeries.EpisodeImage</texture>
+    </control>
+	
+	
+	<control>
+      <description>Series Poster</description>
+      <id>500</id>
+      <type>image</type>
+      <posX>115</posX>
+      <posY>875</posY>
+      <height>159</height>
+	  <width>249</width>
+      <texture mask="tvmask.png">#TVSeries.EpisodeImage</texture>
+    </control>
+	
+	  <control>
+        <description>BasicHome music</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>110</posX>
+        <posY>871</posY>
+		<height>171</height>
+		<width>261</width>
+        <texture>tvshadow.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+	
+    <!--<control>
+      <description>Overlay text right</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1065</posX>
+      <posY>234</posY>
+      <width>825</width>
+      <height>699</height>
+      <texture mask="picturethumbmask.png">black.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+      <visible>[facadeview.list|facadeview.playlist]</visible>
+    </control>-->
+	<!--
+		<control>
+			<description>Episode Rating</description>
+      <type>imagelist</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>247</posY>
+      <width>453</width>
+      <height>55</height>
+      <textureWidth>25</textureWidth>
+      <textureHeight>25</textureHeight>
+      <subitems>
+        <subitem>greystar.png</subitem>
+        <subitem>star.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>10</imagesToDraw>
+      <percentage>#TVSeries.Episode.Rating</percentage>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Text Rating/Votes Value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1380</posX>
+      <posY>241</posY>
+      <label>#TVSeries.Episode.DataPanelLine31Value #(string.format('({0} {1}{2})',L(205),'#TVSeries.Episode.RatingCount',iif(eq(#TVSeries.Episode.myRating,''),'',', #TVSeries.Translation.Rated.Label: #TVSeries.Episode.myRating')))</label>
+      <width>480</width>
+			<font>font11</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.RatingCount,0)+!string.equals(#selecteditem,)</visible>
+    </control>
+
+		<control>
+			<description>Episode image</description>
+			<type>image</type>
+			<id>67</id>
+			<posX>1588</posX>
+			<posY>313</posY>
+			<width>270</width>
+			<height>139</height>
+			<keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+			<texture>#TVSeries.EpisodeImage</texture>
+			<visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+		</control>
+		<control>
+      <description>Episode Guest Stars txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>280</posY>
+      <label>#TVSeries.Translation.GuestStars.Label:</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Guest Stars value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>309</posY>
+      <width>420</width>
+      <label>#(iif(eq(#TVSeries.Episode.GuestStars,''),'N/A','#TVSeries.Episode.GuestStars'))</label>
+      <font>font10</font>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+		<control>
+      <description>Episode Directors txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>346</posY>
+      <label>#TVSeries.Translation.Directors.Label:</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Directors value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>375</posY>
+      <label>#(iif(eq(#TVSeries.Episode.Director,''),'N/A','#TVSeries.Episode.Director'))</label>
+      <font>font10</font>
+      <width>420</width>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Writers txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>412</posY>
+      <label>#TVSeries.Translation.Writers.Label:</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Writers</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>441</posY>
+      <width>420</width>
+      <label>#(iif(eq(#TVSeries.Episode.Writer,''),'N/A','#TVSeries.Episode.Writer'))</label>
+      <font>font10</font>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+		<control>
+      <description>Episode Runtime txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>478</posY>
+      <label>299</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.EpisodeFilename,)+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Runtime value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>507</posY>
+      <width>420</width>
+      <label>#TVSeries.Episode.PrettyLocalPlaytime</label>
+      <font>font10</font>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.EpisodeFilename,)+!string.equals(#selecteditem,)</visible>
+    </control>
+		<control>
+      <description>Episode Video Details txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>544</posY>
+      <label>#(L(2134)):</label>
+      <font>font11</font>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.EpisodeFilename,)+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Video Details Value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>573</posY>
+      <label>#TVSeries.Episode.videoWidth x #TVSeries.Episode.videoHeight, #TVSeries.Episode.VideoCodec, #TVSeries.Episode.VideoBitrate, #TVSeries.Episode.VideoFrameRate fps</label>
+      <font>font10</font>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.EpisodeFilename,)+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Audio Details txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>610</posY>
+      <label>#(L(2135)):</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.EpisodeFilename,)+!string.equals(#selecteditem,)</visible>
+    </control>
+    <control>
+      <description>Episode Audio Details Value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>1095</posX>
+      <posY>639</posY>
+      <width>420</width>
+      <label>#TVSeries.Episode.AudioFormat, #TVSeries.Episode.AudioBitrate, #TVSeries.Episode.AudioChannels ch</label>
+      <font>font10</font>
+      <align>left</align>
+      <textcolor>ff666666</textcolor>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#TVSeries.Episode.EpisodeFilename,)+!string.equals(#selecteditem,)</visible>
+    </control>
+	-->
+	
+    <control Style="NoShadow">
+      <description>Plot value</description>
+      <type>textboxscrollup</type>
+      <id>1</id>
+      <posX>380</posX>
+      <posY>940</posY>	
+      <width>1530</width>
+      <height>80</height>
+      <align>left</align>
+      <font>font11</font>
+      <label>#TVSeries.Description</label>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+    
+	<!--
+		<control>
+      <description>Episode Logos</description>
+      <type>image</type>
+      <id>66</id>
+      <posX>1095</posX>
+      <posY>877</posY>
+      <width>1290</width>
+      <height>48</height>
+      <texture>#TVSeries.Logos</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <spaceBetweenItems>0</spaceBetweenItems>
+      <visible>[facadeview.list|facadeview.playlist]+!string.equals(#selecteditem,)</visible>
+    </control>
+	-->
+  </controls>
+</window>
+
+

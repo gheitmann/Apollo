@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>4759</id>
+  <defaultcontrol>213</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <import>myonlinevideosOSDexpanded.xml</import>
+    <!--#################   THIS IS THE EXPANDING OSD BACKGROUND     ##################-->
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>190</posX>
+      <posY>865</posY>
+      <height>178</height>
+      <width>1530</width>
+      <texture>osdsmall2.png</texture>
+    </control>
+    <!--###################     HERE ARE THE DISPLAYED OSD DATA    ###################################-->
+
+    <control>
+      <description>Time Info</description>
+      <type>label</type>
+      <id>110</id>
+      <posX>1683</posX>
+      <posY>940</posY>
+      <label>#time</label>
+      <align>right</align>
+      <font>font11</font>
+	  <textcolor>eaeaea</textcolor>
+    </control>
+	
+	<control>
+      <description>Remaining time</description>
+      <type>label</type>
+      <id>102</id>
+      <posX>4070</posX>
+      <posY>550</posY>
+      <label></label>
+      <align>right</align>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>player.paused+!control.isvisible(7654)</visible>
+    </control>	
+	
+
+    <control>
+      <description>TV Progress Bar</description>
+      <type>tvprogress</type>
+      <id>105</id>
+	  <posX>330</posX>
+      <posY>995</posY>
+      <width>1240</width>
+      <height>3</height>
+      <toptexture></toptexture>
+      <TextureOffsetY>4</TextureOffsetY>
+      <bottomtexture></bottomtexture>
+      <texturetick></texturetick>
+      <lefttexture></lefttexture>
+      <midtexture></midtexture>
+      <righttexture></righttexture>
+      <logotexture></logotexture>
+      <fillbackgroundtexture></fillbackgroundtexture>
+      <fillbgxoff>3</fillbgxoff>
+      <fillbgyoff>0</fillbgyoff>
+      <filltexture1>osd_progress_mid.png</filltexture1>
+      <filltexture2>osd_progress_mid.png</filltexture2>
+      <filltexture3>osd_progress_mid_orange.png</filltexture3>
+      <markertexture>osd_progress_mid_red.png</markertexture>
+      <fillheight>3</fillheight>
+	  <label>#percentage</label>
+	  <label1>#percentage</label1>
+	  <label2>#TV.Record.percent3</label2>
+      <labelmarkerstarts>#jumppoints</labelmarkerstarts>
+      <labelmarkerends>#chapters</labelmarkerends>
+    </control>
+    <control>
+      <description>End Time Info</description>
+      <type>label</type>
+      <id>101</id>
+      <posX>1683</posX>
+      <posY>979</posY>
+      <label>#currentremaining</label>
+      <align>right</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>Start Time Info</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>225</posX>
+      <posY>979</posY>
+      <label>#currentplaytime</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>Movie Name</description>
+      <id>36</id>
+      <type>fadelabel</type>
+      <posX>225</posX>
+      <posY>895</posY>
+      <width>1108</width>
+      <textcolor>ffffffff</textcolor>
+      <font>font11</font>
+      <label>#Play.Current.Title</label>
+    </control>
+    <control>
+      <description>Movie Name</description>
+      <id>0</id>
+      <type>fadelabel</type>
+      <posX>225</posX>
+      <posY>935</posY>
+      <width>1108</width>
+      <textcolor>ffffffff</textcolor>
+      <font>font11</font>
+      <label>#Play.Current.OnlineVideos.SiteName</label>
+    </control>	
+
+
+    <control>
+      <description>Plot</description>
+      <id>1</id>
+      <type>textboxscrollup</type>
+      <posX>425</posX>
+      <posY>665</posY>
+      <width>1240</width>
+	  <height>150</height>
+      <align>left</align>
+      <label>#Play.Current.Plot</label>
+	  <font>font11</font>
+      <seperator></seperator>
+      <textcolor>eaeaea</textcolor>
+      <visible>control.hasfocus(1237)</visible>
+    </control>
+	<!--
+    <control>
+      <description>site Icon</description>
+      <type>image</type>
+      <id>1</id>
+        <posX>225</posX>
+        <posY>665</posY>
+		<width>180</width>
+        <height>180</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<centered>yes</centered>
+      <texture>#Play.Current.OnlineVideos.SiteIcon</texture>
+      <visible>!control.hasfocus(1237)</visible>
+    </control>
+	-->
+    <import>common.osd.buttons.xml</import>    
+  </controls>
+</window>

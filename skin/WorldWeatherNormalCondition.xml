@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <controls>
+  <control>
+		  <description>Backdrop Overlay</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>40</posX>
+          <posY>135</posY>
+          <width>1832</width>
+          <height>943</height>
+          <texture>0011.png</texture>
+		</control>
+    <control>
+      <description>Current condition static label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>168</posX>
+      <posY>230</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.TranslationCurrentCondition</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Forecast static label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>230</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.TranslationForecastCondition</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <!--<control>
+      <description>divider</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1249</posX>
+      <posY>150</posY>
+      <height>802</height>
+      <width>0</width>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>40ffffff</colordiffuse>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>-->
+    <!-- ** Current Weather Information with feed ** -->
+    <control>
+      <description>current weather icon</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>853</posX>
+      <posY>207</posY>
+      <width>199</width>
+      <height>201</height>
+      <texture>#WorldWeather.TodayIconImage</texture>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>current temp label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>498</posX>
+      <posY>278</posY>
+      <height>106</height>
+      <align>left</align>
+      <label>#WorldWeather.TodayTemperature</label>
+      <font>font18</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Current Condition Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>498</posX>
+      <posY>410</posY>
+      <width>579</width>
+      <label>#WorldWeather.TodayCondition</label>
+      <align>center</align>
+      <font>font16</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Actual Weather Feed</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>498</posX>
+      <posY>818</posY>
+      <width>729</width>
+      <height>150</height>
+      <label>#WorldWeather.Feed0Text</label>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <layout>StackLayout(0, Vertical, true)</layout>
+      <posX>498</posX>
+      <posY>449</posY>
+      <!-- *** preicipitation label *** -->
+      <control>
+        <description>Current Precipitation static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationPrecipitation:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayPrecipitation, )</visible>
+      </control>
+      <!-- *** Current visibility label *** -->
+      <control>
+        <description>current visibility label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationVisibility:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayVisibility, )</visible>
+      </control>
+      <!-- *** Current cloud coverage label *** -->
+      <control>
+        <description>current visibility label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationCloudCoverage:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayCloudCoverage, )</visible>
+      </control>
+      <!-- *** Current wind label *** -->
+      <control>
+        <description>current wind static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationWind:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <!-- *** Current humidity label *** -->
+      <control>
+        <description>current humidity static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationHumidity:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <!-- *** Current pressure label *** -->
+      <control>
+        <description>current humidity static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationPressure:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayPressure, )</visible>
+      </control>
+      <!-- *** Dewpoint label *** -->
+      <control>
+        <description>Current Dewpoint label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationDewPoint:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayDewPoint, )</visible>
+      </control>
+      <!-- *** Current sunrise label *** -->
+      <control>
+        <description>current sunrise static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationSunrise:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <!-- *** Current sunset label *** -->
+      <control>
+        <description>current sunset static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationSunset:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <!-- *** Current moonphase label *** -->
+      <control>
+        <description>current moonphase static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationMoonPhase:</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+    </control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <layout>StackLayout(0, Vertical, true)</layout>
+      <posX>823</posX>
+      <posY>449</posY>
+      <control>
+        <description>Current Precipitation label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayPrecipitation</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayPrecipitation, )</visible>
+      </control>
+      <control>
+        <description>current visibility label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayVisibility</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayVisibility, )</visible>
+      </control>
+      <control>
+        <description>current cloud coverage label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayCloudCoverage</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayCloudCoverage, )</visible>
+      </control>
+      <control>
+        <description>current wind label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayWindDirection - #WorldWeather.TodayWindSpeed</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <width>700</width>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+string.equals(#WorldWeather.TodayWindDirectionDegree, )</visible>
+      </control>
+      <control>
+        <description>current wind label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayWindDirection (#WorldWeather.TodayWindDirectionDegree) - #WorldWeather.TodayWindSpeed</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayWindDirectionDegree, )</visible>
+      </control>
+      <control>
+        <description>current humidity label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayHumidity</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <control>
+        <description>current pressure label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayPressure  #WorldWeather.TodayBarometricPressure</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayPressure, )</visible>
+      </control>
+      <control>
+        <description>current dewpoint label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TodayDewPoint</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayDewPoint, )</visible>
+      </control>
+      <control>
+        <description>Current sunrise label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.LocationSunriseTime</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <control>
+        <description>Current sunset label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.LocationSunsetTime</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <control>
+        <description>current moonphase label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.LocationMoonPhase</label>
+        <font>font11</font>
+        <height>33</height>
+        <textcolor>eaeaea</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+    </control>
+    <!-- **** Weather Forecast for Google/Yahoo ***** -->
+    <!-- ** Day 0 Weather Forcast ***** -->
+
+    <!-- **** Day 1 Weather **** -->
+    <control>
+      <description>DAY 1 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>282</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay0Day, #WorldWeather.ForecastDay0Date</label>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>263</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay0IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>315</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay0Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>315</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay0High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>387</posY>
+      <label>#WorldWeather.ForecastDay0Condition</label>
+      <font>font10</font>
+      <width>778</width>
+      <align>center</align>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 2 Weather **** -->
+    <control>
+      <description>DAY 2 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>459</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay1Day, #WorldWeather.ForecastDay1Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>435</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay1IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>492</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay1Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>492</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay1High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>564</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay1Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)|string.equals(#WorldWeather.ForecastProvider,Yahoo)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 3 Weather **** -->
+    <control>
+      <description>DAY 3 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>636</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay2Day, #WorldWeather.ForecastDay2Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>615</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay2IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>672</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay2Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>672</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay2High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>744</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay2Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 4 Weather **** -->
+    <control>
+      <description>DAY 4 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>819</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay3Day, #WorldWeather.ForecastDay3Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>803</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay3IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>860</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay3Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>860</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay3High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>932</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay3Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,Google)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!--  Weather Forecast for World Weather Online  -->
+    <!-- ** Day 0 Weather Forcast ***** -->
+
+    <control>
+      <description>DAY 0 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>282</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay0Day, #WorldWeather.ForecastDay0Date</label>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>263</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay0IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>303</posY>
+      <font>font14</font>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay0Low   |</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>303</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay0High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>365</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay0Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 1 Weather **** -->
+    <control>
+      <description>DAY 1 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>423</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay1Day, #WorldWeather.ForecastDay1Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>402</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay1IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>443</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay1Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>443</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay1High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>504</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay1Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 2 Weather **** -->
+    <control>
+      <description>DAY 2 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>566</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay2Day, #WorldWeather.ForecastDay2Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>545</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay2IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>584</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay2Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>584</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay2High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>647</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay2Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 3 Weather **** -->
+    <control>
+      <description>DAY 3 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>708</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay3Day, #WorldWeather.ForecastDay3Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>686</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay3IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>729</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay3Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>729</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay3High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>792</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay3Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 4 Weather **** -->
+    <control>
+      <description>DAY 4 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>851</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay4Day, #WorldWeather.ForecastDay4Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>827</posY>
+      <width>141</width>
+      <height>163</height>
+      <texture>#WorldWeather.ForecastDay4IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>873</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay4Low   |</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>873</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay4High</label>
+      <font>font14</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 General Weather</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>935</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay4Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+[string.equals(#WorldWeather.ForecastProvider,World Weather Online)|string.equals(#WorldWeather.ForecastProvider,AccuWeather)]+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!--  Weather Forecast for wetter.com  -->
+    <!-- ** Day 0 Weather Forcast ***** -->
+
+    <control>
+      <description>DAY 0 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>279</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay0Day, #WorldWeather.ForecastDay0Date</label>
+      <font>font11</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>252</posY>
+      <width>141</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay0IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>296</posY>
+      <font>font12</font>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay0Low   |</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>296</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay0High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 0 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>348</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay0Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 1 Weather **** -->
+    <control>
+      <description>DAY 1 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>384</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay1Day, #WorldWeather.ForecastDay1Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>357</posY>
+      <width>130</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay1IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>396</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay1Low   |</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>396</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay1High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 1 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>450</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay1Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 2 Weather **** -->
+    <control>
+      <description>DAY 2 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>488</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay2Day, #WorldWeather.ForecastDay2Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>461</posY>
+      <width>141</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay2IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>503</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay2Low   |</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>503</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay2High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 2 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>557</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay2Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 3 Weather **** -->
+    <control>
+      <description>DAY 3 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>594</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay3Day, #WorldWeather.ForecastDay3Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>567</posY>
+      <width>141</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay3IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>611</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay3Low   |</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>611</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay3High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 3 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>663</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay3Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 4 Weather **** -->
+    <control>
+      <description>DAY 4 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>702</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay4Day, #WorldWeather.ForecastDay4Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>675</posY>
+      <width>141</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay4IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>717</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay4Low   |</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>717</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay4High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>DAY 4 General Weather</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>771</posY>
+      <width>793</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay4Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 5 Weather **** -->
+    <control>
+      <description>DAY 5 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>810</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay5Day, #WorldWeather.ForecastDay5Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 5 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>782</posY>
+      <width>141</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay5IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 5 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>824</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay5Low   |</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 5 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>824</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay5High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 5 GENERAL WEATHER</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>878</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay5Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+
+    <!-- **** Day 6 Weather **** -->
+    <control>
+      <description>Day 6 LABEL</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>914</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay6Day, #WorldWeather.ForecastDay6Date</label>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 6 ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1297</posX>
+      <posY>887</posY>
+      <width>141</width>
+      <height>126</height>
+      <texture>#WorldWeather.ForecastDay6IconImage</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 6 MIN VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1629</posX>
+      <posY>929</posY>
+      <align>right</align>
+      <label>#WorldWeather.ForecastDay6Low   |</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 6 MAX VALUE</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1659</posX>
+      <posY>929</posY>
+      <align>left</align>
+      <label>#WorldWeather.ForecastDay6High</label>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    <control>
+      <description>Day 6 General Weather</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1239</posX>
+      <posY>983</posY>
+      <width>778</width>
+      <align>center</align>
+      <label>#WorldWeather.ForecastDay6Condition</label>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ForecastProvider,wetter.com)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+    
+  </controls>
+</window>

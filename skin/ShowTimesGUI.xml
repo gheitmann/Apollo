@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>7111992</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:-</define>
+  <define>#header.image:Trailers_logo.png</define>
+  <define>#header.hover:hover_my trailers.png</define>
+  <controls>
+  
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+    
+	<import>custom\Allscreens\user_dialog.xml</import>
+	
+
+
+
+    <control>
+      <description>movie border</description>
+      <type>image</type>
+	  <posX>2379</posX>
+      <id>23</id>
+    </control>
+
+	
+	
+		
+             <control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>115</posX>
+					<posY>240</posY>
+					<!-- Remove and Gaps when buttons are not visible -->
+					<layout>StackLayout(0, Vertical, true)</layout>
+    <control>
+      <type>button</type>
+      <description>Change View</description>
+      <id>2</id>
+      <posX>26</posX>
+      <posY>80</posY>
+      <label>417</label>
+	  <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>97258</onup>
+      <ondown>3</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	   
+	  <font>font12</font>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Show Theaters</description>
+      <id>3</id>
+      <posX>26</posX>
+      <posY>125</posY>
+      <label>-</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>2</onup>
+      <ondown>4</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	  
+	  <font>font12</font>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Show BoxOffice</description>
+      <id>4</id>
+      <posX>26</posX>
+      <posY>170</posY>
+      <label>Box Office</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>3</onup>
+      <ondown>40</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	  
+	  <font>font12</font>
+    </control>	
+    <control>
+      <type>button</type>
+      <description>ShowTimes</description>
+      <id>40</id>
+      <posX>26</posX>
+      <posY>215</posY>
+      <label>71119924</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>4</onup>
+      <ondown>41</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	  
+	  <font>font12</font>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Play Trailer</description>
+      <id>41</id>
+      <posX>26</posX>
+      <posY>260</posY>
+      <label>-</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>40</onup>
+      <ondown>42</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	  
+	  <font>font12</font>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Next</description>
+      <id>42</id>
+      <posX>26</posX>
+      <posY>305</posY>
+      <label>209</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>41</onup>
+      <ondown>43</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	  
+	  <font>font13</font>
+    </control>
+    <control>
+      <type>button</type>
+      <description>Previous</description>
+      <id>43</id>
+      <posX>26</posX>
+      <posY>350</posY>
+      <label>210</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>42</onup>
+      <ondown>97258</ondown>
+      <onleft>50</onleft>
+      <onright>6000</onright>	  
+	  <font>font13</font>
+    </control>
+	<control>
+      <type>button</type>
+      <description>Add to Trakt Movie Watch List</description>
+      <id>97258</id>
+      <posX>26</posX>
+      <posY>395</posY>
+      <label>#Trakt.Translation.AddToWatchList.Label</label>
+      <textureFocus>btn_list.png</textureFocus>
+	  <textureHeight>50</textureHeight>
+      <width>590</width>
+      <onup>43</onup>
+      <ondown>2</ondown>
+      <onleft>50</onleft>
+      <onright>50</onright>	  
+	  <font>font12</font>
+      <scrollStartDelaySec>1</scrollStartDelaySec>
+      <scrollWrapString> | </scrollWrapString>
+	  <visible>control.isvisible(24)+plugin.isenabled(Trakt)</visible>
+    </control>
+    </control>
+	
+	
+	
+    <control>
+      <type>fadelabel</type>
+      <description>Next Refresh</description>
+      <id>45</id>
+      <posX>28</posX>
+      <posY>50</posY>
+      <label></label>
+      <font>font10</font>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Showtimes</description>
+      <id>46</id>
+      <posX>2228</posX>
+      <posY>2250</posY>
+    </control>	
+    <control>
+      <type>fadelabel</type>
+	  <description>TheaterList Control</description>
+      <id>47</id>
+      <posX>2215</posX>
+      <posY>2270</posY>
+    </control>		
+    <control>
+      <description>Movie Certificate Value</description>
+      <type>label</type>
+      <id>25</id>
+      <posX>26</posX>
+      <posY>515</posY>
+      <label></label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+    <control>
+      <description>Runtime value</description>
+      <type>label</type>
+      <id>26</id>
+      <posX>80</posX>
+      <posY>550</posY>
+      <label></label>
+      <font>font10</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+	<control>
+		<description>IMDB Rating Value</description>
+		<type>imagelist</type>
+		<id>32</id>
+		<posX>130</posX>
+		<posY>685</posY>
+		<width>115</width>
+		<height>13</height>
+		<textureWidth>24</textureWidth>
+		<textureHeight>24</textureHeight>
+		<subitems>
+			<subitem>starbad.png</subitem>
+			<subitem>stargood.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#st_userrating</percentage>
+		<visible>Control.IsVisible(24)</visible>
+	</control>	
+	
+	<!--
+    <control>
+      <description>Actors label</description>
+      <type>label</type>
+      <id>28</id>
+      <posX>758</posX>
+      <posY>270</posY>
+      <label>344</label>
+      <font>font13</font>
+      <textcolor>ff969696</textcolor>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+    <control>
+      <description>Actors value</description>
+      <type>textbox</type>
+      <id>29</id>
+      <posX>758</posX>
+      <posY>290</posY>
+      <height>125</height>
+      <width>500</width>
+      <label>#st_starring</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+    <control>
+      <description>Genre label</description>
+      <type>label</type>
+      <id>35</id>
+      <posX>758</posX>
+      <posY>130</posY>
+      <label>174</label>
+      <font>font13</font>
+      <textcolor>ff969696</textcolor>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+    <control>
+      <description>Genre value</description>
+      <type>fadelabel</type>
+      <id>36</id>
+      <posX>758</posX>
+      <posY>150</posY>
+      <width>400</width>
+      <label>#st_genre</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font13</font>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+    <control>
+      <description>Director Label</description>
+      <type>label</type>
+      <id>30</id>
+      <posX>758</posX>
+      <posY>200</posY>
+      <label>199</label>
+      <font>font13</font>
+      <textcolor>ff969696</textcolor>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+    <control>
+      <Description>Director Value</Description>
+      <type>textbox</type>
+      <id>31</id>
+      <posX>758</posX>
+      <posY>220</posY>
+      <label>#st_director</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font13</font>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <visible>Control.IsVisible(24)</visible>	  
+    </control>
+	-->
+    <control>
+      <description>Plot label</description>
+      <type>label</type>
+      <id>33</id>
+      <posX>230</posX>
+      <posY>450</posY>
+      <label></label>
+      <visible>no</visible>	  
+    </control>
+    <control>
+      <description>Plot value</description>
+      <type>textboxscrollup</type>
+      <id>34</id>
+      <posX>130</posX>
+      <posY>940</posY>
+      <width>1650</width>
+      <height>80</height>
+      <label>#st_plot</label>
+      <align>left</align> 
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Theater</description>
+      <id>44</id>
+      <posX>130</posX>
+      <posY>890</posY>
+      <width>1550</width>
+      <height>140</height>
+      <textcolor>white</textcolor>
+      <label>#selecteditem | #st_rating @ #st_theater | #st_runtime</label>
+      <align>left</align> 
+	  <visible>control.hastext(46)</visible>		  
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Showtimes</description>
+      <id>0</id>
+      <posX>140</posX>
+      <posY>120</posY>
+      <label>#st_moviedate @ #st_showtimes</label>
+      <disabledcolor>ff808080</disabledcolor>
+      <width>1700</width>
+      <font>font10</font>
+      <align>left</align> 
+	  <visible>control.hastext(46)</visible>		  
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>BoxOffice</description>
+      <id>0</id>
+      <posX>270</posX>
+      <posY>65</posY>
+      <label>#st_extra</label>
+      <disabledcolor>ff808080</disabledcolor>
+      <width>1000</width>
+      <font>font13</font>
+      <align>left</align> 
+    </control>	
+    	
+      <import>showtimesfacade.xml</import>
+		<!-- Gradient overlay -->
+	  <control>
+        <type>image</type>
+        <id>0</id>
+		<posX>0</posX>
+		<posY>730</posY>
+        <width>1920</width>
+        <height>164</height>
+        <texture>#overlaycolour</texture>
+		<visible>!facadeview.list+!facadeview.coverflow+!facadeview.filmstrip</visible>
+      </control>
+	<!-- Gradient overlay -->  
+	
+   	  <control>
+        <description>background overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>movieShad.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>!facadeview.coverflow+!facadeview.filmstrip+control.isvisible(24)</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>	
+	
+	    <control>
+      <description>movie poster</description>
+      <type>image</type>
+      <id>24</id>
+      <posX>1342</posX>
+        <posY>225</posY>
+        <width>402</width>
+        <height>576</height>
+	  <texture mask="coverartm.png" />
+    </control>
+    
+  </controls>
+</window>

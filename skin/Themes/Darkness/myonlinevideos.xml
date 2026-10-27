@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>4755</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#useSelectedFanart:Yes</define>
+  <controls>
+    
+    <!-- *** WINDOW DEFAULTS *** -->    
+    
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+	<import>custom\Allscreens\user_dialog.xml</import>		
+	<import>myonlinevideos.facade.xml</import>
+	
+
+	<!--Now recording info on home-->
+   
+	   <!--Now recording info on home-->
+   
+
+	<control>
+	  <description>Current Category</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>138</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1300</width>
+      <font>font18</font>		  
+	  <label>#OnlineVideos.HeaderLabel #OnlineVideos.filter</label>
+	  <textcolor>eaeaea</textcolor>		  
+	  <visible>!player.hasmedia+!player.hasaudio+!control.hastext(80000)</visible>
+	</control> 
+
+	<control>
+	  <description>Date / Time</description>
+	  <type>label</type>
+      <id>0</id>
+	  <posX>138</posX>
+	  <posY>100</posY>
+	  <label>#time</label>
+	  <align>left</align>
+	  <font>font10</font>
+	  <textcolor>white</textcolor>
+	  <visible>!player.hasmedia+!player.hasaudio</visible>
+	</control>	
+	
+	<control>
+      <description>Buffering Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>238</posX>
+      <posY>100</posY>
+      <label>#OnlineVideos.buffered % #OnlineVideos.Translation.Buffered.Label</label>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <font>font10</font>
+      <visible>string.equals(#OnlineVideos.IsBuffering, true)+!player.hasmedia+!player.hasaudio</visible>
+    </control>
+
+	
+    <control>
+      <description>Label for Current, Total Amount and Localized Type of items</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>138</posX>
+      <posY>130</posY>
+      <label>#selectedindex/#itemcount #itemtype</label>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <font>font10</font>
+      <visible>string.equals(#selectedindex)+!string.equals(#OnlineVideos.state, details)</visible>
+    </control>
+    <control>
+      <description>Label for Total Amount and Localized Type of items</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>138</posX>
+      <posY>130</posY>
+      <label>#itemcount #itemtype</label>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <font>font10</font>
+      <visible>!string.equals(#selectedindex)+!string.equals(#OnlineVideos.state, details)</visible>
+    </control>
+	
+  
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>1090</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>control.isvisible(13)|player.hasmedia|topbar.visible+!control.isvisible(08701)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+    
+	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>[!control.isvisible(2211)]+string.isset(#media.user)</visible>
+    </control>
+	
+
+  
+    <control Style="NoShadow">
+      <description>number of current downloads</description>
+      <type>button</type>
+      <id>47016</id>
+      <posX>8</posX>
+      <posY>8</posY>
+      <width>40</width>
+      <height>40</height>
+      <textureFocus>OnlineVideos\disk.png</textureFocus>
+      <textureNoFocus>OnlineVideos\disk.png</textureNoFocus>
+      <label>#OnlineVideos.currentDownloads</label>
+      <font>font11</font>
+      <textXOff>-10</textXOff>
+      <textalign>center</textalign>
+      <textcolor>FF000000</textcolor>
+      <textcolorNoFocus>FF000000</textcolorNoFocus>
+      <onleft>50</onleft>
+      <onright>50</onright>
+      <onup>17</onup>
+      <ondown>2</ondown>
+      <visible>!string.equals(#OnlineVideos.currentDownloads, 0)</visible>
+      <animation effect="zoom" start="100,100" end="120,120" time="500" condition="true" pulse="true">conditional</animation>
+    </control>    
+
+    
+    <!-- *** Bottom part *** -->
+
+	<import>common.window.xml</import>
+
+	
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>99</id>
+        <posX>1342</posX>
+        <posY>224</posY>
+        <width>422</width>
+        <height>604</height>
+		<keepaspectratio>no</keepaspectratio>
+        <zoomfromtop>no</zoomfromtop>
+        <texture mask="">#selectedthumb</texture>
+        <visible>!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      </control>
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1314</posX>
+        <posY>210</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>!facadeview.filmstrip+!facadeview.coverflow</visible>
+      </control>
+	  
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1762</posX>
+        <posY>220</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>!facadeview.filmstrip+!facadeview.coverflow</visible>
+        <animation effect="rotate" delay="0" end="-180" time="0" condition="true">Conditional</animation>		
+      </control>
+
+	  
+
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1342</posX>
+            <posY>225</posY>
+			<width>556</width>
+			<height>313</height>
+			<align>center</align>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>OnlineVideos\Icons\#OnlineVideos.selectedSite.png</texture>
+			<visible>!string.equals(#OnlineVideos.state,groups) + !string.equals(#OnlineVideos.state,sites) + !string.equals(#OnlineVideos.state,videos)+!string.equals(#selecteditem,..)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+		</control>	  
+	  
+	  
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1342</posX>
+            <posY>225</posY>
+			<width>556</width>
+			<height>313</height>
+			<texture>OnlineVideos\thumbbg.png</texture>
+			<visible>[!control.isvisible(51)+control.hasthumb(400)+!string.equals(#selecteditem,..)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]] | [string.equals(#OnlineVideos.state,categories)+!string.equals(#selecteditem,..)]</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+    <control>
+      <id>400</id>
+      <type>image</type>
+        <posX>1342</posX>
+        <posY>224</posY>
+        <width>422</width>
+        <height>604</height>
+      <align>center</align>
+      <valign>middle</valign>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture mask="">#selectedthumb</texture>
+      <visible>!control.isvisible(51)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>134</posX>
+        <posY>875</posY>
+		<height>176</height>
+		<width>127</width>
+        <texture>postershadow.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      </control>	  
+	 
+	  <control>
+        <description>Little Poster</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>100</posX>
+        <posY>875</posY>
+		<width>240</width>
+		<height>140</height>
+		<align>center</align>
+		<keepaspectratio>yes</keepaspectratio>
+        <texture>#selectedthumb</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+        <visible>!control.isvisible(51)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      </control>
+	  
+	  <control>
+        <description>Little Poster</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>135</posX>
+        <posY>875</posY>
+		<height>170</height>
+		<width>120</width>
+        <texture mask="">#selectedthumb</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      </control>
+	  
+	  
+	  
+    <control Style="NoShadow">
+      <description>Movie Title</description>
+      <type>label</type>
+      <id>0</id>
+      <width>1500</width>
+      <height>20</height>
+      <posX>350</posX>
+      <posY>900</posY>
+      <align>left</align>
+      <font>font11</font>
+      <label>#selecteditem - #OnlineVideos.aired</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>!control.isvisible(51)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]+!string.equals(#OnlineVideos.aired, )</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+ 
+    <control Style="NoShadow">
+      <description>Movie Title, no aired label</description>
+      <type>label</type>
+      <id>0</id>
+      <width>1500</width>
+      <height>20</height>
+      <posX>350</posX>
+      <posY>900</posY>
+      <align>left</align>
+      <font>font11</font>
+      <label>#selecteditem</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>!control.isvisible(51)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]+string.equals(#OnlineVideos.aired, )</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+
+	
+	    <control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>350</posX>
+      <posY>940</posY>
+      <width>1530</width>
+      <height>80</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#OnlineVideos.desc</label>
+      <visible>!control.isvisible(51)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>	
+	
+	    <control Style="NoShadow">
+      <description>Movie Title</description>
+      <type>label</type>
+      <id>0</id>
+      <width>1500</width>
+      <height>20</height>
+      <posX>280</posX>
+      <posY>900</posY>
+      <align>left</align>
+      <font>font11</font>
+      <label>#selecteditem</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+	    <control>
+      <description>summery</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+	  <textalign>left</textalign>
+      <posX>280</posX>
+      <posY>940</posY>
+      <width>1530</width>
+      <height>80</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#OnlineVideos.desc</label>
+      <visible>!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>	
+	 
+	 <!--
+	 
+    <control>
+      <description>Length Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>300</posX>
+      <posY>579</posY>
+      <width>120</width>
+      <font>font10</font>
+      <label>#OnlineVideos.Translation.Runtime.Label:</label>
+      <textcolor>ffa9d0f7</textcolor>
+      <visible>string.equals(#OnlineVideos.state, videos)+control.hastext(504)</visible>
+    </control>  
+    <control>
+      <description>Length</description>
+      <type>label</type>
+      <id>504</id>
+      <posX>400</posX>
+      <posY>579</posY>
+      <width>250</width>
+      <font>font10</font>
+      <label>#OnlineVideos.length</label>
+      <textcolor>ffa9d0f7</textcolor>
+      <visible>string.equals(#OnlineVideos.state, videos)</visible>
+    </control>   
+	
+	-->
+	
+	<control>
+	  <description>Date / Time</description>
+	  <type>label</type>
+      <id>502</id>
+	  <posX>138</posX>
+	  <posY>95</posY>
+	  <label></label>
+	  <align>left</align>
+	  <font>font10</font>
+	  <textcolor>eaeaea</textcolor>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+	  <visible>!string.equals(#OnlineVideos.state, details) + !string.equals(#OnlineVideos.state, videos)+!player.hasmedia+!player.hasaudio+!control.hastext(80000)</visible>
+	</control>	
+	
+	<!-- TEMPORARY COMMENT OUT
+    <control>
+      <description>Airdate Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>650</posX>
+      <posY>579</posY>
+      <width>150</width>
+      <font>font10</font>
+      <label>#OnlineVideos.Translation.Airdate.Label:</label>
+      <textcolor>ffa9d0f7</textcolor>
+      <visible>string.equals(#OnlineVideos.state, videos)+control.hastext(503)</visible>
+    </control>    
+    <control>
+      <description>airdate of video</description>
+      <type>label</type>
+      <id>503</id>
+      <posX>800</posX>
+      <posY>579</posY>
+      <width>400</width>
+      <font>font10</font>
+      <label>#OnlineVideos.aired</label>
+      <textcolor>ffa9d0f7</textcolor>
+      <visible>string.equals(#OnlineVideos.state, videos)</visible>
+    </control>
+	
+	-->
+
+    
+    <import>myonlinevideos.extended.youtube.xml</import>
+	 <import>myonlinevideos.details.xml</import>
+	 <import>myonlinevideos.hiddenmenu.xml</import>
+    
+
+  
+  </controls>
+</window>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>9811</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#useSelectedFanart:Yes</define>
+  <controls>
+		<import>TVSeries.Dummy.xml</import>
+
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+	  <posX>0</posX>
+      <posY>0</posY>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+		<control>
+		  <description>Default Background</description>
+		  <type>image</type>
+		  <id>0</id>
+		  <posX>0</posX>
+		  <posY>0</posY>
+		  <width>1920</width>
+		  <height>1080</height>
+		  <texture>fan#backgroundcolour</texture>
+		  <visible>string.equals(#TVSeries.fanart.enable,Yes)</visible>
+		</control>		
+
+	<include condition="#(eq(#TVSeries.fanart.enable,'Yes'))">TVSeries.fanart.show.xml</include>
+		
+	<include condition="#(eq(#skin.series.extended,'no'))">TVSeries.Facade.xml</include>
+	<include condition="#(eq(#skin.series.extended,'yes'))">TVSeries.Facade.extended.xml</include>
+	
+		<!-- Gradient overlay -->
+	  <control>
+        <type>image</type>
+        <id>0</id>
+		<posX>0</posX>
+		<posY>740</posY>
+        <width>1920</width>
+        <height>164</height>
+        <texture>#overlaycolour</texture>
+		<visible>!facadeview.list+!facadeview.coverflow+!facadeview.filmstrip+!string.equals(#skin.series.extended, yes)</visible>
+      </control>
+	<!-- Gradient overlay -->  
+	
+	<include condition="#(eq(#skin.series.extended,'no'))">TVSeries.Listview.xml</include>
+	<include condition="#(eq(#skin.series.extended,'yes'))">TVSeries.Listview.extended.xml</include>
+	
+	<!--Now recording info on home-->
+
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>1090</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>[control.isvisible(13)|player.hasmedia|topbar.visible]+!control.isvisible(505050)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+    
+	
+		<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>[!control.isvisible(2211)]+string.isset(#media.user)</visible>
+    </control>
+	
+	<control>
+      <type>label</type>
+      <id>2211</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>270</width>
+      <height>30</height>
+      <label>Scraping......</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>control.isvisible(51)</visible>
+    </control>
+	
+	
+		<control>
+		  <description>Date / Time</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>135</posX>
+		  <posY>100</posY>
+		  <label>#time / #TVSeries.SeriesCount Series</label>
+		  <align>left</align>
+		  <font>font10</font>
+		  <textcolor>eaeaea</textcolor>
+		  <visible>!player.hasmedia</visible>
+		</control>
+		
+		<control>
+		  <description>Extra</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>135</posX>
+		  <posY>130</posY>
+		  <label>#TVSeries.UnWatchedCount unwatched episodes</label>
+		  <align>left</align>
+		  <font>font10</font>
+		  <textcolor>eaeaea</textcolor>
+		  <visible>!player.hasmedia+control.isvisible(1239)</visible>
+		</control>		
+
+		
+		<control>
+		  <description>Current Category</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>135</posX>
+		  <posY>48</posY>
+		  <align>left</align>
+		  <width>1800</width>
+		  <font>font18</font>		  
+		  <label>Series</label>
+		  <textcolor>eaeaea</textcolor>	
+          <visible>!player.hasmedia</visible>		  
+		</control>
+			
+	
+	
+	<import>TVSeries.SeasonView.xml</import>
+	<import>TVSeries.EpisodeView.xml</import>
+	<import>TVSeries.HiddenMenu.xml</import>
+
+	
+	      <control>
+            <description>Import Animation</description>
+            <type>animation</type>
+            <id>51</id>
+			<posX>888</posX>
+			<posY>468</posY>
+			<width>144</width>
+			<height>144</height>      
+            <textures></textures>
+			<Duration>0:0:01.5</Duration>
+            <keepaspectratio>yes</keepaspectratio>
+          </control>
+	<import>TVSeries.overlay.xml</import>
+  </controls>
+</window>

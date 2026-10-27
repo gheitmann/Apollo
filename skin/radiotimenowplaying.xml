@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>25652</id>
+  <defaultcontrol>155</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.hover:</define>
+  <define>#header.label:RadioTime Now Playing</define>
+  <define>#usePlayFanart:Yes</define>
+  <controls>
+     <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>    	
+    <control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>	
+    <control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+      <animation effect="fade" time="1500" reversible="true">visible</animation>
+      <animation effect="fade" time="1500" reversible="true">hidden</animation>
+      <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+      <visible>player.hasmedia|topbar.visible</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>	
+     <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>[!player.hasaudio]+string.isset(#media.user)</visible>
+    </control>	
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>Playing audio..</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>player.hasaudio</visible>
+    </control>    
+
+    <control>
+      <description>Current window</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1800</width>
+      <font>font18</font>		  
+      <label>#header.label</label>
+      <textcolor>eaeaea</textcolor>		  
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control>
+      <description>Time / Item Count / Play station</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>95</posY>
+      <label>#time / #RadioTime.Play.Station</label>
+      <align>left</align>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control>
+      <description>station logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>125</posX>
+      <posY>860</posY>
+      <width>300</width>
+      <height>200</height>
+      <texture>tvshadow.png</texture> 
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+    <control>
+      <id>112</id>
+      <description>album art image</description>
+      <type>image</type>
+      <posX>130</posX>
+      <posY>860</posY>
+      <width>287</width>
+      <height>200</height>
+      <texture>#RadioTime.Play.Image</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+    </control>
+       <!--
+    <control>
+      <id>0</id>
+      <description>Title label</description>
+      <type>fadelabel</type>
+      <posX>1927</posX>
+      <posY>302</posY>
+      <width>438</width>
+      <height>28</height>
+      <font>font12</font>
+      <label>#RadioTime.Play.Language</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Artist label</description>
+      <type>fadelabel</type>
+      <posX>1926</posX>
+      <posY>189</posY>
+      <width>438</width>
+      <height>26</height>
+      <font>font12</font>
+      <label>#RadioTime.Play.Description</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Artist label</description>
+      <type>fadelabel</type>
+      <posX>1924</posX>
+      <posY>150</posY>
+      <width>438</width>
+      <height>26</height>
+      <font>font12</font>
+      <label>#RadioTime.Play.Station</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>track label</description>
+      <type>fadelabel</type>
+      <posX>2926</posX>
+      <posY>263</posY>
+      <width>438</width>
+      <height>26</height>
+      <font>font12</font>
+      <label>#RadioTime.Play.Slogan</label>
+    </control>
+	-->
+
+    <control>
+      <id>0</id>
+      <description>track label</description>
+      <type>fadelabel</type>
+      <posX>435</posX>
+      <posY>950</posY>
+      <width>1590</width>
+      <height>120</height>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+      <label>#RadioTime.Play.Location - #RadioTime.Play.Slogan</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>track label</description>
+      <type>fadelabel</type>
+      <posX>3435</posX>
+      <posY>1000</posY>
+	  <width>1590</width>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+      <label>#RadioTime.Play.Location</label>
+    </control> 
+    
+    <control>
+      <id>0</id>
+      <description>Progress background</description>
+      <type>image</type>
+      <visible>player.hasmedia</visible>
+      <posX>850</posX>
+      <posY>533</posY>
+      <width>302</width>
+      <height>10</height>
+      <texture></texture>
+    </control>
+    <control>
+      <type>progress</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1077</posY>
+      <width>1920</width>
+      <height>3</height>
+      <label>#percentage</label>
+      <texturebg>black.png</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>1920</midwidth>
+      <midheight>3</midheight>
+      <midoffsetX>-</midoffsetX>
+      <midoffsetY>0</midoffsetY>
+      <midtexture>osd_progress_mid.png</midtexture>
+    </control>
+    <control>
+      <id>0</id>
+      <description>track progress label</description>
+      <type>label</type>
+      <visible>player.hasmedia</visible>
+      <posX>435</posX>
+      <posY>870</posY>
+      <width>1590</width>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+      <align>left</align>
+      <label>#currentplaytime</label>
+    </control>
+	
+	<control>
+      <id>0</id>
+      <description>track progress label</description>
+      <type>label</type>
+      <visible>player.hasmedia</visible>
+      <posX>435</posX>
+      <posY>910</posY>
+      <width>1390</width>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+      <align>left</align>
+      <label>#Play.Current.Title</label>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>track duration label</description>
+      <type>label</type>
+      <visible>player.hasmedia</visible>
+      <posX>3435</posX>
+      <posY>900</posY>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+      <align>left</align>
+      <label>#Duration</label>
+    </control>
+
+    <control>
+      <id>29</id>
+      <description>Genres</description>
+      <type>label</type>
+      <posX>138</posX>
+      <posY>230</posY>
+      <font>font11</font>
+      <label>#RadioTime.Translation.Genres.Label</label>
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control>
+      <id>166</id>
+      <description>list genres</description>
+      <type>listcontrol</type>      
+      <ondown>155</ondown>
+      <posX>120</posX>
+      <posY>270</posY>
+      <width>1020</width>
+      <height>187</height>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textYOff>7</textYOff>
+      <textXOff>-25</textXOff>
+      <selectedColor>ff808080</selectedColor>
+      <textcolor>FFFFFFFF</textcolor>
+      <textureHeight>50</textureHeight>
+      <textureFocus>btn_list.png</textureFocus>
+      <textureNoFocus></textureNoFocus>
+      <onright>53</onright>
+      <onleft>53</onleft>
+    </control>
+    <control>
+      <id>28</id>
+      <description>similar stations</description>
+      <type>label</type>
+      <posX>140</posX>
+      <posY>458</posY>
+      <font>font11</font>
+      <label>#RadioTime.Translation.SimilarStations.Label</label>
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control>
+      <id>155</id>
+      <description>list similar</description>
+      <type>listcontrol</type>      
+      <onup>166</onup>
+      <ondown>53</ondown>      
+      <posX>120</posX>
+      <posY>496</posY>
+      <width>1020</width>
+      <height>310</height>
+      <font>font11</font>
+      <textalign>left</textalign>
+      <textYOff>7</textYOff>
+      <textXOff>-25</textXOff>
+      <selectedColor>ff808080</selectedColor>
+      <textcolor>FFFFFFFF</textcolor>
+      <textureHeight>50</textureHeight>
+      <textureFocus>btn_list.png</textureFocus>
+      <textureNoFocus></textureNoFocus>      
+      <onright>53</onright>
+      <onleft>53</onleft>
+    </control>    
+    <control>
+      <id>53</id>
+      <description>Show Lyrics Button</description>
+      <type>button</type>
+      <posX>155</posX>
+      <posY>770</posY> 
+      <width>370</width>     
+      <label>Lyrics</label>
+      <textcolor>eaeaea</textcolor>
+      <visible>plugin.isenabled(My Lyrics)</visible>
+      <hyperlink>90478</hyperlink>
+      <onup>155</onup>
+      <ondown>166</ondown>
+      <onright>53</onright>
+      <onleft>53</onleft>
+    </control>     
+	
+	
+	<control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1400</posX>
+      <posY>160</posY>
+      <width>331</width>
+      <height>331</height>
+	  <keepaspectratio>true</keepaspectratio>
+      <texture mask="s_cdmask.png">#Play.Current.Thumb</texture>
+	  <centered>yes</centered>
+      <visible>player.hasaudio</visible>
+    </control>
+	
+	
+  </controls>
+</window>

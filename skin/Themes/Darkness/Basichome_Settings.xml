@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+
+	  
+	  <control>
+        <description>left</description>
+        <type>image</type>
+        <id>6660011</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>5</width>
+        <height>5</height>
+        <texture></texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>control.hasfocus(5006)|control.hasfocus(5005)|control.hasfocus(2)|control.hasfocus(3)|control.hasfocus(4)|control.hasfocus(55510)|control.hasfocus(55511)|control.hasfocus(55513)|control.hasfocus(55514)|control.hasfocus(55515)|control.hasfocus(55516)|control.hasfocus(55517)|control.hasfocus(5)</visible>
+      </control>
+      
+	  <control>
+        <description>right</description>
+        <type>image</type>
+        <id>666012</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>5</width>
+        <height>5</height>
+        <texture></texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>false</visible>
+      </control>
+	  
+		<control>
+		  <type>actiongroup</type>
+		  <description>action menu</description>
+		  <defaultcontrol>231</defaultcontrol>
+		  <onexit>50</onexit>
+		  <buttonX>0</buttonX>
+		  <buttonY>0</buttonY>
+		  <buttonwidth>1</buttonwidth>
+          <buttonheight>1</buttonheight>
+          <textureFocus>-</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+		  <width>800</width>
+		  <height>800</height>
+		  <dimColor>00ffffff</dimColor>
+
+		  
+     <control>
+	   <type>image</type>
+	   <posX>0</posX>
+	   <posY>0</posY>
+	   <width>1920</width>
+	   <height>1080</height>
+       <texture>black.png</texture>
+        <colordiffuse>99000000</colordiffuse>
+	   <animation effect="fade" time="350" reversible="true">hidden</animation>
+	   <visible>control.hasfocus(231)|control.hasfocus(230)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(242)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)|control.hasfocus(270)|control.hasfocus(271)|control.hasfocus(272)|control.hasfocus(273)|control.hasfocus(274)</visible>    
+	 </control>
+		
+	  <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>420</posX>
+        <posY>100</posY>
+        <width>975</width>
+        <height>986</height>
+        <texture>dialogglowbig.png</texture>
+		<visible>control.hasfocus(231)|control.hasfocus(230)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(242)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)</visible>    
+      </control>		
+		
+			<control>
+				<description>group element</description>
+				<type>group</type>
+		        <animation effect="fade" time="350" reversible="true">hidden</animation>	
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>500</posX>
+					<posY>195</posY>
+					<!-- Remove and Gaps when buttons are not visible -->
+					<layout>StackLayout(0, Vertical, false)</layout>
+					<visible allowhiddenfocus="true">control.hasfocus(231)|control.hasfocus(230)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(242)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)</visible>   
+				
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>269</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>menu</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Main menu type: </valuePrefixText>
+        <onclick>#(skin.setstring('#skin.home.menu',#selectedlabel269))</onclick>
+        <binding>#skin.home.menu</binding>
+        <subitems>
+        <subitem>Standard</subitem>
+        <subitem>Extended</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>0011223</onup>
+        <onleft>269</onleft>
+        <ondown>268</ondown>
+        <onright>269</onright>
+      </control>
+				
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>268</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>plugin</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> MyVideos tile plugin: </valuePrefixText>
+        <onclick>#(skin.setstring('#002.tileplugin.hyperlink',#selectedlabel268))</onclick>
+        <binding>#002.tileplugin.hyperlink</binding>
+        <subitems>
+        <subitem>MyVideo</subitem>
+        <subitem>OnlineVideos</subitem>
+        <subitem>Trakt</subitem>
+        <subitem>PlayDisc</subitem>
+		<subitem>MovingPictures</subitem>
+		<subitem>NoPlugin</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>269</onup>
+        <onleft>268</onleft>
+        <ondown>267</ondown>
+        <onright>268</onright>
+      </control>
+	  
+	  
+      <control>
+        <description>Enable/Disable button hints</description>
+        <type>checkbutton</type>
+        <id>267</id>
+        <label>Open MyVideo with Movie tile</label>
+		<font>font11</font>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.swapmovies.vids'))</selected>
+        <onclick>#(skin.togglesetting('#skin.swapmovies.vids'))</onclick>
+        <onup>268</onup>
+		<onright></onright>
+        <ondown>231</ondown>
+      </control>					
+					
+					
+      <control>
+        <description>Enable/Disable button hints</description>
+        <type>checkbutton</type>
+        <id>231</id>
+        <label>Enable/Disable button hints</label>
+		<font>font11</font>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.tips'))</selected>
+        <onclick>#(skin.togglesetting('#skin.tips'))</onclick>
+        <onup>267</onup>
+		<onright></onright>
+        <ondown>230</ondown>
+      </control>
+	  
+	  <control>
+        <description>movie swap</description>
+        <type>checkbutton</type>
+        <id>230</id>
+        <label>Use MyVideos Latest Media in Movies </label>
+		<font>font11</font>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.movie.swap'))</selected>
+        <onclick>#(skin.togglesetting('#skin.movie.swap'))</onclick>
+        <onup>231</onup>
+		<onright></onright>
+        <ondown>232</ondown>
+      </control>
+	  
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>232</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>Background Colour</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Skin background colour: </valuePrefixText>
+        <onclick>#(skin.setstring('#background.colour',#selectedlabel232))</onclick>
+        <binding>#background.colour</binding>
+        <subitems>
+        <subitem>default</subitem>
+        <subitem>purple</subitem>
+        <subitem>blue</subitem>
+        <subitem>green</subitem>
+		<subitem>dark</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>230</onup>
+        <onleft>232</onleft>
+        <ondown>233</ondown>
+        <onright>232</onright>
+      </control>
+	  
+      <control>
+        <description>Enable active recording info</description>
+        <type>checkbutton</type>
+        <id>233</id>
+        <label>Use RSS instead of Latest Media Info</label>
+		<font>font11</font>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.rss.info'))</selected>
+        <onclick>#(skin.togglesetting('#skin.rss.info'))</onclick>
+        <onup>232</onup>
+		<onright></onright>
+        <ondown>234</ondown>
+      </control>	
+
+	  <control>
+        <description>Plugin1</description>
+         <type>menubutton</type>
+        <id>234</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin button 1</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin button 1: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile1plugin.hyperlink',#selectedlabel234))</onclick>
+        <binding>#tile1plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>233</onup>
+        <onleft>234</onleft>
+        <ondown>235</ondown>
+        <onright>234</onright>
+      </control>
+	 
+	  
+	  <control>
+        <description>Plugin2</description>
+         <type>menubutton</type>
+        <id>235</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,246))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin button 2</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin button 2: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile2plugin.hyperlink',#selectedlabel235))</onclick>
+        <binding>#tile2plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>234</onup>
+        <onleft>235</onleft>
+        <ondown>236</ondown>
+        <onright>235</onright>
+      </control>
+	  
+	  <control>
+        <description>Plugin3</description>
+        <type>menubutton</type>
+        <id>236</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,247))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin button 3</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin button 3: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile3plugin.hyperlink',#selectedlabel236))</onclick>
+        <binding>#tile3plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>235</onup>
+        <onleft>236</onleft>
+        <ondown>237</ondown>
+        <onright>236</onright>
+      </control>
+	  
+	  <control>
+        <description>Plugin4</description>
+        <type>menubutton</type>
+        <id>237</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,248))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin button 4</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin button 4: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile4plugin.hyperlink',#selectedlabel237))</onclick>
+        <binding>#tile4plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>236</onup>
+        <onleft>237</onleft>
+        <ondown>238</ondown>
+        <onright>237</onright>
+      </control>
+	  
+	  <control>
+        <description>Plugin5</description>
+        <type>menubutton</type>
+        <id>238</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,249))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin button 5</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin button 5: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile5plugin.hyperlink',#selectedlabel238))</onclick>
+        <binding>#tile5plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>237</onup>
+        <onleft>238</onleft>
+        <ondown>239</ondown>
+        <onright>238</onright>
+      </control>
+	  
+	  <control>
+        <description>Plugin6</description>
+        <type>menubutton</type>
+        <id>239</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,250))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin button 6</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin button 6: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile6plugin.hyperlink',#selectedlabel239))</onclick>
+        <binding>#tile6plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>238</onup>
+        <onleft>239</onleft>
+        <ondown>240</ondown>
+        <onright>239</onright>
+      </control>
+	  
+	   <control>
+        <description>Enable weather in homescreen</description>
+        <type>checkbutton</type>
+        <id>240</id>
+        <label>Enable weather in homescreen</label>
+		<font>font11</font>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.weather.home'))</selected>
+        <onclick>#(skin.togglesetting('#skin.weather.home'))</onclick>
+        <onup>239</onup>
+		<onright></onright>
+        <ondown>241</ondown>
+      </control>
+	  
+	  <control>
+        <description>Option</description>
+        <type>menubutton</type>
+        <id>241</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>Audio tile...</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Audio settings tile: </valuePrefixText>
+        <onclick>#(skin.setstring('#audio.radio.swap',#selectedlabel241))</onclick>
+        <binding>#audio.radio.swap</binding>
+        <subitems>
+        <subitem>settings</subitem>
+        <subitem>radio</subitem>
+		<subitem>rockstar</subitem>
+		<subitem>myLyrics</subitem>
+		<subitem>radiotime</subitem>
+		<subitem>mvCentral</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>240</onup>
+        <onleft>241</onleft>
+        <ondown>242</ondown>
+        <onright>241</onright>
+      </control>	
+
+	  <control>
+        <description>label settings...</description>
+        <type>button</type>
+        <id>242</id>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>12</textXOff>
+        <textYOff>7</textYOff>
+		<label>350019</label>
+        <onclick>#(skin.setfocus(35,251))</onclick>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>241</onup>
+        <ondown>269</ondown>
+		<onleft>242</onleft>
+        <onright>242</onright>
+      </control> 
+	  
+	  
+      </control>
+      </control>
+	  
+	  <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>420</posX>
+        <posY>100</posY>
+        <width>975</width>
+        <height>986</height>
+        <texture>dialogglowbig.png</texture>
+		<visible>control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)|control.hasfocus(270)|control.hasfocus(271)|control.hasfocus(272)|control.hasfocus(273)|control.hasfocus(274)|control.hasfocus(275)</visible>    
+      </control>	
+	  
+      <control>
+        <description>Hint</description>
+        <type>textbox</type>
+        <id>0</id>
+		<posX>1370</posX>
+        <posY>500</posY>
+		<width>300</width>
+		<height>200</height>
+		<align>left</align>
+        <label>Press Info/F9 to set a hyperlink parameter for your configured plugin..</label>
+		<font>font11</font>
+		<textcolor>ffffffff</textcolor>
+		<visible>[control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)]+skin.hassetting(#skin.tips)</visible>
+		<animation effect="fade" time="250" reversible="true">visiblechange</animation>
+      </control>	  
+	  
+	  <control>
+        <description>default textarea</description>
+        <type>textbox</type>
+        <id>0</id>
+        <posX>515</posX>
+        <posY>190</posY>
+        <width>800</width>
+        <height>300</height>
+        <spinPosX>3610</spinPosX>
+        <image></image>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>
+        <textalign>left</textalign>
+        <label>If you would like to set a parameter when opening a plugin you have set please enter the parameter below, for example if the plugin you are using is online videos and you want to launch bbc iplayer you would set " site:BBC iPlayer " below. The parameters are plugin dependant. Press Info/F9 to return to settings menu.</label>
+		<visible>control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(270)|control.hasfocus(271)|control.hasfocus(272)|control.hasfocus(273)|control.hasfocus(274)|control.hasfocus(275)</visible>
+      </control>
+
+	  <!--HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>245</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,234))</oninfo>
+        <label>#tile1plugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tile1plugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(245)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>246</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,235))</oninfo>
+        <label>#tile2plugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tile2plugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(246)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>247</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,236))</oninfo>
+        <label>#tile3plugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tile3plugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(247)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>248</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,237))</oninfo>
+        <label>#tile4plugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tile4plugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(248)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>249</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,238))</oninfo>
+        <label>#tile5plugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tile5plugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(249)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>250</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,239))</oninfo>
+        <label>#tile6plugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tile6plugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(250)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  
+	  <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>420</posX>
+        <posY>30</posY>
+        <width>975</width>
+        <height>1060</height>
+        <texture>dialogglowbig.png</texture>
+		<visible>control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>    
+      </control>
+	  
+	  <control>
+		<description>button group</description>
+		<type>group</type>
+		<posX>505</posX>
+		<posY>120</posY>
+		<!-- Remove and Gaps when buttons are not visible -->
+		<layout>StackLayout(0, Vertical, false)</layout>
+		
+	  <control>
+        <description>Configure label names</description>
+        <type>textbox</type>
+        <id>0</id>
+        <width>800</width>
+        <height>140</height>
+        <spinPosX>3610</spinPosX>
+        <image></image>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>
+        <textalign>left</textalign>
+        <label>Please configure your menu label names here if you wish them to be different from the default ones. Press Info/F9 to go to previous menu.</label>
+		<visible>control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+      </control>
+	  
+	  <!--Label1-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>251</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu movies:  #menu.label2</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>266</onup>
+        <ondown>252</ondown>
+      </control>
+	  <!--Label1-->
+	  <!--Label2-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>252</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu tvseries:  #menu.label3</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label3'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>251</onup>
+        <ondown>253</ondown>
+      </control>
+	  <!--Label2-->
+	  <!--Label3-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>253</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu livetv:  #menu.label4</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label4'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>252</onup>
+        <ondown>254</ondown>
+      </control>
+	  <!--Label3-->
+	  <!--Label4-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>254</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu audio:  #menu.label5</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label5'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>253</onup>
+        <ondown>255</ondown>
+      </control>
+	  <!--Label4-->
+	  <!--Label5-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>255</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu others:  #menu.label6</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label6'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>254</onup>
+        <ondown>256</ondown>
+      </control>
+	  <!--Label5-->
+	  	  <!--Label6-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>256</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>movies tile:  #home.movies1</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.movies1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>255</onup>
+        <ondown>257</ondown>
+      </control>
+	  <!--Label6-->
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>257</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>video tile:  #home.movies2</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.movies2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>256</onup>
+        <ondown>258</ondown>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>258</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>movie settings tile:  #home.movies3</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.movies3'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>257</onup>
+        <ondown>259</ondown>
+      </control>
+	  <!--Label7-->	 	  
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>259</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>tvseries tile:  #home.series1</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.series1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>258</onup>
+        <ondown>260</ondown>
+      </control>
+	  <!--Label7-->	 		  
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>260</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>unwatched tile:  #home.series2</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.series2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>259</onup>
+        <ondown>261</ondown>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>261</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>guide tile:  #home.tv1</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>260</onup>
+        <ondown>262</ondown>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>262</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>recorded tile:  #home.tv2</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>261</onup>
+        <ondown>263</ondown>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>263</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>schedules tile:  #home.tv3</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv3'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>262</onup>
+        <ondown>264</ondown>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>264</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>tvserver tile:  #home.tv4</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv4'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>263</onup>
+        <ondown>265</ondown>
+      </control>
+	  <!--Label7-->	 	  
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>265</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>tv settings tile:  #home.tv5</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv5'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>264</onup>
+        <ondown>266</ondown>
+      </control>
+	  <!--Label7-->	 	
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>266</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>music tile:  #home.audio1</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.audio1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)</visible>
+		<onup>265</onup>
+        <ondown>251</ondown>
+      </control>
+	  <!--Label7-->	 	  
+ 
+	  <!-- End of settings group -->
+	  </control>
+	  
+	  
+	  <!--TVSERIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>270</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,55512))</oninfo>
+        <label>Parameter:  #TVSeries.hyperlink</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#TVSeries.hyperlink'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(270)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--TVSERIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>271</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,55513))</oninfo>
+        <label>Parameter:  #TVSeries.hyperlink2</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#TVSeries.hyperlink2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(271)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  
+	  
+	  <!--MoviesFilter HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>272</id>
+        <posX>500</posX>
+		<posY>560</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,58511))</oninfo>
+		<onup>273</onup>
+        <onleft>272</onleft>
+        <ondown>272</ondown>
+        <onright>272</onright>
+        <label>Parameter:  #Movies.hyperlink2</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#Movies.hyperlink2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(272)|control.hasfocus(273)</visible>
+      </control>
+	  <!--MoviesFilter PARAMETER-->	  
+	  
+	  <control>
+        <description>Settings tile</description>
+         <type>menubutton</type>
+        <id>273</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>825</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+		<oninfo>#(skin.setfocus(35,58511))</oninfo>
+        <dialogTitle>menu</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Tile type: </valuePrefixText>
+        <onclick>#(skin.setstring('#mtsettings.hyperlink',#selectedlabel273))</onclick>
+        <binding>#mtsettings.hyperlink</binding>
+        <subitems>
+        <subitem>Settings</subitem>
+        <subitem>MovieFilter</subitem>
+		<subitem>OnlineVideos</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>273</onup>
+        <onleft>273</onleft>
+        <ondown>272</ondown>
+        <onright>273</onright>
+		<visible allowhiddenfocus="true">control.hasfocus(272)|control.hasfocus(273)</visible>
+      </control>
+	  
+	  <!--MAIN MOVIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>274</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,55510))</oninfo>
+        <label>Parameter:  #Movies.hyperlink1</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#Movies.hyperlink1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(274)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+
+	  <!--MAIN MOVIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>275</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>800</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,55511))</oninfo>
+        <label>Parameter:  #tileVDplugin.parameter</label>
+		<font>font11</font>
+		<textcolorNoFocus>99ffffff</textcolorNoFocus>
+		<textureFocus>btn_list_blue2.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#tileVDplugin.parameter'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(275)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->	  
+	  
+	  
+	  
+	  
+	  <!-- End of Action group -->
+	  </control>
+	  
+
+
+  </controls>
+</window>

@@ -1,0 +1,112 @@
+{
+  "xml_files": 537,
+  "xml_errors": [],
+  "native_windows": 91,
+  "existing_bindings_checked": 449,
+  "type_mismatches": [],
+  "missing_fields_review": [
+    {
+      "file": "videooverlay.xml",
+      "id": "1",
+      "expected": "GUIVideoControl",
+      "field": "_videoWindow"
+    },
+    {
+      "file": "videooverlay.xml",
+      "id": "6",
+      "expected": "GUIImage",
+      "field": "_labelBigPlayTime"
+    },
+    {
+      "file": "mymusicplayingnow.xml",
+      "id": "999",
+      "expected": "GUIImage",
+      "field": "VUMeterLeft"
+    },
+    {
+      "file": "mymusicplayingnow.xml",
+      "id": "998",
+      "expected": "GUIImage",
+      "field": "VUMeterRight"
+    },
+    {
+      "file": "mymusicplayingnow.xml",
+      "id": "155",
+      "expected": "GUIListControl",
+      "field": "lstSimilarTracks"
+    },
+    {
+      "file": "dialogpictureinfo.xml",
+      "id": "2",
+      "expected": "GUILabelControl",
+      "field": "lblHeading"
+    },
+    {
+      "file": "dialogok.xml",
+      "id": "11",
+      "expected": "GUIButtonControl",
+      "field": "btnYes"
+    },
+    {
+      "file": "dialogtext.xml",
+      "id": "5",
+      "expected": "GUIImage",
+      "field": "imgLogo"
+    },
+    {
+      "file": "musicoverlay.xml",
+      "id": "6",
+      "expected": "GUIImage",
+      "field": "_labelBigPlayTime"
+    },
+    {
+      "file": "musicoverlay.xml",
+      "id": "9",
+      "expected": "GUIVideoControl",
+      "field": "_videoWindow"
+    },
+    {
+      "file": "mypics.xml",
+      "id": "8",
+      "expected": "GUIButtonControl",
+      "field": "btnSearch"
+    },
+    {
+      "file": "settings_dvd.xml",
+      "id": "29",
+      "expected": "GUIButtonControl",
+      "field": "btnSubtitle"
+    },
+    {
+      "file": "dialogvideoartistinfo.xml",
+      "id": "22",
+      "expected": "GUITextControl",
+      "field": "tbMovieArea"
+    },
+    {
+      "file": "dialogvideoinfo.xml",
+      "id": "50",
+      "expected": "GUICheckButton",
+      "field": "btnAwards"
+    },
+    {
+      "file": "dialogvideoinfo.xml",
+      "id": "51",
+      "expected": "GUITextScrollUpControl",
+      "field": "tbAwardsArea"
+    },
+    {
+      "file": "dialogvideoinfo.xml",
+      "id": "52",
+      "expected": "GUICheckButton",
+      "field": "btnMPAAText"
+    },
+    {
+      "file": "dialogvideoinfo.xml",
+      "id": "53",
+      "expected": "GUITextScrollUpControl",
+      "field": "tbMPAATextArea"
+    }
+  ],
+  "missing_includes": []
+}

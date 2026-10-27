@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>4757</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    
+    <!-- *** WINDOW DEFAULTS *** -->
+
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+
+	<import>custom\Allscreens\user_dialog.xml</import>
+	
+	<control>
+	  <description>Date / Time</description>
+	  <type>label</type>
+      <id>502</id>
+	  <posX>138</posX>
+	  <posY>123</posY>
+	  <label>#selectedindex/#itemcount #itemtype</label>
+	  <align>left</align>
+	  <font>font10</font>
+	  <textcolor>eaeaea</textcolor>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+	</control>	
+	
+    
+    <control>
+      <description>listcontrol</description>
+      <type>listcontrol</type>
+      <id>50</id>
+      <spinPosX>3180</spinPosX>
+      <spinPoxY>670</spinPoxY>
+	  <width>1120</width>
+	  <textureFocus>btn_list.png</textureFocus>
+	  <textXOff2>1110</textXOff2>
+      <scrollOffset>2</scrollOffset>
+      <textXOff3>800</textXOff3>
+      <PinIconXOff>12</PinIconXOff>
+      <PinIconYOff>8</PinIconYOff>
+      <IconXOff>50</IconXOff>
+      <textXOff>60</textXOff>
+      <onleft>508</onleft>
+	  <playedColor>ffffcc00</playedColor>
+	  <visible>!control.hasfocus(503)|!control.hasfocus(504)|!control.hasfocus(506)|!control.hasfocus(507)|!control.hasfocus(508)</visible>
+    </control>
+	
+	<!-- *** Bottom part *** -->
+	
+	<import>myonlinevideos.overlay.xml</import>
+	
+     
+    <control>
+      <type>image</type>
+      <posX>79</posX>
+      <posY>900</posY>
+      <width>214</width>
+      <height>119</height>
+      <centered>yes</centered>
+      <texture>#selectedthumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <width>650</width>
+      <height>20</height>
+      <posX>280</posX>
+      <posY>900</posY>
+      <align>left</align>
+      <font>font11</font>
+      <label>#selecteditem  --  #OnlineVideos.Translation.Creator.Label: #OnlineVideos.owner</label>
+      <textcolor>White</textcolor>      
+    </control>    
+
+    <control>
+      <description>Description</description>
+      <type>textboxscrollup</type>
+      <posX>280</posX>
+      <posY>940</posY>
+      <width>1530</width>
+      <height>80</height>
+      <textcolor>eaeaea</textcolor>
+      <font>font11</font>
+      <label>#OnlineVideos.desc</label>
+    </control>           
+
+    <import>myonlinevideos.Updater.hiddenmenu.xml</import>
+ 
+  </controls>
+</window>

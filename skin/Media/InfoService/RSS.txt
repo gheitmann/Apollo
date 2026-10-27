@@ -1,0 +1,8 @@
+BBC News UK,http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/uk/rss.xml,4
+Die Welt,http://www.welt.de/?service=Rss,1
+Die Welt Vermischtes,http://welt.de/vermischtes/?service=Rss,2
+PC-Welt,http://www.pcwelt.de/rss/newsfeed.xml,3
+BBC Sport,http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/football/rss.xml,5
+Stern,http://www.stern.de/standard/rss.php?channel=all,6
+Der Spiegel,http://www.spiegel.de/schlagzeilen/rss/0,5291,,00.xml,7
+Golem AV, http://rss.golem.de/rss.php?tp=av&feed=ATOM1.0

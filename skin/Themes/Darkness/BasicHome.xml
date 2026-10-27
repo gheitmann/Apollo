@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>35</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <controls>
+
+
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#backgroundcolour</texture>
+	  <shouldCache>false</shouldCache>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	
+    <control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>12000</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>[player.hasmedia|topbar.visible]+!window.isvisible(3002)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>300</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+    <visible>string.isset(#media.user)</visible>
+</control>
+	
+	
+
+	<!-- Expression test box (labels do not work with cint !! -->
+	
+	<!--<control>
+      <type>textbox</type>
+      <id>1</id>
+      <posX>185</posX>
+      <posY>20</posY>
+      <width>1000</width>
+      <height>120</height>
+      <label>#backgroundcolour</label>
+      <align>left</align>
+      <font>font9</font>
+      <textcolor>99ffffff</textcolor>
+    </control>-->
+	
+	<!--control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>500</posX>
+      <posY>35</posY>
+      <width>150</width>
+      <height>150</height>
+      <texture>#tile1plugin.hyperlink.jpg</texture>
+      <colordiffuse>80ffffff</colordiffuse>
+    </control-->
+	
+	<!--     
+    <import>custom\Allscreens\user_dialog.xml</import>
+	-->
+	
+	    <!-- ** Current Weather Information ** -->
+    <control>
+      <description>current weather icon</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>115</posX>
+      <posY>43</posY>
+      <width>98</width>
+      <height>100</height>
+      <texture>#WorldWeather.TodayIconImage</texture>
+	  <visible>skin.hassetting(#skin.weather.home)+!player.hasaudio+!player.hasvideo</visible>
+    </control>
+    <control>
+      <description>current temp label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>220</posX>
+      <posY>65</posY>
+      <height>71</height>
+      <align>left</align>
+      <label>#WorldWeather.Location</label>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>skin.hassetting(#skin.weather.home)+!player.hasaudio+!player.hasvideo</visible>
+    </control>
+	<control>
+      <description>current temp label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>220</posX>
+      <posY>90</posY>
+      <height>71</height>
+      <align>left</align>
+      <label>#(string.format('{0:ddd dd MMM}', cdate(#date.local))), #WorldWeather.TodayTemperature</label>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>skin.hassetting(#skin.weather.home)+!player.hasaudio+!player.hasvideo</visible>
+    </control>
+	
+		<control>
+		  <description>Unknown</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>133</posX>
+		  <posY>96</posY>
+		  <label>#WorldWeather.TodayCondition, #WorldWeather.TodayTemperature</label>
+		  <align>left</align>
+		  <font>font10</font>
+		  <textcolor>eaeaea</textcolor>
+		  <visible>[plugin.isenabled(World Weather)|plugin.isenabled(World Weather Lite)]+!skin.hassetting(#skin.weather.home)+!player.hasaudio+!player.hasvideo</visible>
+		</control>
+		<!--
+		<control>
+		  <description>Unknown</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>133</posX>
+		  <posY>126</posY>
+		  <label>#(string.format('{0:dd/MM/yyyy}', cdate(#date.local)))</label>
+		  <align>left</align>
+		  <font>font9</font>
+		  <textcolor>eaeaea</textcolor>
+		  <visible>!skin.hassetting(#skin.weather.home)+!player.hasaudio+!player.hasvideo</visible>
+		</control>		
+        -->
+		
+		<control>
+		  <description>Current Category</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>131</posX>
+		  <posY>48</posY>
+		  <align>left</align>
+		  <width>1800</width>
+		  <font>font18</font>		  
+		  <label>Home</label>
+		  <textcolor>eaeaea</textcolor>		  
+		  <visible>!skin.hassetting(#skin.weather.home)+!player.hasaudio+!player.hasvideo</visible>
+		</control>		
+	
+	
+
+	  <include condition="#(and(eq(#skin.record.info,'False'),eq(#skin.home.menu,'Standard')))">BasichomeMainMenu.xml</include>
+	  <include condition="#(and(eq(#skin.record.info,'False'),eq(#skin.home.menu,'Extended')))">BasichomeMainMenuExtended.xml</include>
+	  <include condition="#(and(eq(#skin.record.info,'True'),eq(#skin.home.menu,'Extended')))">BasichomeMainMenuExtendedDisabledTV.xml</include>
+	  <include condition="#(and(eq(#skin.record.info,'True'),eq(#skin.home.menu,'Standard')))">BasichomeMainMenuDisabledTV.xml</include>
+  
+	<import>PluginDefines.xml</import>	
+	<import>Basichome_settings.xml</import>	
+	<import>BasicHomeMovies.xml</import>	
+	<import>BasicHomeTVSeries.xml</import>
+	<import>BasicHomeTV.xml</import>
+	<import>BasicHomeMusic.xml</import>
+	
+	<include condition="#(eq(#skin.plugin.layout,'True'))">BasicHomePluginsExtended.xml</include>
+	<include condition="#(eq(#skin.plugin.layout,'False'))">BasicHomePlugins.xml</include>
+	<include condition="#(eq(#skin.plugin.layout,'True'))">BasicHomePluginsExtendedfanart.xml</include>
+
+	  
+	<import>BasicHomeExtraInfos.xml</import>
+	<include condition="#(eq(#skin.latest.plugins,'True'))">BasicHomeExtraInfos2.xml</include>	
+	<import>BasicHomerss.xml</import>
+	<import>BasicHomeAllPlugins.xml</import>
+	<import>BasicHomeAllPluginsCheck.xml</import>
+	<import>Hints.xml</import>
+	
+	
+	<include condition="#(eq(#skin.movie.swap,'True'))">Basichomevideos.xml</include>	
+	
+	
+    <!--     *******************************************************************************************  -->
+    <!--     *************************    NOW PLAYING OVERLAYS          ********************************  -->
+    <!--     *******************************************************************************************  -->
+    <!-- ******************************************************************************************* -->
+    <!-- ************************* INFOS ON BASIC HOME (NOW PLAYING VIDEO) ********************* -->
+    <!-- ******************************************************************************************* -->
+    
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>20</posX>
+      <posY>10</posY>
+      <width>275</width>
+      <height>172</height>
+      <texture>tvbac.png</texture>
+	  <shouldCache>true</shouldCache>
+      <colordiffuse>99000000</colordiffuse>
+	  <visible>player.HasVideo</visible>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	</control>
+	
+    <control>
+      <description>video preview window</description>
+      <type>videowindow</type>
+      <id>99</id>
+      <posX>35</posX>
+      <posY>28</posY>
+      <width>241</width>
+      <height>135</height>
+      <visible>player.HasVideo</visible>
+      <action>18</action>
+      <textureFocus>tv_green_border.png</textureFocus>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="0" reversible="true">hidden</animation>
+    </control>
+    <!--control>
+      <description>scrolling info label Video</description>
+      <type>fadelabel</type>
+      <id>01018</id>
+      <posX>185</posX>
+      <posY>1030</posY>
+      <width>345</width>
+      <align>left</align>
+      <font>font9</font>
+      <textcolor>99ffffff</textcolor>
+      <label>#Play.Current.Title</label>
+      <visible>player.HasVideo</visible>
+	  <animation effect="fade" time="1500" reversible="true">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="true">windowclose</animation>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+    </control>
+	
+	<control>
+      <description>scrolling info label Video</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>185</posX>
+      <posY>1030</posY>
+      <width>345</width>
+      <align>left</align>
+      <font>font9</font>
+      <textcolor>99ffffff</textcolor>
+      <label>#TV.View.title</label>
+      <visible>[player.HasVideo]+!control.hastext(01018)</visible>
+	  <animation effect="fade" time="1500" reversible="true">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="true">windowclose</animation>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+    </control-->
+	
+	
+    
+    <!--     *******************************************************************************************  -->
+    <!--     ******************   INFOS ON BASIC HOME (NOW PLAYING AUDIO) W FANART  ********************  -->
+    <!--     *******************************************************************************************  -->
+	
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>20</posX>
+      <posY>10</posY>
+      <width>275</width>
+      <height>172</height>
+      <texture>tvbac.png</texture>
+	  <shouldCache>true</shouldCache>
+      <colordiffuse>99000000</colordiffuse>
+	  <visible>control.hasfocus(089)</visible>
+	  <animation effect="zoom" start="1,100" end="100,100" center="0,0" time="300">visible</animation>
+	  <animation effect="zoom" start="100,100" end="1,100" center="0,0" time="300">hidden</animation>
+	  <animation effect="slide" start="0,0" delay="0" end="290,0" time="300">visible</animation>
+	  <animation effect="slide" start="290,0" delay="0" end="0,0" time="300">hidden</animation>
+	</control>
+	
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>20</posX>
+      <posY>10</posY>
+      <width>275</width>
+      <height>172</height>
+      <texture>tvbac.png</texture>
+	  <shouldCache>true</shouldCache>
+      <colordiffuse>90000000</colordiffuse>
+	  <visible>Player.HasAudio+!Player.HasVideo</visible>
+	  <animation effect="fade" time="1000" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	</control>
+	
+		<control>
+      <id>1</id>
+      <type>image</type>
+      <posX>110</posX>
+      <posY>38</posY>
+      <width>110</width>
+      <height>110</height>
+      <texture>cdfx_small.png</texture>
+      <visible>Player.HasAudio+!Player.HasVideo</visible>
+      <animation effect="fade" time="2000" delay="1500" reversible="false">visible</animation>
+	  <animation effect="fade" time="500" reversible="false">hidden</animation>
+	  <animation effect="fade" time="2000" delay="1500" reversible="false">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="false">windowclose</animation>
+	  <animation effect="slide" start="-70,0" delay="1500" end="0,0" time="300">visible</animation>
+	  <animation effect="slide" start="-70,0" delay="1500" end="0,0" time="300">windowopen</animation>
+	  <animation effect="rotate" delay="0" end="-360" centre="475,258" time="20000" loop="true" condition="player.hasaudio+player.playing">Conditional</animation>
+    </control>
+	
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>36</posX>
+      <posY>25</posY>
+      <width>140</width>
+      <height>140</height>
+      <texture>s_cdshad.png</texture>
+	  <shouldCache>true</shouldCache>
+      <colordiffuse>ffffffff</colordiffuse>
+	  <visible>Player.HasAudio+!Player.HasVideo</visible>
+      <animation effect="fade" time="1000" reversible="true">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="true">windowclose</animation>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="500" reversible="true">hidden</animation>
+	</control>
+
+	
+    <control>
+      <description>default</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>40</posX>
+      <posY>30</posY>
+      <width>131</width>
+      <height>131</height>
+      <centered>yes</centered>
+      <keepaspectratio>true</keepaspectratio>
+      <visible>Player.HasAudio+!Player.HasVideo+!control.hasthumb(12345)+!control.hasthumb(77)</visible>
+      <texture mask="s_cdmask.png">defaultArtistBig.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="true">windowclose</animation>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="2500" reversible="true">hidden</animation>
+    </control>
+
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>12345</id>
+      <posX>40</posX>
+      <posY>30</posY>
+      <width>131</width>
+      <height>131</height>
+      <centered>yes</centered>
+      <keepaspectratio>true</keepaspectratio>
+      <visible>Player.HasAudio+!Player.HasVideo</visible>
+      <texture mask="s_cdmask.png">#Play.Current.Thumb</texture>
+	  <animation effect="fade" time="1500" reversible="true">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="true">windowclose</animation>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>music logo</description>
+      <type>image</type>
+      <id>77</id>
+      <posX>40</posX>
+      <posY>30</posY>
+      <width>131</width>
+      <centered>yes</centered>
+      <keepaspectratio>true</keepaspectratio>
+      <texture mask="s_cdmask.png">#Play.Current.ArtistThumb</texture>
+      <visible>Player.HasAudio+!Player.HasVideo+!control.hasthumb(12345)</visible>
+	  <animation effect="fade" time="1500" reversible="true">windowopen</animation>
+	  <animation effect="fade" time="100" reversible="true">windowclose</animation>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+    </control>
+    
+    
+    <!--<import>BasicHomeEdits.xml</import>	-->
+   
+  </controls>
+</window>
+
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+Top info
+-->
+<window>
+  <controls>
+  
+ 
+	   <!--Now recording info on home-->
+ 
+	
+	<control>
+	  <description>Current Category</description>
+      <type>label</type>
+      <id>80000</id>
+      <posX>138</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1800</width>
+      <font>font18</font>		  
+	  <label>#currentmodule</label>
+	  <textcolor>eaeaea</textcolor>		  
+	  <visible>!player.hasmedia+!player.hasaudio</visible>
+	</control> 
+
+	<control>
+	  <description>Date / Time</description>
+	  <type>label</type>
+      <id>0</id>
+	  <posX>138</posX>
+	  <posY>100</posY>
+	  <label>#time</label>
+	  <align>left</align>
+	  <font>font10</font>
+	  <textcolor>eaeaea</textcolor>
+	  <visible>!player.hasmedia+!player.hasaudio</visible>
+	</control>	
+  
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>1090</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>control.isvisible(13)|player.hasmedia|topbar.visible+!control.isvisible(08701)+!control.isvisible(505050)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>[!control.isvisible(2211)]+string.isset(#media.user)</visible>
+    </control>
+	
+  </controls>
+</window>

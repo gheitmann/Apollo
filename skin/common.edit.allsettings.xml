@@ -1,0 +1,1857 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1380</height>
+      <texture>splashscreen.jpg</texture>
+	  <visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>		  
+	  <shouldCache>false</shouldCache>
+    </control>
+
+	<control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>35</posX>
+      <posY>80</posY>
+      <width>1848</width>
+      <height>978</height>
+      <texture>edit_back.png</texture>
+	  <visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>		  
+	  <shouldCache>false</shouldCache>
+    </control>
+	
+	
+      <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>50</posX>
+      <posY>30</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>
+
+      <control>
+        <description>btn</description>
+        <type>button</type>
+        <id>07500</id>
+        <textureFocus>btn_list.png</textureFocus>
+        <textureNoFocus></textureNoFocus>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<label>back</label>
+		<onclick>#(skin.setfocus(705,508))</onclick>
+		<textXOff>13</textXOff>
+	    <textYOff>7</textYOff>
+	    <width>570</width>
+	    <height>50</height>
+		<onup>30</onup>
+        <onleft>07500</onleft>
+        <ondown>1108500</ondown>
+	    <onright>07500</onright>	
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control> 
+	  
+	  <control>
+        <description>dummy</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+        <height>20</height>
+        <align>left</align>
+        <label></label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  
+	  <control>
+        <description>label</description>
+        <type>label</type>
+        <id>0</id>
+        <width>570</width>
+        <height>40</height>
+        <align>left</align>
+        <label> Others screen plugin options:</label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108500</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin 1</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin 1: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile1plugin.hyperlink',#selectedlabel1108500))</onclick>
+        <binding>#tile1plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>07500</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108501</ondown>
+        <onright>1208500</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108501</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin 2</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin 2: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile2plugin.hyperlink',#selectedlabel1108501))</onclick>
+        <binding>#tile2plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108500</onup>
+        <onleft>1108501</onleft>
+        <ondown>1108502</ondown>
+        <onright>1208501</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108502</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin 3</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin 3: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile3plugin.hyperlink',#selectedlabel1108502))</onclick>
+        <binding>#tile3plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108501</onup>
+        <onleft>1108502</onleft>
+        <ondown>1108503</ondown>
+        <onright>1208502</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108503</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin 4</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin 4: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile4plugin.hyperlink',#selectedlabel1108503))</onclick>
+        <binding>#tile4plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108502</onup>
+        <onleft>1108503</onleft>
+        <ondown>1108504</ondown>
+        <onright>1208503</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108504</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin 5</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin 5: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile5plugin.hyperlink',#selectedlabel1108504))</onclick>
+        <binding>#tile5plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108503</onup>
+        <onleft>1108504</onleft>
+        <ondown>1108505</ondown>
+        <onright>1208504</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108505</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Plugin 6</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Plugin 6: </valuePrefixText>
+        <onclick>#(skin.setstring('#tile6plugin.hyperlink',#selectedlabel1108505))</onclick>
+        <binding>#tile6plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#pluginlist</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108504</onup>
+        <onleft>1108505</onleft>
+        <ondown>500</ondown>
+        <onright>1208505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+
+	  <control>
+        <description>fanart option</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+        <height>10</height>
+        <align>left</align>
+        <label></label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+	  
+	  <control>
+        <description>fanart option</description>
+        <type>label</type>
+        <id>0</id>
+        <width>570</width>
+        <height>40</height>
+        <align>left</align>
+        <label> Number of tvguide rows:</label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+
+	  <control>
+        <description>tvguide rows</description>
+        <type>menubutton</type>
+        <id>500</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> TVguide rows: </valuePrefixText>
+        <onclick>#(skin.setstring('#skin.tvguide.rows',#selectedlabel500))</onclick>
+        <binding>#skin.tvguide.rows</binding>
+        <subitems>
+        <subitem> 7</subitem>
+        <subitem> 12</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108505</onup>
+        <onleft>500</onleft>
+        <ondown>501</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+
+	  <control>
+        <description>fanart option</description>
+        <type>label</type>
+        <id>0</id>
+        <width>570</width>
+        <height>10</height>
+        <align>left</align>
+        <label></label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+	  
+	  <control>
+        <description>fanart option</description>
+        <type>label</type>
+        <id>0</id>
+        <width>570</width>
+        <height>40</height>
+        <align>left</align>
+        <label> Enable Fanart:</label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  
+	  <control>
+        <description>fanart option</description>
+        <type>menubutton</type>
+        <id>501</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> MovingPictures:  </valuePrefixText>
+        <onclick>#(skin.setstring('#MovingPictures.fanart.enable',#selectedlabel501))</onclick>
+        <binding>#MovingPictures.fanart.enable</binding>
+        <subitems>
+        <subitem>Yes</subitem>
+        <subitem>No</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>500</onup>
+        <onleft>501</onleft>
+        <ondown>502</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	
+
+	  <control>
+        <description>fanart option</description>
+        <type>menubutton</type>
+        <id>502</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> TVSeries:  </valuePrefixText>
+        <onclick>#(skin.setstring('#TVSeries.fanart.enable',#selectedlabel502))</onclick>
+        <binding>#TVSeries.fanart.enable</binding>
+        <subitems>
+        <subitem>Yes</subitem>
+        <subitem>No</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>501</onup>
+        <onleft>502</onleft>
+        <ondown>503</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	
+
+	  <control>
+        <description>fanart option</description>
+        <type>menubutton</type>
+        <id>503</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> MyVideos:  </valuePrefixText>
+        <onclick>#(skin.setstring('#MyVideos.fanart.enable',#selectedlabel503))</onclick>
+        <binding>#MyVideos.fanart.enable</binding>
+        <subitems>
+        <subitem>Yes</subitem>
+        <subitem>No</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>502</onup>
+        <onleft>503</onleft>
+        <ondown>504</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	
+
+	  <control>
+        <description>fanart option</description>
+        <type>menubutton</type>
+        <id>504</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Music:  </valuePrefixText>
+        <onclick>#(skin.setstring('#Music.fanart.enable',#selectedlabel504))</onclick>
+        <binding>#Music.fanart.enable</binding>
+        <subitems>
+        <subitem>No</subitem>
+		<subitem>All Screens</subitem>
+        <subitem>Now Playing only</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>503</onup>
+        <onleft>504</onleft>
+        <ondown>1108533</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+
+	  <control>
+        <description>dummy</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+        <height>10</height>
+        <align>left</align>
+        <label></label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+	  
+	  <control>
+        <description>label</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+		<height>50</height>
+        <spinPosX>3610</spinPosX>
+        <image></image>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>
+        <textalign>left</textalign>
+        <label> Movies options:</label>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>								
+      </control>
+
+	  <control>
+        <description>Settings tile</description>
+         <type>menubutton</type>
+        <id>1108533</id>
+        <width>570</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>menu</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Small movie tile type: </valuePrefixText>
+        <onclick>#(skin.setstring('#mtsettings.hyperlink',#selectedlabel1108533))</onclick>
+        <binding>#mtsettings.hyperlink</binding>
+        <subitems>
+        <subitem>Settings</subitem>
+        <subitem>MovieFilter</subitem>
+		<subitem>OnlineVideos</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>504</onup>
+        <onleft>1108533</onleft>
+        <ondown>1108534</ondown>
+        <onright>505</onright>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>								
+      </control>	  
+
+	  <!--MoviesFilter HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108534</id>
+        <width>570</width>
+		<height>45</height>
+		<oninfo>#(skin.setfocus(35,58511))</oninfo>
+		<onup>1108533</onup>
+        <onleft>1108534</onleft>
+        <ondown>1108535</ondown>
+        <onright>505</onright>
+        <label>Small movie tile parameter:  #Movies.hyperlink2</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#Movies.hyperlink2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>								
+      </control>
+	  <!--MoviesFilter PARAMETER-->	  
+	  
+	  
+	  <!--MAIN MOVIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108535</id>
+        <width>570</width>
+		<height>45</height>
+        <label>Big movie tile parameter:  #Movies.hyperlink1</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+		<onup>1108534</onup>
+        <onleft>1108535</onleft>
+        <ondown>505</ondown>
+        <onright>505</onright>		
+        <onclick>#(skin.setstring('#Movies.hyperlink1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>								
+      </control>
+	  <!--HYPERLINK PARAMETER-->	 
+	  
+	  </control>
+	  
+	  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	  
+      <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>640</posX>
+      <posY>90</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>
+
+	  
+	  <control>
+        <description>dummy</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+        <height>10</height>
+        <align>left</align>
+        <label></label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+	  
+	  <control>
+        <description>fanart option</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+        <height>40</height>
+        <align>left</align>
+        <label> Homescreen Options:</label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>
+	  
+      <control>
+        <description>Prefix My</description>
+        <type>checkbutton</type>
+        <id>505</id>
+        <textureFocus>btn_list.png</textureFocus>
+        <textureNoFocus></textureNoFocus>
+	    <textYOff>7</textYOff>
+	    <width>600</width>
+	    <height>50</height>
+		<selected>#(skin.hassetting('#skin.record.info'))</selected>
+        <onclick>#(skin.togglesetting('#skin.record.info'))</onclick>
+        <label>Disable TV section</label>
+		<font>font11</font>
+		<onup>1108535</onup>
+        <onleft>1108500</onleft>
+        <ondown>506</ondown>
+	    <onright>1108515</onright>	
+		<layoutDetail>TableCell(1, 1, 2)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>  
+	  
+	  <control>
+        <description>Enable latest in plugins</description>
+        <type>checkbutton</type>
+        <id>506</id>
+        <textureFocus>btn_list.png</textureFocus>
+        <textureNoFocus></textureNoFocus>
+	    <textYOff>7</textYOff>
+	    <width>600</width>
+	    <height>50</height>
+		<selected>#(skin.hassetting('#skin.latest.plugins'))</selected>
+        <onclick>#(skin.togglesetting('#skin.latest.plugins'))</onclick>
+        <label>Latest media in Others screen</label>
+		<font>font11</font>
+		<onup>505</onup>
+        <onleft>1108500</onleft>
+        <ondown>507</ondown>
+	    <onright>1108515</onright>	
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>  
+	  
+	  <control>
+        <description>Enable layout in plugins</description>
+        <type>checkbutton</type>
+        <id>507</id>
+        <textureFocus>btn_list.png</textureFocus>
+        <textureNoFocus></textureNoFocus>
+	    <textYOff>7</textYOff>
+	    <width>600</width>
+	    <height>50</height>
+		<selected>#(skin.hassetting('#skin.plugin.layout'))</selected>
+        <onclick>#(skin.togglesetting('#skin.plugin.layout'))</onclick>
+        <label>Others alternative layout</label>
+		<font>font11</font>
+		<onup>506</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108506</ondown>
+	    <onright>1108515</onright>	
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control> 
+
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108506</id>
+        <width>600</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>menu</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Main menu type: </valuePrefixText>
+        <onclick>#(skin.setstring('#skin.home.menu',#selectedlabel1108506))</onclick>
+        <binding>#skin.home.menu</binding>
+        <subitems>
+        <subitem>Standard</subitem>
+        <subitem>Extended</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>507</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108507</ondown>
+        <onright>1108515</onright>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>			
+      </control>
+
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1108507</id>
+        <width>600</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>plugin</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> MyVideos tile plugin: </valuePrefixText>
+        <onclick>#(skin.setstring('#002.tileplugin.hyperlink',#selectedlabel1108507))</onclick>
+        <binding>#002.tileplugin.hyperlink</binding>
+        <subitems>
+        <subitem>MyVideo</subitem>
+        <subitem>OnlineVideos</subitem>
+        <subitem>Trakt</subitem>
+        <subitem>PlayDisc</subitem>
+		<subitem>MovingPictures</subitem>
+		<subitem>NoPlugin</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>1108506</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108508</ondown>
+        <onright>1108515</onright>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>					
+      </control>	
+	  
+      <control>
+        <description>Enable/Disable button hints</description>
+        <type>checkbutton</type>
+        <id>1108508</id>
+        <label>Open MyVideo with big Movie tile</label>
+		<font>font11</font>
+		<width>600</width>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.swapmovies.vids'))</selected>
+        <onclick>#(skin.togglesetting('#skin.swapmovies.vids'))</onclick>
+        <onup>1108507</onup>
+		<onleft>1108500</onleft>
+		<onright>1108515</onright>
+        <ondown>1108509</ondown>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>							
+      </control>	
+	  
+      <control>
+        <description>Enable/Disable button hints</description>
+        <type>checkbutton</type>
+        <id>1108509</id>
+        <label>Button hints enabled ?</label>
+		<font>font11</font>
+		<width>600</width>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.tips'))</selected>
+        <onclick>#(skin.togglesetting('#skin.tips'))</onclick>
+        <onup>1108508</onup>
+		<onleft>1108500</onleft>
+		<onright>1108515</onright>
+        <ondown>1108510</ondown>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>			
+      </control>
+
+	  <control>
+        <description>movie swap</description>
+        <type>checkbutton</type>
+        <id>1108510</id>
+        <label>MyVideos Latest fanarts in movie screen</label>
+		<font>font11</font>
+		<width>600</width>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.movie.swap'))</selected>
+        <onclick>#(skin.togglesetting('#skin.movie.swap'))</onclick>
+        <onup>1108509</onup>
+		<onleft>1108500</onleft>
+		<onright>1108515</onright>
+        <ondown>1108511</ondown>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>					
+      </control>
+
+	  <control>
+        <description>Backgrounds</description>
+        <type>menubutton</type>
+        <id>1108511</id>
+        <width>600</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>7</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>Background Colour</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Skin background colour: </valuePrefixText>
+        <onclick>#(skin.setstring('#background.colour',#selectedlabel1108511))</onclick>
+        <binding>#background.colour</binding>
+        <subitems>
+        <subitem>default</subitem>
+        <subitem>purple</subitem>
+        <subitem>blue</subitem>
+        <subitem>green</subitem>
+		<subitem>dark</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>1108510</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108512</ondown>
+        <onright>1108515</onright>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>							
+      </control>
+	  
+      <control>
+        <description>Enable active recording info</description>
+        <type>checkbutton</type>
+        <id>1108512</id>
+        <label>Use RSS instead of Latest Media Info</label>
+		<font>font11</font>
+		<width>600</width>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.rss.info'))</selected>
+        <onclick>#(skin.togglesetting('#skin.rss.info'))</onclick>
+        <onup>1108511</onup>
+        <onleft>1108500</onleft>
+		<onright>1108515</onright>
+        <ondown>1108513</ondown>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>							
+      </control>	
+
+	   <control>
+        <description>Enable weather in homescreen</description>
+        <type>checkbutton</type>
+        <id>1108513</id>
+        <label>Enable weather in homescreen</label>
+		<font>font11</font>
+		<width>600</width>
+		<textcolorNoFocus>60ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <selected>#(skin.hassetting('#skin.weather.home'))</selected>
+        <onclick>#(skin.togglesetting('#skin.weather.home'))</onclick>
+        <onup>1108512</onup>
+		<onleft>1108500</onleft>
+		<onright>1108515</onright>
+        <ondown>1108514</ondown>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>
+      </control>
+	  
+	  <control>
+        <description>Option</description>
+        <type>menubutton</type>
+        <id>1108514</id>
+        <width>600</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>spinlist</mode>
+        <dialogTitle>Audio tile...</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText> Audio settings tile: </valuePrefixText>
+        <onclick>#(skin.setstring('#audio.radio.swap',#selectedlabel1108514))</onclick>
+        <binding>#audio.radio.swap</binding>
+        <subitems>
+        <subitem>settings</subitem>
+        <subitem>radio</subitem>
+		<subitem>rockstar</subitem>
+		<subitem>myLyrics</subitem>
+		<subitem>radiotime</subitem>
+		<subitem>mvCentral</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>1108513</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108531</ondown>
+        <onright>1108515</onright>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>									
+      </control>
+	  
+	  <control>
+        <description>dummy</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+        <height>10</height>
+        <align>left</align>
+        <label></label>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>		
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+      </control>	  
+
+	  <control>
+        <description>label</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+		<height>50</height>
+        <spinPosX>3610</spinPosX>
+        <image></image>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>
+        <textalign>left</textalign>
+        <label> TVSeries options:</label>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>								
+      </control>	  
+	  
+	  <!--TVSERIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108531</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+        <label>Big TVSeries tile parameter:  #TVSeries.hyperlink</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>1108514</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108532</ondown>
+        <onright>1108515</onright>		
+        <onclick>#(skin.setstring('#TVSeries.hyperlink'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>									
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+	  <!--TVSERIES HYPERLINK PARAMETER-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108532</id>
+        <posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+        <label>Small TVSeries tile parameter:  #TVSeries.hyperlink2</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onup>1108531</onup>
+        <onleft>1108500</onleft>
+        <ondown>1108515</ondown>
+        <onright>1108515</onright>			
+        <onclick>#(skin.setstring('#TVSeries.hyperlink2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>
+      </control>
+	  <!--HYPERLINK PARAMETER-->
+
+	  
+	  </control>
+	  
+	  
+	  
+	  
+	  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	  
+      <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>1270</posX>
+      <posY>100</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>	  
+	  
+	  <control>
+        <description>Configure label names</description>
+        <type>label</type>
+        <id>0</id>
+        <width>600</width>
+		<height>40</height>
+        <spinPosX>3610</spinPosX>
+        <image></image>
+        <font>font11</font>
+        <textcolor>ffffffff</textcolor>
+        <textalign>left</textalign>
+        <label>Tile Labels (Excluding plugins):</label>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>								
+      </control>
+	  
+	  <!--Label1-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108515</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu movies:  #menu.label2</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>
+        <onup>1108532</onup>
+        <onleft>505</onleft>
+        <ondown>1108516</ondown>
+        <onright>1108515</onright>
+      </control>
+	  <!--Label1-->
+	  <!--Label2-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108516</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu tvseries:  #menu.label3</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label3'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108515</onup>
+        <onleft>505</onleft>
+        <ondown>1108517</ondown>
+        <onright>1108516</onright>
+      </control>
+	  <!--Label2-->
+	  <!--Label3-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108517</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu livetv:  #menu.label4</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label4'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108516</onup>
+        <onleft>505</onleft>
+        <ondown>1108518</ondown>
+        <onright>1108517</onright>
+      </control>
+	  <!--Label3-->
+	  <!--Label4-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108518</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu audio:  #menu.label5</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label5'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108517</onup>
+        <onleft>505</onleft>
+        <ondown>1108519</ondown>
+        <onright>1108518</onright>
+      </control>
+	  <!--Label4-->
+	  <!--Label5-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108519</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>menu others:  #menu.label6</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#menu.label6'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108518</onup>
+        <onleft>505</onleft>
+        <ondown>1108520</ondown>
+        <onright>1108519</onright>
+      </control>
+	  <!--Label5-->
+	  	  <!--Label6-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108520</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>movies tile:  #home.movies1</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.movies1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108519</onup>
+        <onleft>505</onleft>
+        <ondown>1108521</ondown>
+        <onright>1308500</onright>
+      </control>
+	  <!--Label6-->
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108521</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>video tile:  #home.movies2</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.movies2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108520</onup>
+        <onleft>505</onleft>
+        <ondown>1108522</ondown>
+        <onright>1308501</onright>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108522</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>movie settings tile:  #home.movies3</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.movies3'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108521</onup>
+        <onleft>505</onleft>
+        <ondown>1108523</ondown>
+        <onright>1308502</onright>
+      </control>
+	  <!--Label7-->	 	  
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108523</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>tvseries tile:  #home.series1</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.series1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108522</onup>
+        <onleft>505</onleft>
+        <ondown>1108524</ondown>
+        <onright>1308503</onright>
+      </control>
+	  <!--Label7-->	 		  
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108524</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>unwatched tile:  #home.series2</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.series2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108523</onup>
+        <onleft>505</onleft>
+        <ondown>1108525</ondown>
+        <onright>1308504</onright>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108525</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>guide tile:  #home.tv1</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108524</onup>
+        <onleft>505</onleft>
+        <ondown>1108526</ondown>
+        <onright>1308505</onright>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108526</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>recorded tile:  #home.tv2</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv2'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108525</onup>
+        <onleft>505</onleft>
+        <ondown>1108527</ondown>
+        <onright>1308506</onright>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108527</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>schedules tile:  #home.tv3</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv3'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108526</onup>
+        <onleft>505</onleft>
+        <ondown>1108528</ondown>
+        <onright>1308507</onright>
+      </control>
+	  <!--Label7-->	 
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108528</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>tvserver tile:  #home.tv4</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv4'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108527</onup>
+        <onleft>505</onleft>
+        <ondown>1108529</ondown>
+        <onright>1308508</onright>
+      </control>
+	  <!--Label7-->	 	  
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108529</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>tv settings tile:  #home.tv5</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.tv5'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108528</onup>
+        <onleft>505</onleft>
+        <ondown>1108530</ondown>
+        <onright>1308509</onright>
+      </control>
+	  <!--Label7-->	 	
+	  	  <!--Label7-->.
+	  <control>
+        <description>Label</description>
+        <type>button</type>
+        <id>1108530</id>
+		<posX>500</posX>
+		<posY>500</posY>
+        <width>600</width>
+		<height>50</height>
+		<oninfo>#(skin.setfocus(35,242))</oninfo>
+        <label>music tile:  #home.audio1</label>
+		<font>font11</font>
+		<textcolorNoFocus>70ffffff</textcolorNoFocus>
+		<textureFocus>btn_list.png</textureFocus>
+		<textureNoFocus></textureNoFocus>
+        <onclick>#(skin.setstring('#home.audio1'))</onclick>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <onup>1108529</onup>
+        <onleft>505</onleft>
+        <ondown>1108530</ondown>
+        <onright>1308510</onright>
+      </control>
+	  <!--Label7-->	 
+	  </control>
+	  
+      <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>530</posX>
+      <posY>140</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>
+	  
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1208500</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile1texture',#selectedlabel1208500))</onclick>
+        <binding>#tile1texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile1texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile1texture.png</textureNoFocus>
+		<onup>07500</onup>
+        <onleft>1108500</onleft>
+        <ondown>1208501</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1208501</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile2texture',#selectedlabel1208501))</onclick>
+        <binding>#tile2texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile2texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile2texture.png</textureNoFocus>
+		<onup>1208500</onup>
+        <onleft>1108501</onleft>
+        <ondown>1208502</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1208502</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile3texture',#selectedlabel1208502))</onclick>
+        <binding>#tile3texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile3texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile3texture.png</textureNoFocus>
+		<onup>1208501</onup>
+        <onleft>1108502</onleft>
+        <ondown>1208503</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>	  
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1208503</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile4texture',#selectedlabel1208503))</onclick>
+        <binding>#tile4texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile4texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile4texture.png</textureNoFocus>
+		<onup>1208502</onup>
+        <onleft>1108503</onleft>
+        <ondown>1208504</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1208504</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile5texture',#selectedlabel1208504))</onclick>
+        <binding>#tile5plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile5texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile5texture.png</textureNoFocus>
+		<dimColor>80ffffff</dimColor>
+		<onup>1208503</onup>
+        <onleft>1108504</onleft>
+        <ondown>1208505</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1208505</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile6texture',#selectedlabel1208505))</onclick>
+        <binding>#tile6texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile6texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile6texture.png</textureNoFocus>
+		<onup>1208504</onup>
+        <onleft>1108505</onleft>
+        <ondown>500</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+      </control>	  
+	  
+	  <!-- TILE SETUP CONTROLS FOR ALL OTHER HOME TILES -->
+	  
+	  
+	  <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>1780</posX>
+      <posY>390</posY>
+      <layout>StackLayout(0, Vertical, false)</layout>
+		<visible allowhiddenfocus="true">control.hasfocus(07500)|control.hasfocus(1108500)|control.hasfocus(1108501)|control.hasfocus(1108502)|control.hasfocus(1108503)|control.hasfocus(1108504)|control.hasfocus(1108505)|control.hasfocus(500)|control.hasfocus(501)|control.hasfocus(502)|control.hasfocus(503)|control.hasfocus(504)|control.hasfocus(505)|control.hasfocus(506)|control.hasfocus(507)|control.hasfocus(1108506)|control.hasfocus(1108507)|control.hasfocus(1108508)|control.hasfocus(1108509)|control.hasfocus(1108510)|control.hasfocus(1108511)|control.hasfocus(1108512)|control.hasfocus(1108513)|control.hasfocus(1108514)|control.hasfocus(1108515)|control.hasfocus(1108516)|control.hasfocus(1108517)|control.hasfocus(1108518)|control.hasfocus(1108519)|control.hasfocus(1108520)|control.hasfocus(1108521)|control.hasfocus(1108522)|control.hasfocus(1108523)|control.hasfocus(1108524)|control.hasfocus(1108525)|control.hasfocus(1108526)|control.hasfocus(1108527)|control.hasfocus(1108528)|control.hasfocus(1108529)|control.hasfocus(1108530)|control.hasfocus(1108531)|control.hasfocus(1108532)|control.hasfocus(1108533)|control.hasfocus(1108534)|control.hasfocus(1108535)|control.hasfocus(1108536)|control.hasfocus(1208500)|control.hasfocus(1208501)|control.hasfocus(1208502)|control.hasfocus(1208503)|control.hasfocus(1208504)|control.hasfocus(1208505)|control.hasfocus(1308500)|control.hasfocus(1308501)|control.hasfocus(1308502)|control.hasfocus(1308503)|control.hasfocus(1308504)|control.hasfocus(1308505)|control.hasfocus(1308506)|control.hasfocus(1308507)|control.hasfocus(1308508)|control.hasfocus(1308509)|control.hasfocus(1308510)</visible>	
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308500</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile7texture',#selectedlabel1308500))</onclick>
+        <binding>#tile7texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile7texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile7texture.png</textureNoFocus>
+		<onup>07500</onup>
+        <onleft>1108520</onleft>
+        <ondown>1308501</ondown>
+        <onright>1308500</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308501</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile8texture',#selectedlabel1308501))</onclick>
+        <binding>#tile8texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile8texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile8texture.png</textureNoFocus>
+		<onup>1308500</onup>
+        <onleft>1108521</onleft>
+        <ondown>1308502</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308502</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile9texture',#selectedlabel1308502))</onclick>
+        <binding>#tile9texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile9texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile9texture.png</textureNoFocus>
+		<onup>1308501</onup>
+        <onleft>1108522</onleft>
+        <ondown>1308503</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>	  
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308503</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile10texture',#selectedlabel1308503))</onclick>
+        <binding>#tile10texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile10texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile10texture.png</textureNoFocus>
+		<onup>1308502</onup>
+        <onleft>1108523</onleft>
+        <ondown>1308504</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308504</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile11texture',#selectedlabel1308504))</onclick>
+        <binding>#tile11plugin.hyperlink</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile11texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile11texture.png</textureNoFocus>
+		<dimColor>80ffffff</dimColor>
+		<onup>1308503</onup>
+        <onleft>1108524</onleft>
+        <ondown>1308505</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308505</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile12texture',#selectedlabel1308505))</onclick>
+        <binding>#tile12texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile12texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile12texture.png</textureNoFocus>
+		<onup>1308504</onup>
+        <onleft>1108525</onleft>
+        <ondown>1308506</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308506</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile13texture',#selectedlabel1308506))</onclick>
+        <binding>#tile13texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile13texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile13texture.png</textureNoFocus>
+		<onup>1308505</onup>
+        <onleft>1108526</onleft>
+        <ondown>1308507</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308507</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile14texture',#selectedlabel1308507))</onclick>
+        <binding>#tile14texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile14texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile14texture.png</textureNoFocus>
+		<onup>1308506</onup>
+        <onleft>1108527</onleft>
+        <ondown>1308508</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308508</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile15texture',#selectedlabel1308508))</onclick>
+        <binding>#tile15texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile15texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile15texture.png</textureNoFocus>
+		<onup>1308507</onup>
+        <onleft>1108528</onleft>
+        <ondown>1308509</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308509</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>no</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile16texture',#selectedlabel1308509))</onclick>
+        <binding>#tile16texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile16texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile16texture.png</textureNoFocus>
+		<onup>1308508</onup>
+        <onleft>1108529</onleft>
+        <ondown>1308510</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+	  <control>
+        <description>Backgrounds</description>
+         <type>menubutton</type>
+        <id>1308510</id>
+        <width>80</width>
+        <height>50</height>
+		<textXOff>5</textXOff>
+        <textYOff>3</textYOff>
+		<oninfo>#(skin.setfocus(35,245))</oninfo>
+        <mode>dialoglist</mode>
+        <dialogTitle>Select a tile</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText></valuePrefixText>
+        <onclick>#(skin.setstring('#tile17texture',#selectedlabel1308510))</onclick>
+        <binding>#tile17texture</binding>
+        <subitems>
+        <subitem>#PluginTileList</subitem>
+        </subitems>
+        <textcolorNoFocus>70ffffff</textcolorNoFocus>
+        <textureFocus>Tiles\#tile17texture.png</textureFocus>
+		<textureNoFocus>Tiles\#tile17texture.png</textureNoFocus>
+		<onup>1308509</onup>
+        <onleft>1108530</onleft>
+        <ondown>1308510</ondown>
+        <onright>505</onright>
+		<layoutDetail>TableCell(1, 1, 1)</layoutDetail>
+        <animation effect="zoom" start="100,100" end="80,80" time="0">visible</animation>
+		<animation effect="zoom" start="100,100" end="120,120" time="50">focus</animation>
+	  </control>
+      </control>	
+	  
+	  
+	  
+  </controls>
+</window>

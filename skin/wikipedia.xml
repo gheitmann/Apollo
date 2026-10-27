@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>4711</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>background_02.jpg</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control> 
+   
+    <control>
+      <description>Backdrop Overlay - thumbs View</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>40</posX>
+      <posY>135</posY>
+      <width>1832</width>
+      <height>943</height>
+      <texture>0011.png</texture>
+    </control>
+
+    <control>
+      <description>Current window</description>
+      <type>label</type>
+      <id>16</id>
+      <posX>1810</posX>
+      <posY>33</posY>
+      <align>right</align>
+      <width>1800</width>
+      <font>font11</font>		  
+      <label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(102015), #currentmodule)), #currentmodule, ' '))</label>
+      <textcolor>eaeaea</textcolor>		  
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+		
+    <control>
+	<description>Date / Time</description>
+	<type>label</type>
+	<id>0</id>
+	<posX>1810</posX>
+	<posY>113</posY>
+	<label>#time #date | #itemcount Files</label>
+	<align>right</align>
+	<font>font11</font>
+	<textcolor>eaeaea</textcolor>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+    </control> 
+    
+    <control>
+      <type>group</type>
+      <description>group element</description>       
+      <posX>120</posX>
+      <posY>255</posY>
+      <layout>StackLayout(0, Vertical, true)</layout>
+      <control>
+        <description>Search Button</description>
+        <type>button</type>
+        <id>10</id>
+        <label>137</label>
+        <onup>21</onup>               
+      </control>
+      <control>
+        <description>Select local Wikipedia Button</description>
+        <type>button</type>
+        <id>11</id>
+        <label>200025</label>         
+      </control>
+      <control>
+        <description>Back to the text (when viewing an image)</description>
+        <type>button</type>
+        <id>14</id>
+        <label>2514</label>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Links Button</description>
+        <type>button</type>
+        <id>12</id>
+        <label>2511</label>
+      </control>
+      <control>
+        <description>Images Button</description>
+        <type>button</type>
+        <id>13</id>
+        <ondown>99</ondown>
+        <label>2515</label>
+      </control>
+    </control>
+    <control>
+      <description>Article title/searchterm</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>650</posX>
+      <posY>255</posY>
+      <visible>no</visible>
+      <label>Article title/searchterm</label>
+      <font>font11</font>
+      <align>left</align>
+      <width>1000</width>
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control>
+      <description>Image description</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>650</posX>
+      <posY>300</posY>
+      <visible>no</visible>
+      <label>Image description</label>
+      <font>font12</font>
+      <align>left</align>
+      <width>1000</width>
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control style="NoShadow">
+      <description>Here is the article text displayed</description>
+      <type>textbox</type>
+      <id>20</id>
+      <posX>650</posX>
+      <posY>300</posY>
+      <visible>no</visible>
+      <font>font12</font>
+      <width>1000</width>
+      <height>675</height> 
+      <spinWidth>29</spinWidth>
+      <spinHeight>29</spinHeight>
+      <spinPosX>1620</spinPosX>
+      <spinPosY>920</spinPosY>     
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control>
+      <description>Article Image</description>
+      <type>image</type>
+      <id>25</id>
+      <posX>650</posX>
+      <posY>300</posY>
+      <visible>no</visible>
+      <width>1000</width>
+      <height>675</height>
+      <texture />
+      <centered>yes</centered>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+  </controls>
+</window>
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>7974</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:</define>
+  <define>#selecteditem:</define>
+  <define>#itemcount:</define>	
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#backgroundcolour</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>    
+    <control>
+      <description>Backdrop Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>	
+    <control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+      <animation effect="fade" time="1500" reversible="true">visible</animation>
+      <animation effect="fade" time="1500" reversible="true">hidden</animation>
+      <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+      <visible>player.hasmedia|topbar.visible</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>      
+    <visible>string.isset(#media.user)</visible>
+</control>
+
+    <control>
+      <description>Current window</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>48</posY>
+      <align>left</align>
+      <width>1800</width>
+      <font>font18</font>                  
+      <label>Bing Image</label>
+      <textcolor>eaeaea</textcolor>                  
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control> 
+               
+    <control>
+      <description>Date / Time</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>135</posX>
+      <posY>98</posY>
+      <label>#time / #BingImage.ImageRegion #BingImage.ImageDate</label>
+      <align>left</align>
+      <font>font10</font>
+      <textcolor>eaeaea</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>    
+    
+    <!-- *** Buttons *** -->
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <posX>115</posX>
+      <posY>220</posY>
+      <layout>StackLayout(0, Vertical, true)</layout>      
+      <control>
+	<description>Region</description>
+	<type>button</type>
+	<id>2</id>
+        <width>300</width>
+	<label>Region...</label>
+	<onup>17</onup>
+	<ondown>3</ondown>
+      </control>
+      <control>
+	<description>Archive images</description>
+	<type>checkbutton</type>
+	<id>3</id>
+        <width>300</width>
+	<label>Archive images</label>
+	<onup>2</onup>
+	<ondown>4</ondown>
+      </control>
+      <control>
+	<description>Open libary</description>
+	<type>button</type>
+	<id>4</id>
+        <width>300</width>
+	<label>Open library...</label>
+	<onup>3</onup>
+	<ondown>9</ondown>
+      </control>
+      <control>
+	<description>Refresh</description>
+	<type>button</type>
+	<id>9</id>
+        <width>300</width>
+	<label>Refresh</label>
+	<onup>4</onup>
+	<ondown>2</ondown>
+      </control>      
+    </control>  
+    
+    <!-- *** Black background *** -->
+    <control>
+      <description>black background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>525</posX>
+      <posY>125</posY>
+      <width>730</width>
+      <height>460</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture>background_coverflow.png</texture>
+    </control>
+    <!-- *** Bing Image *** -->
+    <control>
+      <description>Bing image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>595</posX>
+      <posY>210</posY>
+      <width>1180</width>
+      <height>600</height>
+      <keepaspectratio>no</keepaspectratio>      
+      <texture mask="music_mask.png">#BingImage.Image</texture>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <!-- *** Bing Image Background *** -->
+    <!--<control>
+      <description>Bing image background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>350</posX>
+      <posY>85</posY>
+      <width>850</width>
+      <height>570</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture>background_images.png</texture>
+    </control>-->
+    <!-- *** Bing Image information *** -->    
+     <control>
+      <description>Description</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>595</posX>
+      <posY>875</posY>
+      <width>1180</width>
+      <label>#BingImage.ImageDescription</label>
+      <font>font11</font>      
+      <textcolor>eaeaea</textcolor>
+      <visible>!string.equals(#BingImage.ImageDate, )</visible>
+    </control>               
+  </controls>
+</window>

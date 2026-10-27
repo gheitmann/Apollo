@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>	
+	    
+    <control Style="BasicHomeFade">
+      <description>Feed items</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>115</posX>
+      <posY>990</posY>
+      <width>1700</width>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ff888888</textcolor>
+      <label>#infoservice.feed.titles</label>
+      <wrapString> :-: </wrapString>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor></shadowColor>
+      <visible>string.equals(#skin.rss.info, true)</visible>
+    </control>
+	  
+</controls>
+</window>

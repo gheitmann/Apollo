@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the list view
+-->
+<window>
+  <controls>
+  
+	  
+	  <control>
+        <description>Little Poster</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>135</posX>
+        <posY>875</posY>
+		<height>170</height>
+		<width>120</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <align>center</align>
+        <valign>middle</valign>		
+        <texture mask="">#Emulators2.CurrentItem.coverpath</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+
+
+	
+	  
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+        <posX>1342</posX>
+        <posY>224</posY>
+        <width>422</width>
+        <height>604</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <align>center</align>
+      <valign>middle</valign>
+      <texture mask="">#Emulators2.CurrentItem.coverpath</texture>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+      <visible>facadeview.list|facadeview.smallicons|facadeview.largeicons|control.isvisible(6)</visible>	  
+    </control>
+  	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1314</posX>
+        <posY>210</posY>
+        <width>28</width>
+        <height>619</height>
+        <texture>D_side.png</texture>
+		<visible>!control.isvisible(51)+!facadeview.filmstrip+!facadeview.coverflow</visible>
+      </control>      
+
+  </controls>
+</window>

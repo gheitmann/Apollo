@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>3007</id>
+  <defaultcontrol>213</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>190</posX>
+      <posY>865</posY>
+      <height>178</height>
+      <width>1530</width>
+      <texture>osdsmall2.png</texture>
+    </control>
+    <control>
+      <description>Time Info</description>
+      <type>label</type>
+      <id>100</id>
+      <posX>3178</posX>
+      <posY>889</posY>
+    </control>
+    <control>
+      <description>Time Info</description>
+      <type>label</type>
+      <id>110</id>
+      <posX>4890</posX>
+      <posY>810</posY>
+      <label>#time</label>
+      <align>right</align>
+      <font>font12</font>
+      <textcolor>eaeaea</textcolor>
+    </control>
+    <control>
+      <type>image</type>
+      <id>10</id>
+      <posX>4005</posX>
+      <posY>875</posY>
+      <width>180</width>
+      <height>180</height>
+      <texture mask="ltlmusic_mask.png">#TV.View.thumb</texture>
+      <centered>yes</centered>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>yes</visible>
+    </control>
+    <control>
+      <description>Current channel</description>
+      <type>label</type>
+      <id>35</id>
+      <posX>225</posX>
+      <posY>895</posY>
+      <width>1508</width>
+      <label>#TV.View.channel &#9642; #TV.View.title</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>20</id>
+	  <posX>350</posX>
+      <posY>995</posY>
+      <width>1220</width>
+      <offset>0</offset>
+      <height>3</height>
+      <innerheight>3</innerheight>
+      <lefttexture>osd_progress_left.png</lefttexture>
+      <midtexture>osd_progress_mid.png</midtexture>
+      <righttexture>osd_progress_right.png</righttexture>
+      <label>#TV.Record.percent1</label>
+      <visible>yes</visible>
+    </control>
+    <control>
+      <description>Start Time Info</description>
+      <type>label</type>
+      <id>101</id>
+      <posX>225</posX>
+      <posY>980</posY>
+      <label>#TV.View.start</label>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>On tv NOW</description>
+      <id>36</id>
+      <type>textbox</type>
+      <posX>4410</posX>
+      <posY>975</posY>
+      <width>1078</width>
+      <height>43</height>
+      <label>#TV.View.title</label>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>End Time Info</description>
+      <type>label</type>
+      <id>102</id>
+      <posX>1683</posX>
+      <posY>980</posY>
+      <label>#TV.View.Stop</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <font>font11</font>
+    </control>
+    <control>
+      <description>On tv NEXT</description>
+      <id>37</id>
+      <type>textbox</type>
+      <posX>225</posX>
+      <posY>935</posY>
+      <width>1525</width>
+      <height>43</height>
+      <align>left</align>
+      <font>font11</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>rec logo</description>
+      <type>image</type>
+      <id>39</id>
+      <posX>1678</posX>
+      <posY>852</posY>
+      <width>73</width>
+      <height>73</height>
+      <texture>recording.png</texture>
+      <animation effect="zoom" start="100,100" end="110,110" time="500" condition="true" pulse="true">conditional</animation>
+    </control>
+    <control>
+      <description>Zap to channel no</description>
+      <type>label</type>
+      <id>38</id>
+      <posX>73</posX>
+      <posY>43</posY>
+      <label>-</label>
+      <align>left</align>
+      <font>font12</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>yes</visible>
+      <animation effect="zoom" start="100,100" end="160,160" time="10">visiblechange</animation>
+    </control>
+  </controls>
+</window>

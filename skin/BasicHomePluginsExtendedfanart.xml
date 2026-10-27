@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+
+  <controls>
+  
+
+	  
+	  <control>
+        <description>missing art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>705</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">black.png</texture>
+        <colordiffuse>99ffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)</visible>
+      </control>
+	  <control>
+        <description>missing artshad</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>698</posX>
+        <posY>510</posY>
+		<height>295</height>
+		<width>560</width>
+        <texture>othershad.png</texture>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)</visible>
+      </control>	  
+	  
+	  
+	  
+	  <control>
+        <description>missing art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>210</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">black.png</texture>
+        <colordiffuse>99ffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)</visible>
+      </control>	  
+	  <control>
+        <description>missing artshad</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1264</posX>
+        <posY>205</posY>
+		<height>295</height>
+		<width>559</width>
+        <texture>othershad.png</texture>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)</visible>
+      </control>	
+	  
+
+	  <control>
+        <description>missing art</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">black.png</texture>
+        <colordiffuse>99ffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)</visible>
+      </control>	
+	  <control>
+        <description>missing artshad</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1264</posX>
+        <posY>510</posY>
+		<height>295</height>
+		<width>559</width>
+        <texture>othershad.png</texture>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)</visible>
+      </control>	
+	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>705</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.movingpicture.latest1.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MovPics)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MovPics)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MovPics)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MovPics)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MovPics)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MovPics)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>
+	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>210</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.movingpicture.latest2.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MovPics)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MovPics)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MovPics)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MovPics)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MovPics)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MovPics)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	  
+	
+
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.movingpicture.latest3.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MovPics)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MovPics)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MovPics)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MovPics)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MovPics)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MovPics)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	  
+
+	  
+	  <!--************* SERIES ***************-->
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>705</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.tvseries.latest1.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,TVSeries)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,TVSeries)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,TVSeries)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,TVSeries)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,TVSeries)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,TVSeries)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>
+	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>210</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.tvseries.latest2.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,TVSeries)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,TVSeries)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,TVSeries)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,TVSeries)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,TVSeries)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,TVSeries)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	  
+	
+
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.tvseries.latest3.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,TVSeries)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,TVSeries)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,TVSeries)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,TVSeries)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,TVSeries)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,TVSeries)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	 	  
+
+	  
+	  <!--************* MYVIDEOS ***************-->
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>705</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.myvideo.latest1.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MyVideo)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MyVideo)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MyVideo)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MyVideo)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MyVideo)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MyVideo)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>
+	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>210</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.myvideo.latest2.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MyVideo)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MyVideo)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MyVideo)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MyVideo)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MyVideo)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MyVideo)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	  
+	
+
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.myvideo.latest3.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MyVideo)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MyVideo)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MyVideo)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MyVideo)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MyVideo)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MyVideo)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	 	  
+	  
+	  
+	  <!--************* MUSIC ***************-->
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>705</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.music.latest1.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MyMusic)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MyMusic)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MyMusic)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MyMusic)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MyMusic)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MyMusic)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>
+	  
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>210</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.music.latest2.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MyMusic)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MyMusic)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MyMusic)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MyMusic)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MyMusic)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MyMusic)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	  
+	
+
+	  
+	  <control>
+        <description>BasicHome tile3</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1270</posX>
+        <posY>515</posY>
+		<height>280</height>
+		<width>545</width>
+        <texture mask="tile_000.png">#latestMediaHandler.music.latest3.fanart</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+	  <visible>[string.equals(#tile1plugin.hyperlink,MyMusic)+control.hasfocus(55522)]|[string.equals(#tile2plugin.hyperlink,MyMusic)+control.hasfocus(55523)]|[string.equals(#tile3plugin.hyperlink,MyMusic)+control.hasfocus(55524)]|[string.equals(#tile4plugin.hyperlink,MyMusic)+control.hasfocus(77787)]|[string.equals(#tile5plugin.hyperlink,MyMusic)+control.hasfocus(77788)]|[string.equals(#tile6plugin.hyperlink,MyMusic)+control.hasfocus(77789)]+plugin.isenabled(Latest Media Handler)</visible>
+      </control>	  
+	  
+	  
+	  
+<!--
+	    <control> 
+        <id>77790</id>
+		<type>button</type>
+		<description>plugin 7</description>
+        <hyperlink>#tile7.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile7plugin.parameter</hyperlinkParameter>
+        <label>#tile7.name</label>
+        <textureNoFocus mask="tile_000.png">#tile7plugin.hyperlink.png</textureNoFocus>
+        <textureFocus mask="tile_000.png">#tile7plugin.hyperlink.png</textureFocus>
+        <posX>700</posX>
+        <posY>510</posY>
+		<height>296</height>
+		<width>580</width>
+		<textalign>center</textalign>
+		<textYOff>100</textYOff>
+        <textcolorNoFocus>ff808080</textcolorNoFocus>
+        <textcolor>ffffffff</textcolor>
+        <font>font12</font>
+        <onup>55524</onup>
+        <onleft>55523</onleft>
+        <onright>77789</onright>
+        <ondown>77787</ondown>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)|control.hasfocus(231)|control.hasfocus(230)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(242)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)|control.hasfocus(77790)|control.hasfocus(77791)|control.hasfocus(77792)</visible>
+    </control>
+	
+	
+		<control> 
+        <id>77791</id>
+		<type>button</type>
+		<description>plugin 8</description>
+        <hyperlink>#tile8.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile8plugin.parameter</hyperlinkParameter>
+        <label>#tile8.name</label>
+        <textureNoFocus mask="tile_000.png">#tile8plugin.hyperlink.png</textureNoFocus>
+        <textureFocus mask="tile_000.png">#tile8plugin.hyperlink.png</textureFocus>
+        <posX>1285</posX>
+        <posY>205</posY>
+		<height>296</height>
+		<width>540</width>
+		<textalign>center</textalign>
+		<textYOff>100</textYOff>
+        <textcolorNoFocus>ff808080</textcolorNoFocus>
+        <textcolor>ffffffff</textcolor>
+        <font>font12</font>
+        <onup>5005</onup>
+        <onleft>55524</onleft>
+        <onright>77788</onright>
+        <ondown>77789</ondown>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)|control.hasfocus(231)|control.hasfocus(230)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(242)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)|control.hasfocus(77790)|control.hasfocus(77791)|control.hasfocus(77792)</visible>
+    </control>
+	
+	
+    <control> 
+        <id>77792</id>
+		<type>button</type>
+		<description>plugin 9</description>
+        <hyperlink>#tile9.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile9plugin.parameter</hyperlinkParameter>
+        <label>#tile9.name</label>
+        <textureNoFocus mask="tile_000.png">#tile9plugin.hyperlink.png</textureNoFocus>
+        <textureFocus mask="tile_000.png">#tile9plugin.hyperlink.png</textureFocus>
+        <posX>1286</posX>
+        <posY>510</posY>
+		<height>296</height>
+		<width>540</width>
+		<textalign>center</textalign>
+		<textYOff>100</textYOff>
+        <textcolorNoFocus>ff808080</textcolorNoFocus>
+        <textcolor>ffffffff</textcolor>
+        <font>font12</font>
+        <onup>77788</onup>
+        <onleft>77787</onleft>
+        <onright>77789</onright>
+        <ondown>77789</ondown>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666009)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666010)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.hasfocus(91919998)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+		<visible>control.hasfocus(5005)|control.hasfocus(55522)|control.hasfocus(55523)|control.hasfocus(55524)|control.hasfocus(77787)|control.hasfocus(77788)|control.hasfocus(77789)|control.hasfocus(0011223)|control.hasfocus(231)|control.hasfocus(230)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(250)|control.hasfocus(242)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)|control.hasfocus(77790)|control.hasfocus(77791)|control.hasfocus(77792)</visible>
+    </control>
+-->
+
+
+	
+  </controls>
+</window>

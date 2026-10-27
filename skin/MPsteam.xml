@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>8465</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+   <define>#header.label:Steam</define>
+    <controls>
+		<control>
+		  <description>Default Background</description>
+		  <type>image</type>
+		  <id>0</id>
+		  <posX>0</posX>
+		  <posY>0</posY>
+		  <width>1920</width>
+		  <height>1080</height>
+		  <texture>#backgroundcolour</texture>
+		</control>
+		<control>
+		  <description>Default Background</description>
+		  <type>image</type>
+		  <id>0</id>
+		  <posX>0</posX>
+		  <posY>0</posY>
+		  <width>1920</width>
+		  <height>1080</height>
+		  <texture>fan#backgroundcolour</texture>
+		</control>	
+		<control>
+			<description>fanart overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>hover_steam.jpg</texture>
+			<colordiffuse>16ffffff</colordiffuse>
+		</control>		
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1700</posX>
+      <posY>60</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>user.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+	<control>
+      <description>background overlay</description>
+      <type>image</type>
+      <id>1090</id>
+      <posX>1687</posX>
+      <posY>47</posY>
+      <width>80</width>
+      <height>80</height>
+      <texture>prog.png</texture>
+	  <animation effect="fade" time="1500" reversible="true">visible</animation>
+	  <animation effect="fade" time="1500" reversible="true">hidden</animation>
+	  <animation effect="rotate" centre="40,40" delay="0" end="-360" time="2500" loop="true" condition="true">Conditional</animation>
+	  <visible>control.isvisible(13)|player.hasmedia|topbar.visible+!control.isvisible(09701)</visible>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+	
+		<control>
+		  <description>Date / Time</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>132</posX>
+		  <posY>95</posY>
+		  <label>#time</label>
+		  <align>left</align>
+		  <font>font10</font>
+		  <textcolor>eaeaea</textcolor>
+		  <visible>!player.hasmedia</visible>
+		</control>
+
+		
+		<control>
+		  <description>Current Category</description>
+		  <type>label</type>
+		  <id>0</id>
+		  <posX>132</posX>
+		  <posY>48</posY>
+		  <align>left</align>
+		  <width>1800</width>
+		  <font>font18</font>		  
+		  <label>MPsteam</label>
+		  <textcolor>eaeaea</textcolor>		  
+		  <visible>!player.hasmedia</visible>
+		</control>	
+    
+	
+	<control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1680</posX>
+      <posY>70</posY>
+      <width>200</width>
+      <height>30</height>
+      <label>#media.user</label>
+      <align>right</align>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+	  <visible>[!control.isvisible(2211)]+string.isset(#media.user)</visible>
+    </control>
+	
+        <control>
+            <description>steam-logo</description>
+            <type>image</type>
+            <posX>135</posX>
+            <posY>875</posY>
+		    <height>170</height>
+		    <width>170</width>
+            <texture>Steam-logo.png</texture>
+        </control>
+	  <control>
+        <description>Cover Art</description>
+        <type>image</type>
+        <id>70</id>
+        <posX>1342</posX>
+        <posY>225</posY>
+        <width>500</width>
+        <height>500</height>
+		<keepaspectratio>no</keepaspectratio>
+        <zoomfromtop>no</zoomfromtop>
+        <texture>Steam-logo.png</texture>
+      </control>			
+
+        <control>
+            <id>2</id>
+            <description>ButtonStartAgain</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>2</onright>
+            <onup>2</onup>
+            <ondown>3</ondown>
+            <posX>130</posX>
+            <posY>700</posY>
+            <width>1050</width>
+            <height>50</height>
+            <label>Start Steam</label>
+            <textcolor>ffffffff</textcolor>
+            <font>font11</font>
+            <textYOff>5</textYOff>
+            <textXOff>15</textXOff>
+            <textalign>left</textalign>
+            <textcolorNoFocus>60ffffff</textcolorNoFocus>
+		    <textureFocus>btn_list.png</textureFocus>
+		    <textureNoFocus></textureNoFocus>
+        </control>
+        <control>
+            <id>3</id>
+            <description>ButtonSetFocus</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>2</onright>
+            <onup>2</onup>
+            <ondown>2</ondown>
+            <posX>130</posX>
+            <posY>750</posY>
+            <width>1050</width>
+            <height>50</height>
+            <label>Set focus to Steam</label>
+            <textcolor>ffffffff</textcolor>
+            <font>font11</font>
+            <textYOff>5</textYOff>
+            <textXOff>15</textXOff>
+            <textalign>left</textalign>
+            <textcolorNoFocus>60ffffff</textcolorNoFocus>
+		    <textureFocus>btn_list.png</textureFocus>
+		    <textureNoFocus></textureNoFocus>
+        </control>		
+    </controls>
+</window>

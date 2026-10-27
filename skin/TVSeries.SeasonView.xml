@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+   
+   
+      <control>
+        <description>background overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>movieShad.png</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+		<visible>control.isvisible(1238)+!facadeview.coverflow+!facadeview.filmstrip</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>	
+	  
+	  
+      <control>
+        <description>Series Default image</description>
+        <id>0</id>
+        <type>image</type>
+        <posX>1342</posX>
+        <posY>225</posY>
+        <width>402</width>
+        <height>576</height>
+        <texture mask="coverartm.png">missing_Coverart_video.png</texture>
+        <visible>!control.hasthumb(529)+!facadeview.coverflow+!facadeview.filmstrip+[control.isvisible(1238)+!control.hasfocus(1500)]</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+	
+	  <control>
+        <description>Series Poster</description>
+        <id>529</id>
+        <type>image</type>
+        <posX>1342</posX>
+        <posY>225</posY>
+        <width>402</width>
+        <height>576</height>
+        <texture mask="coverartm.png">#TVSeries.SeasonPoster</texture>
+        <visible>control.isvisible(1238)+!facadeview.coverflow+!facadeview.filmstrip+!control.hasfocus(1500)</visible>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+
+
+	
+  </controls>
+</window>
