@@ -82,11 +82,19 @@ are included so the existing local x64 client can be used for practical skin
 tests. The previous isolated runtime is no longer the test target.
 
 The normal Backdrop synthetic databases and media will be reused in place.
-Six official plugin packages were staged: Extensions 1.5.0.43, Global Search
+Eight official plugin packages were staged: Extensions 1.5.0.43, Global Search
 2.1.0.12, IMDb+ 2.1.0.581, InfoService 1.9.0.81, LogoManager 1.0.5.63 and Trakt
-6.0.7.474. Their existing files are preserved. LogoManager's optional Dark Glass
+6.0.7.474, SubCentral 1.2.7.0 and WorldWeather Lite SharpDX 1.3.4.0 (local x64 package). Existing files are preserved. LogoManager's optional Dark Glass
 design has four missing archive entries upstream and is omitted as a unit.
 No account is linked and no scrobbling or external catalogue import is performed.
 
 Local elevated deployment and the final interaction pass are pending. These
 prepared plugin payloads are not evidence of full service compatibility.
+
+The rebuilt single EXE also passes VerifyOnly against the regular installed
+MediaPortal 1.39 x64 client: correct Config/Skin/Plugins paths, private assembly
+binding, 3/3 readable buttons and 2,393/2,393 synthetic presentation events.
+This is preparation only, not an interactive installation result.
+
+Windows reported cancellation of the elevation request. Therefore no successful
+local deployment or regular-client interaction test is claimed.

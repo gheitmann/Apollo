@@ -14,8 +14,8 @@
 - Preserve existing skin settings during native file replacement; add a
   single-file EXE launcher with backup/restore and guarded presentation fixes.
 
-Full-client interaction/upgrade verification is pending a manual test-window
-close. See VALIDATION.md; this is not a stable release or x64 build.
+Full-client interaction/upgrade verification is pending local installation.
+See VALIDATION.md; this experimental release is not full runtime certification.
 
 - Rebuilt support plugin as AnyCPU and added architecture-selected installer launchers for the regular local test installation.
 - Published source and maintenance guidance; local plugin/service coverage remains tracked separately.

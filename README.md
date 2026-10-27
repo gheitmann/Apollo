@@ -6,6 +6,8 @@ or redesign are included. The source package was released on 15 March 2016.
 
 ## ALPHA1 candidate
 
+[Download the single-file setup and checksums](https://github.com/gheitmann/Apollo/releases/tag/v1.1.0-alpha.1).
+
 Use `dist/Apollo-Setup-ALPHA1.exe` with an installed **MediaPortal** client.
 Close MediaPortal first. Setup selects the installed client or asks for its folder.
 The optional `--mediaportal "C:\path\to\client"` argument selects a custom path.
