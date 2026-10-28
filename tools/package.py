@@ -4,6 +4,10 @@ import hashlib,json,zipfile,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist';DIST.mkdir(exist_ok=True)
 root=ET.parse(ROOT/'packaging/MediaPortalExtension.template.xml').getroot()
+scanned=ET.parse(ROOT/'build/ApolloPlugin-dependency.xml').getroot()
+packaged=root.find('./PluginDependencies/Items/PluginDependencyItem')
+def signature(node):return (node.tag,dict(node.attrib),(node.text or '').strip(),[signature(c) for c in node])
+assert signature(scanned)==signature(packaged),'Packaged plugin dependencies differ from compiled DLL scan'
 entries=root.findall('./Groups/Items/GroupItem/Files/Items/FileItem')
 paths={e.findtext('LocalFileName'):ROOT/e.findtext('LocalFileName') for e in entries}
 for rel,path in paths.items():
@@ -31,12 +35,12 @@ def archive(path,files):
  return digest
 payload={e.findtext('ZipFileName').replace('\\','/'):(ROOT/e.findtext('LocalFileName')).read_bytes() for e in entries}
 payload['MediaPortalExtension.xml']=ET.tostring(root,encoding='utf-8',xml_declaration=True)
-mpe=DIST/'Apollo-MP139-x86-ALPHA2.mpe1';digest=archive(mpe,payload)
+mpe=DIST/'Apollo-MP139-x86-ALPHA3.mpe1';digest=archive(mpe,payload)
 bundle={n:(ROOT/'build'/n).read_bytes() for n in ['ApolloInstaller.x86.exe','ApolloInstaller.x64.exe','Apollo.InstallerPresentation.dll','PresentationProbe.x86.exe','PresentationProbe.x64.exe','PatchInstaller.exe','Mono.Cecil.dll']}
 for name in ['Initialize.ps1','Find-MediaPortal.ps1','Get-MediaPortalArchitecture.ps1','Start-ApolloInstaller.ps1']:bundle[name]=(ROOT/'Source/InstallerUi'/name).read_bytes()
 bundle[mpe.name]=mpe.read_bytes();bundle[mpe.name+'.sha256']=mpe.with_suffix('.mpe1.sha256').read_bytes()
 bundle['Mono.Cecil-LICENSE.txt']=(ROOT.parent/'Mono.Cecil-LICENSE.txt').read_bytes()
-archive(DIST/'Apollo-private-ALPHA2.zip',bundle)
+archive(DIST/'Apollo-private-ALPHA3.zip',bundle)
 report={'payload_files':len(entries),'xml_files':sum(p.suffix.lower()=='.xml' for p in paths.values()),'original_artwork_and_fonts_unchanged':len(artwork),'bundle_entries':len(bundle),'mpe_sha256':digest}
 (ROOT/'docs/package-verification.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

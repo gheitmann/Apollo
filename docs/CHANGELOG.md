@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0.3 — ALPHA3
+
+- Fix the private installer host reporting MediaPortal 0.0.0.0: initialize the process-local native compatibility context from the selected MediaPortal.exe assembly version. No registry or installed core binary changes.
+- Generate packaged ApolloPlugin compatibility metadata from the compiled DLL instead of copying the original 2016 attributes.
+- Check native MediaPortal, Skin and Apollo plugin dependencies during setup verification; record the selected client version in diagnostics.
+- Add x86/x64 zero-version regression checks and build-time metadata parity validation. Preserve all skin layouts and artwork.
+
+
 ## 1.1.0.2 — ALPHA2
 
 - Remove the dangling TV fullscreen overlay texture reference from an unused offscreen decoration. No replacement artwork or OSD layout changes.

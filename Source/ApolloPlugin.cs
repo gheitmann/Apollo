@@ -10,7 +10,7 @@ using MediaPortal.Configuration;
 using MediaPortal.GUI.Library;
 
 [assembly: AssemblyTitle("Apollo skin support")]
-[assembly: AssemblyVersion("1.1.0.2")]
+[assembly: AssemblyVersion("1.1.0.3")]
 [assembly: CompatibleVersion("1.39.0.0")]
 namespace ApolloPlugin {
  public sealed class ImagePlugin : IPlugin, ISetupForm {

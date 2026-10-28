@@ -6,8 +6,8 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-[assembly: AssemblyVersion("1.1.0.2")]
-[assembly: AssemblyFileVersion("1.1.0.2")]
+[assembly: AssemblyVersion("1.1.0.3")]
+[assembly: AssemblyFileVersion("1.1.0.3")]
 
 // One distributable EXE. Dependencies are private temporary files, not user setup steps.
 class Setup
@@ -77,7 +77,7 @@ class Setup
                 System.Threading.Tasks.Task<string> errors = process.StandardError.ReadToEndAsync();
                 process.WaitForExit();
                 string report = output.Result + Environment.NewLine + errors.Result;
-                foreach (string probe in new[] { "architecture.txt", "presentation-probe.txt", "binding-probe.txt", "native-run.txt", "preview-error.txt", "native-fallback.txt", "patch-error.txt", "compatibility-warning.txt" })
+                foreach (string probe in new[] { "architecture.txt", "presentation-probe.txt", "binding-probe.txt", "dependency-probe.txt", "native-run.txt", "preview-error.txt", "native-fallback.txt", "patch-error.txt", "compatibility-warning.txt" })
                 {
                     string path = Path.Combine(run, "Runtime", probe);
                     if (File.Exists(path)) report += Environment.NewLine + File.ReadAllText(path);

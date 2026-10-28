@@ -1,3 +1,36 @@
+# ALPHA3 installer correction — 28 October 2026
+
+The ALPHA2 report showing MediaPortal 0.0.0.0 was traced to the private
+launcher: CompatibilityManager derives AppVersion from the entry EXE, whose
+version was 0.0.0.0. The native MPE provider uses this as its fallback when the
+installation registry key is absent. The launcher now initializes that
+process-local context from the selected MediaPortal.exe assembly version.
+It does not assign a fixed version or change installed binaries/registry keys.
+
+The package also contained obsolete original plugin attributes. ALPHA2 metadata
+still passes on the local 1.39 client once the host version is corrected, so
+those stale attributes are not independently proved to cause the reported failure.
+ALPHA3 generates them from the compiled DLL with the native MPE scanner and
+asserts parity during packaging.
+
+## Checks for this correction
+
+- Native dependency checks pass on official 1.39 x86 assemblies and the regular
+  installed 1.39 x64 client assemblies. Both test hosts reject the deliberately
+  broken 0.0.0.0 context and pass after restoring the selected client version.
+- The single EXE --verify path passes against the regular local x64 installation,
+  including architecture selection, private MPE binding, native destination paths
+  and native MediaPortal/Skin/Apollo plugin dependency validation.
+- 537/537 skin XML files parse; 449 existing native bindings across 91 windows
+  have no known type mismatch; no missing includes in the focused audit.
+- 2,069/2,069 package payload entries and 14/14 private bundle entries are reopened
+  and byte-compared. All 1,510/1,510 original image/font assets remain identical.
+- No client playback/UI regression pass or completed native wizard install is
+  claimed for ALPHA3. This is an installer correction with unchanged skin XML.
+  The reporting user's registry/client configuration is not available locally.
+
+## Earlier ALPHA2 checks (historical)
+
 # ALPHA2 validation â€” 27 October 2026
 
 Target: MediaPortal 1.39 x86, Windows 11. Original Apollo 1.1.0.0 artwork/layouts

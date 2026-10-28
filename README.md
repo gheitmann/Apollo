@@ -4,16 +4,16 @@ An original-design compatibility update of Apollo 1.1.0.0 by Wizard123 and YSMP.
 The 1080p tile interface, artwork and existing themes are preserved. No new images
 or redesign are included. The source package was released on 15 March 2016.
 
-## ALPHA2 candidate
+## ALPHA3 candidate
 
-[Download the single-file setup and checksums](https://github.com/gheitmann/Apollo/releases/tag/v1.1.0-alpha.2).
+[Download the single-file setup and checksums](https://github.com/gheitmann/Apollo/releases/tag/v1.1.0-alpha.3).
 
-Use `dist/Apollo-Setup-ALPHA2.exe` with an installed **MediaPortal** client.
+Use `dist/Apollo-Setup-ALPHA3.exe` with an installed **MediaPortal** client.
 Close MediaPortal first. Setup selects the installed client or asks for its folder.
 The optional `--mediaportal "C:\path\to\client"` argument selects a custom path.
-`--verify` performs preparation and binding checks without installing anything.
+`--verify` performs preparation, binding and native package dependency checks without installing anything.
 
-The native package `dist/Apollo-MP139-x86-ALPHA2.mpe1` is also available for
+The native package `dist/Apollo-MP139-x86-ALPHA3.mpe1` is also available for
 MediaPortal Extension Installer users. Source is maintained at https://github.com/gheitmann/Apollo.
 Builds remain experimental until the documented local smoke test is complete.
 

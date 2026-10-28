@@ -93,16 +93,16 @@ for section in package.findall('./Sections/Items/SectionItem'):
  for action in list(section.findall('./Actions/Items/ActionItem')):
   if action.get('ActionType')=='RunApplication':section.find('Actions/Items').remove(action)
   elif action.get('ActionType')=='InstallFiles':action.set('ConditionGroup','Apollo payload')
-for d in package.findall('./PluginDependencies/Items/PluginDependencyItem'):
- if d.get('AssemblyName')!='ApolloPlugin.dll':package.find('PluginDependencies/Items').remove(d)
+plugin_items=package.find('PluginDependencies/Items');plugin_items.clear()
+plugin_items.append(ET.parse(ROOT/'build/ApolloPlugin-dependency.xml').getroot())
 for d in package.findall('./Dependencies/Items/DependencyItem'):
  if d.findtext('Type')=='MediaPortal':
   for tag in ['MinVersion','MaxVersion']:
    for part,value in zip(['Major','Minor','Build','Revision'],[1,9 if tag=='MinVersion' else 99,0,0]):d.find(tag+'/'+part).text=str(value)
   d.find('WarnOnly').text='true';d.find('Message').text='Tested target: MediaPortal 1.39 x86. Other client versions are unverified.'
-info=package.find('GeneralInfo');info.find('Version/Revision').text='2';info.find('DevelopmentStatus').text='Testing'
-info.find('VersionDescription').text='ALPHA2: x86 compatibility update; preserve native Apollo design, fix package references and settings, remove global language/plugin replacement.'
-info.find('UpdateUrl').text='';info.find('OnlineLocation').text='';info.find('ReleaseDate').text='2026-10-27T00:00:00'
+info=package.find('GeneralInfo');info.find('Version/Revision').text='3';info.find('DevelopmentStatus').text='Testing'
+info.find('VersionDescription').text='ALPHA3: fix helper-host version detection; regenerate plugin dependency metadata and verify native dependencies before installation.'
+info.find('UpdateUrl').text='';info.find('OnlineLocation').text='';info.find('ReleaseDate').text='2026-10-28T00:00:00'
 for node in package.findall('.//LocalFileName'):
  if ':' in (node.text or ''):node.text=''
 project=package.find('ProjectSettings')

@@ -31,6 +31,7 @@ class ApolloInstaller
             string plugins = (string)config.GetMethod("GetFolder").Invoke(null, new object[] { Enum.Parse(dirs, "Plugins") });
             if (!Path.GetFullPath(plugins).TrimEnd('\\').Equals(Path.Combine(installed, "plugins"), StringComparison.OrdinalIgnoreCase))
                 throw new InvalidOperationException("Native plugin destination does not match the installed client: " + plugins);
+            Version clientVersion = InstallerCompatibility.SetClientVersion(installed);
             Assembly.LoadFrom(Path.Combine(local, "Apollo.InstallerPresentation.dll"));
             Assembly patched = Assembly.LoadFrom(Path.Combine(local, "MpeCore.dll"));
             if (args.Length == 1 && args[0] == "--verify")
@@ -39,6 +40,10 @@ class ApolloInstaller
                 foreach (AssemblyName reference in nativeInstaller.GetReferencedAssemblies())
                     if (reference.Name == "MpeCore" && Assembly.Load(reference) != patched)
                         throw new InvalidOperationException("Native installer did not bind to the isolated MpeCore copy.");
+                string[] packages = Directory.GetFiles(Directory.GetParent(local).FullName, "*.mpe1");
+                if (packages.Length != 1) throw new InvalidOperationException("Expected exactly one bundled MPE1 package.");
+                string dependencyReport = InstallerCompatibility.Verify(patched, packages[0]);
+                File.WriteAllText(Path.Combine(local, "dependency-probe.txt"), "Selected MediaPortal.exe: " + clientVersion + Environment.NewLine + dependencyReport);
                 File.WriteAllText(Path.Combine(local, "binding-probe.txt"),
                     "PASS: native installer binds to isolated MpeCore; native config destination=" + config.GetMethod("GetFolder").Invoke(null, new object[] { Enum.Parse(dirs, "Config") }) + "; native skin destination=" + config.GetMethod("GetFolder").Invoke(null, new object[] { Enum.Parse(dirs, "Skin") }) + "; native plugin destination=" + plugins + "; entry point was not invoked. No installation performed.");
                 return 0;
